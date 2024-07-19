@@ -1,0 +1,56 @@
+{
+    "en": [
+        {
+            "id": 1,
+            "name": "About Us"
+        },
+        {
+            "id": 2,
+            "name": "Services"
+        },
+        {
+            "id": 3,
+            "name": "Contact Us"
+        },
+        {
+            "id": 4,
+            "name": "FAQ"
+        }
+    ],
+    "az": [
+        {
+            "id": 1,
+            "name": "Haqqımızda"
+        },
+        {
+            "id": 2,
+            "name": "Servislər"
+        },
+        {
+            "id": 3,
+            "name": "Kontakt"
+        },
+        {
+            "id": 4,
+            "name": "FAQ"
+        }
+    ],
+    "ru": [
+        {
+            "id": 1,
+            "name": "О нас"
+        },
+        {
+            "id": 2,
+            "name": "Услуги"
+        },
+        {
+            "id": 3,
+            "name": "Контакты"
+        },
+        {
+            "id": 4,
+            "name": "Вопросы"
+        }
+    ]
+}

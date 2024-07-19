@@ -1,4 +1,4 @@
-import Switcher from '../LanguageSwitcher/Switcher'
+import './Header.css';
 import { useTranslation } from 'react-i18next';
 import StickyPart from './Header-StickyPart/StickyPart';
 
