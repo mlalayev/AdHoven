@@ -187,13 +187,9 @@
 
 .language-dropdown {
     width: 50px;
-    top: var(--6-px);
-    right: var(--10-px);
     display: var(--display-flex);
     box-sizing: var(--content-sizing);
-    /* position: var(--position-absolute); */
     align-items: var(--display-center);
-    background-color: var(--gray-color);
     border: 1px solid var(--gray-color);
     justify-content: var(--display-center);
 }

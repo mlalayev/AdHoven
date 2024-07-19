@@ -1,11 +1,18 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.node.json"
+  "compilerOptions": {
+    "target": "es6", // or "esnext" depending on your needs
+    "module": "commonjs", // or "esnext" depending on your setup
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx", // Use "react" if you are using React 17 or below
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*"]
     }
-  ]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

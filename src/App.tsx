@@ -1,5 +1,5 @@
 import Footer from "./Common/Footer/Footer";
-import Header from "./Common/Header/Header";
+import Header from "./Common/Header/Header.jsx";
 import i18n from './Components/I18N/I18N.jsx';
 import { I18nextProvider } from 'react-i18next';
 import MainPage from "./Components/MainPage/MainPage";
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<>
             <Header />
-            {/* <MainPage /> */}
+            <MainPage />
             {/* <Footer /> */}
           </>} />
           <Route path="/about" element={<>

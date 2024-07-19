@@ -5,7 +5,7 @@ import StickyPart from './Header-StickyPart/StickyPart';
 function Header() {
   const { t, i18n } = useTranslation();
 
-  const changeLanguage = (lng: any) => {
+  const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
   return (
