@@ -150,6 +150,7 @@
     --main-blue-color: #2772FF;
     --main-blue-line-color: #2773ff34;
     --gray-color: rgba(128, 128, 128, 0.232);
+    --gray-background-color: rgba(211, 211, 211, 0.292);
 
     /* Font-family */
     --Open-font-family: "Open Sans", sans-serif;
@@ -190,7 +191,7 @@
     right: var(--10-px);
     display: var(--display-flex);
     box-sizing: var(--content-sizing);
-    position: var(--position-absolute);
+    /* position: var(--position-absolute); */
     align-items: var(--display-center);
     background-color: var(--gray-color);
     border: 1px solid var(--gray-color);
@@ -230,6 +231,6 @@
     background-color: var(--gray-color);
 }
 
-.flag{
+.flag {
     width: 20px;
 }

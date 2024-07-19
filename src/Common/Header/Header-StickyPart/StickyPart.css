@@ -1,9 +1,16 @@
 .sticky-part {
+    display: flex;
     margin: 0 auto;
     max-width: 1350px;
     position: relative;
-    display: flex;
     align-items: center;
+}
+
+.sticky-part-right {
+    right: 0px;
+    gap: 20px;
+    display: flex;
+    position: absolute;
 }
 
 .logo {
@@ -12,21 +19,53 @@
 }
 
 .menu-ul-desktop {
+    width: 100%;
+    margin: 0 auto;
     display: none;
-    border: 1px solid red;
     list-style: none;
-    width: 80%;
+    padding: 0 320px 0 80px;
     justify-content: space-between;
-    padding: 0 60px;
+    font-family: var(--Open-font-family);
 }
 
 .menu-ul {
-    border: 1px solid red;
+    top: 60px;
+    width: 100%;
+    height: 200px;
     display: flex;
     list-style: none;
-    width: 80%;
-    justify-content: space-between;
-    padding: 0 60px;
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: space-around;
+}
+
+.menu-ul li {
+    gap: 10px;
+    height: 100%;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.menu-ul li:hover {
+    background-color: lightgray;
+}
+
+.menu-ul a,
+.menu-ul-desktop a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: black;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu-ul-desktop span:hover{
+    margin-top: 1px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
 }
 
 #checkbox {
@@ -34,29 +73,29 @@
 }
 
 .toggle {
-    position: relative;
     width: 40px;
-    cursor: pointer;
     margin: auto;
     display: block;
+    cursor: pointer;
+    position: relative;
     height: calc(4px * 3 + 11px * 2);
 }
 
 .bar {
-    position: absolute;
     left: 0;
     right: 0;
+    opacity: 1;
     height: 4px;
+    color: inherit;
+    position: absolute;
+    background-color: black;
     border-radius: calc(4px / 2);
     /* background: #7b52b9; */
-    background-color: black;
-    color: inherit;
-    opacity: 1;
     transition: none 0.35s cubic-bezier(.5, -0.35, .35, 1.5) 0s;
 }
 
-.hamburger-menu{
-    justify-self: flex-end;
+.hamburger-menu {
+    display: flex;
 }
 
 /***** Spin Animation *****/
@@ -95,4 +134,18 @@
     top: calc(50% - 4px/ 2);
     transform: rotate(225deg);
     transition-delay: 0s, calc(0s + 0.35s);
+}
+
+@media screen and (min-width:800px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .menu-ul {
+        display: none;
+    }
+
+    .menu-ul-desktop {
+        display: flex;
+    }
 }

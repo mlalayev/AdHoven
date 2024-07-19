@@ -1,0 +1,9 @@
+.weather-info{
+    display: flex;
+    align-items: center;
+    font-family: var(--Open-font-family);
+}
+
+.weather-icon{
+    width: 40px;
+}
