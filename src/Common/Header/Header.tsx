@@ -1,5 +1,6 @@
 import Switcher from '../LanguageSwitcher/Switcher'
 import { useTranslation } from 'react-i18next';
+import StickyPart from './Header-StickyPart/StickyPart';
 
 function Header() {
   const { t, i18n } = useTranslation();
@@ -8,10 +9,9 @@ function Header() {
     i18n.changeLanguage(lng);
   };
   return (
-    <div>
-      <Switcher changeLanguage={changeLanguage} />
-      <h1>{t('header.home')}</h1>
-    </div>
+    <header>
+      <StickyPart />
+    </header>
   )
 }
 
