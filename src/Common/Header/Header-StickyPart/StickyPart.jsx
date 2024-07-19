@@ -1,6 +1,6 @@
 import './StickyPart.css';
 import logo from '../../../assets/logotwo.png';
-import Switcher from '../../LanguageSwitcher/Switcher';
+import Switcher from '../../LanguageSwitcher/Switcher.tsx';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import Temprature from '../Header-Temprature/Temprature.tsx'
@@ -12,7 +12,7 @@ function StickyPart() {
   const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const changeLanguage = (lng: any) => {
+  const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   }
 
@@ -23,14 +23,17 @@ function StickyPart() {
   return (
     <div className="sticky-part">
       <img src={logo} alt="logo" className='logo' />
-      {isMenuOpen && (
-        <ul className='menu-ul'>
-          <li><a href="#">{t('header.aboutus')}</a></li>
-          <li><a href="#">{t('header.services')}</a></li>
-          <li><a href="#">{t('header.faq')}</a></li>
-          <li><a href="#">{t('header.contactus')}</a></li>
-        </ul>
-      )}
+      <ul className={`menu-ul ${isMenuOpen ? 'active' : ''}`}>
+        {MenuNav[i18n.language].map((item) => (
+          <li key={item.id}>
+            <a href={item.link}>
+              <span style={{
+                cursor:"pointer"
+              }}>{item.name}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
 
       <ul className='menu-ul-desktop'>
         {MenuNav[i18n.language].map((item) => {
