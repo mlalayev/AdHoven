@@ -11,7 +11,8 @@
     "baseUrl": "./",
     "paths": {
       "*": ["node_modules/*"]
-    }
+    },
+    "resolveJsonModule": true // Add this line to enable JSON module resolution
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

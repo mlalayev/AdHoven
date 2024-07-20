@@ -1,0 +1,78 @@
+{
+    "en": {
+      "footerColumns": [
+        {
+          "title": "Contact",
+          "contactDetails": [
+            {
+              "icon": "fas fa-home",
+              "text": "New York, NY 10012, US"
+            },
+            {
+              "icon": "fas fa-envelope",
+              "text": "info@example.com"
+            },
+            {
+              "icon": "fas fa-phone",
+              "text": "+01 234 567 88"
+            },
+            {
+              "icon": "fas fa-print",
+              "text": "+01 234 567 89"
+            }
+          ]
+        }
+      ]
+    },
+    "az": {
+      "footerColumns": [
+        {
+          "title": "Əlaqə",
+          "contactDetails": [
+            {
+              "icon": "fas fa-home",
+              "text": "Bakı, Azərbaycan"
+            },
+            {
+              "icon": "fas fa-envelope",
+              "text": "hello@adhoven.com"
+            },
+            {
+              "icon": "fas fa-phone",
+              "text": "+994 50 555 81 79"
+            },
+            {
+              "icon": "fas fa-print",
+              "text": "+994 50 555 81 79"
+            }
+          ]
+        }
+      ]
+    },
+    "ru": {
+      "footerColumns": [
+        {
+          "title": "Контакты",
+          "contactDetails": [
+            {
+              "icon": "fas fa-home",
+              "text": "Баку, Азербайджан"
+            },
+            {
+              "icon": "fas fa-envelope",
+              "text": "hello@adhoven.com"
+            },
+            {
+              "icon": "fas fa-phone",
+              "text": "+994 50 555 81 79"
+            },
+            {
+              "icon": "fas fa-print",
+              "text": "+994 50 555 81 79"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

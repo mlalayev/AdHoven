@@ -1,5 +1,10 @@
 {
     "header": {
         "city": "Баку"
+    },
+    "footer": {
+        "services": "Услуги",
+        "usefullinks": "Полезные ссылки",
+        "contacts": "Контакты"
     }
 }
