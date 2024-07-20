@@ -1,0 +1,77 @@
+{
+  "en": {
+    "footerColumns": [
+      {
+        "title": "Products",
+        "links": [
+          {
+            "name": "Facebook Ads",
+            "url": "#!"
+          },
+          {
+            "name": "SMM",
+            "url": "#!"
+          },
+          {
+            "name": "Custom Approach",
+            "url": "#!"
+          },
+          {
+            "name": "Digital Marketing",
+            "url": "#!"
+          }
+        ]
+      }
+    ]
+  },
+  "az": {
+    "footerColumns": [
+      {
+        "title": "Məhsullar",
+        "links": [
+          {
+            "name": "Facebook Reklamları",
+            "url": "#!"
+          },
+          {
+            "name": "SMM",
+            "url": "#!"
+          },
+          {
+            "name": "Fərdi Yanaşma",
+            "url": "#!"
+          },
+          {
+            "name": "Rəqəmsal Marketinq",
+            "url": "#!"
+          }
+        ]
+      }
+    ]
+  },
+  "ru": {
+    "footerColumns": [
+      {
+        "title": "Продукты",
+        "links": [
+          {
+            "name": "Реклама в Facebook",
+            "url": "#!"
+          },
+          {
+            "name": "SMM",
+            "url": "#!"
+          },
+          {
+            "name": "Индивидуальный Подход",
+            "url": "#!"
+          },
+          {
+            "name": "Цифровой Маркетинг",
+            "url": "#!"
+          }
+        ]
+      }
+    ]
+  }
+}

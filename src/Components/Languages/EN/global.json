@@ -1,5 +1,10 @@
 {
     "header": {
-        "city":"Baku"
+        "city": "Baku"
+    },
+    "footer": {
+        "services": "Services",
+        "usefullinks": "Useful Links",
+        "contacts": "Contacts"
     }
 }

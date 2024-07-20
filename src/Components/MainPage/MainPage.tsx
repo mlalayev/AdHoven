@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ImageSlider from '../Imageslider/Imageslider.jsx';
 import { useTranslation } from 'react-i18next';
+import './MainPage.css'
 
 function MainPage() {
 

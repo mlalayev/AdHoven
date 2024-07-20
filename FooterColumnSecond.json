@@ -1,0 +1,78 @@
+{
+    "en": {
+      "footerColumns": [
+        {
+          "title": "Useful links",
+          "links": [
+            {
+              "name": "Your Account",
+              "url": "#!"
+            },
+            {
+              "name": "Become an Affiliate",
+              "url": "#!"
+            },
+            {
+              "name": "Shipping Rates",
+              "url": "#!"
+            },
+            {
+              "name": "Help",
+              "url": "#!"
+            }
+          ]
+        }
+      ]
+    },
+    "az": {
+      "footerColumns": [
+        {
+          "title": "Faydalı linklər",
+          "links": [
+            {
+              "name": "Hesabınız",
+              "url": "#!"
+            },
+            {
+              "name": "Tərəfdaş Olun",
+              "url": "#!"
+            },
+            {
+              "name": "Göndərmə Tarifləri",
+              "url": "#!"
+            },
+            {
+              "name": "Kömək",
+              "url": "#!"
+            }
+          ]
+        }
+      ]
+    },
+    "ru": {
+      "footerColumns": [
+        {
+          "title": "Полезные ссылки",
+          "links": [
+            {
+              "name": "Ваш аккаунт",
+              "url": "#!"
+            },
+            {
+              "name": "Стать партнером",
+              "url": "#!"
+            },
+            {
+              "name": "Тарифы на доставку",
+              "url": "#!"
+            },
+            {
+              "name": "Помощь",
+              "url": "#!"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
