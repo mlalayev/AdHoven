@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<>
             <Header />
             <MainPage />
-            {/* <Footer /> */}
+            <Footer />
           </>} />
           <Route path="/about" element={<>
             <MainPage />
