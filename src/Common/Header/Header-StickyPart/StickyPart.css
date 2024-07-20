@@ -23,7 +23,7 @@
     margin: 0 auto;
     display: none;
     list-style: none;
-    padding: 0 230px 0 80px;
+    padding: 0 260px 0 80px;
     justify-content: space-between;
     font-family: var(--Open-font-family);
 }
@@ -148,7 +148,7 @@
     transition-delay: 0s, calc(0s + 0.35s);
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:900px) {
     .hamburger-menu {
         display: none;
     }
