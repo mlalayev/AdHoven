@@ -1,4 +1,8 @@
-header{
+header {
     padding: 5px 20px;
-    background-color: var(--gray-background-color);
+    top: 0;
+    z-index: 999;
+    opacity: 1;
+    position: sticky;
+    background-color: #F2F2F2;
 }
