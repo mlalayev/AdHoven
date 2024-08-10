@@ -4,7 +4,6 @@ import '../../../Common/Root.css';
 import React, { useState, useEffect } from 'react';
 import CategoriesData from '../../../../SectionTwoCardsData.json';
 
-
 const Cards = ({ interval = 8000, language = 'en' }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleCards, setVisibleCards] = useState(1);
@@ -46,8 +45,7 @@ const Cards = ({ interval = 8000, language = 'en' }) => {
     };
 
     return (
-        <div
-            className='category-slider-section' >
+        <div className='category-slider-section'>
             <div
                 className="category-card-container"
                 style={{ transform: `translateX(-${(currentIndex / visibleCards) * 100}%)` }}
@@ -67,10 +65,9 @@ const Cards = ({ interval = 8000, language = 'en' }) => {
                 ))}
             </div>
             <div
-                style={{
-                    margin: "40px 0 0 0"
-                }}
-                className="dots-categories">
+                style={{ margin: "40px 0 0 0" }}
+                className="dots-categories"
+            >
                 {Array.from({ length: Math.ceil(CategoriesData.length / visibleCards) }).map((_, index) => (
                     <span
                         key={index}
@@ -79,7 +76,7 @@ const Cards = ({ interval = 8000, language = 'en' }) => {
                     ></span>
                 ))}
             </div>
-        </div >
+        </div>
     );
 };
 
