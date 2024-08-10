@@ -9,11 +9,19 @@
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
     "paths": {
-      "*": ["node_modules/*"]
+      "*": [
+        "node_modules/*"
+      ]
     },
     "resolveJsonModule": true // Add this line to enable JSON module resolution
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

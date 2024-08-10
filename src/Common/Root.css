@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: var(--border-sizing);
+    font-family: var(--Open-font-family);
+}
+
+:root {
+    /* Display properties */
+    --display-flex: flex;
+    --display-none: none;
+    --display-grid: grid;
+    --display-block: block;
+    --flex-start: flex-start;
+    --display-inline: inline;
+    --display-center: center;
+    --flex-direction-row: row;
+    --flex-direction-column: column;
+    --display-inline-flex: inline-flex;
+    --display-space-around: space-around;
+    --display-inline-block: inline-block;
+    --display-space-between: space-between;
+    --flex-direction-column-reverse: column-reverse;
+
+    /* Flex Wrap */
+    --flex-wrap-wrap: wrap;
+    --flex-wrap-nowrap: nowrap;
+    --flex-wrap-wrap-reverse: wrap-reverse;
+
+    /* Position properties */
+    --position-fixed: fixed;
+    --position-relative: relative;
+    --position-absolute: absolute;
+
+    /* Text properties */
+    --text-left: left;
+    --text-right: right;
+    --text-center: center;
+
+    /* Percent */
+    --percent-0: 0%;
+    --percent-5: 5%;
+    --percent-10: 10%;
+    --percent-15: 15%;
+    --percent-20: 20%;
+    --percent-25: 25%;
+    --percent-30: 30%;
+    --percent-35: 35%;
+    --percent-40: 40%;
+    --percent-45: 45%;
+    --percent-50: 50%;
+    --percent-55: 55%;
+    --percent-60: 60%;
+    --percent-65: 65%;
+    --percent-70: 70%;
+    --percent-75: 75%;
+    --percent-80: 80%;
+    --percent-85: 85%;
+    --percent-90: 90%;
+    --percent-95: 95%;
+    --percent-100: 100%;
+
+    /* Pixels */
+    --2-px: 2px;
+    --4-px: 4px;
+    --6-px: 6px;
+    --8-px: 8px;
+    --10-px: 10px;
+    --12-px: 12px;
+    --14-px: 14px;
+    --16-px: 16px;
+    --18-px: 18px;
+    --20-px: 20px;
+    --22-px: 22px;
+    --24-px: 24px;
+    --26-px: 26px;
+    --28-px: 28px;
+    --30-px: 30px;
+    --32-px: 32px;
+    --34-px: 34px;
+    --36-px: 36px;
+    --38-px: 38px;
+    --40-px: 40px;
+
+    /* View Width */
+    --vw-0: 0vw;
+    --vw-5: 5vw;
+    --vw-10: 10vw;
+    --vw-15: 15vw;
+    --vw-20: 20vw;
+    --vw-25: 25vw;
+    --vw-30: 30vw;
+    --vw-35: 35vw;
+    --vw-40: 40vw;
+    --vw-45: 45vw;
+    --vw-50: 50vw;
+    --vw-55: 55vw;
+    --vw-60: 60vw;
+    --vw-65: 65vw;
+    --vw-70: 70vw;
+    --vw-75: 75vw;
+    --vw-80: 80vw;
+    --vw-85: 85vw;
+    --vw-90: 90vw;
+    --vw-95: 95vw;
+    --vw-100: 100vw;
+
+    /* View Height */
+    --vh-0: 0vh;
+    --vh-5: 5vh;
+    --vh-10: 10vh;
+    --vh-15: 15vh;
+    --vh-20: 20vh;
+    --vh-25: 25vh;
+    --vh-30: 30vh;
+    --vh-35: 35vh;
+    --vh-40: 40vh;
+    --vh-45: 45vh;
+    --vh-50: 50vh;
+    --vh-55: 55vh;
+    --vh-60: 60vh;
+    --vh-65: 65vh;
+    --vh-70: 70vh;
+    --vh-75: 75vh;
+    --vh-80: 80vh;
+    --vh-85: 85vh;
+    --vh-90: 90vh;
+    --vh-95: 95vh;
+    --vh-100: 100vh;
+
+    /* Font-weight */
+    --100-font-weight: 100;
+    --200-font-weight: 200;
+    --300-font-weight: 300;
+    --400-font-weight: 400;
+    --500-font-weight: 500;
+    --600-font-weight: 600;
+    --700-font-weight: 700;
+    --800-font-weight: 800;
+    --900-font-weight: 900;
+
+    /* Colors */
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --border-color: #d3d3d3;
+    --twitter-blue: #1da1f2;
+    --grayish-color: #F6F7FA;
+    --instagram-red: #e4405f;
+    --facebook-blue: #1877f2;
+    --text-gray-color: #626A77;
+    --transparent: transparent;
+    --main-blue-color: #2772FF;
+    --main-blue-line-color: #2773ff34;
+    --gray-color: rgba(128, 128, 128, 0.232);
+    --text-second-gray-color: rgb(93, 92, 92);
+
+    /* Font-family */
+    --Open-font-family: "Open Sans", sans-serif;
+
+    /* Transitions */
+    --transition-slow: 1s;
+    --transition-fast: 0.2s;
+    --transition-medium: 0.5s;
+
+    /* Cursor */
+    --cursor-pointer: pointer;
+    --cursor-default: default;
+    --cursor-not-allowed: not-allowed;
+
+    /* Box-Sizing */
+    --border-sizing: border-box;
+    --content-sizing: content-box;
+
+    /* Object-Fit */
+    --object-fit-fill: fill;
+    --object-fit-cover: cover;
+    --object-fit-contain: contain;
+    --object-fit-content: fit-content;
+
+    /* Visibility */
+    --auto: auto;
+    --unset: unset;
+    --hidden: hidden;
+    --visible: visible;
+
+    /* MainPage padding for mobile */
+    --main-page-padding: 74px 70px;
+}

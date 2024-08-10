@@ -1,11 +1,47 @@
-import React from 'react';
 import './Footer.css';
-import { FaFacebook, FaTwitter, FaGoogle, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import video from '../../assets/adhovenvideogif.mp4';
+// import footerDataOne from '../../../FooterColumnFirst.json';
+// import footerDataTwo from '../../../FooterColumnSecond.json';
+// import footerDataThree from '../../../FooterColumnThird.json';
+import { FaFacebook, FaTwitter, FaGoogle, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+
 import footerDataOne from '../../../FooterColumnFirst.json';
 import footerDataTwo from '../../../FooterColumnSecond.json';
 import footerDataThree from '../../../FooterColumnThird.json';
-import { useTranslation } from 'react-i18next';
+
+// Ensure that the JSON data is typed correctly
+const footerDataOneTyped: FooterDataSet = footerDataOne;
+const footerDataTwoTyped: FooterDataSet = footerDataTwo;
+const footerDataThreeTyped: FooterDataSet = footerDataThree;
+
+
+interface FooterLink {
+  name: string;
+  url: string;
+}
+
+interface FooterContactDetail {
+  icon: string;
+  text: string;
+}
+
+interface FooterColumn {
+  title: string;
+  links?: FooterLink[];  // `links` is optional
+  contactDetails?: FooterContactDetail[];  // `contactDetails` is optional
+}
+
+interface FooterData {
+  footerColumns: FooterColumn[];
+}
+
+interface FooterDataSet {
+  en: FooterData;
+  az: FooterData;
+  ru: FooterData;
+}
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -47,11 +83,11 @@ const Footer = () => {
             </p>
           </div>
           <div className="footer-column">
-            <h6 className="footer-title">{t('footer.services')}</h6>
+            <h6 className="footer-title">{t('footer.contacts')}</h6>
             <hr className="footer-hr" />
-            {footerDataOne[i18n.language].footerColumns[0].links.map((item, index) => (
+            {footerDataOne[i18n.language as keyof FooterDataSet].footerColumns[0].links.map((link: FooterLink, index: number) => (
               <p key={index}>
-                <a href={item.url} className="footer-link">{item.name}</a>
+                <a href={link.url} className="footer-link">{link.name}</a>
               </p>
             ))}
           </div>
@@ -59,25 +95,21 @@ const Footer = () => {
           <div className="footer-column">
             <h6 className="footer-title">{t('footer.usefullinks')}</h6>
             <hr className="footer-hr" />
-            {
-              footerDataTwo[i18n.language].footerColumns[0].links.map((link, index) => (
-                <p key={index}>
-                  <a href={link.url} className="footer-link">{link.name}</a>
-                </p>
-              ))
-            }
+            {footerDataTwo[i18n.language as keyof FooterDataSet].footerColumns[0].links.map((link: FooterLink, index: number) => (
+              <p key={index}>
+                <a href={link.url} className="footer-link">{link.name}</a>
+              </p>
+            ))}
           </div>
 
           <div className="footer-column">
             <h6 className="footer-title">{t('footer.contacts')}</h6>
             <hr className="footer-hr" />
-            {
-              footerDataThree[i18n.language].footerColumns[0].contactDetails.map((detail, index) => (
-                <p key={index}>
-                  <i className={detail.icon}></i> {detail.text}
-                </p>
-              ))
-            }
+            {footerDataThree[i18n.language as keyof FooterDataSet].footerColumns[0].contactDetails.map((detail: FooterContactDetail, index: number) => (
+              <p key={index}>
+                <i className={detail.icon}></i> {detail.text}
+              </p>
+            ))}
           </div>
         </section>
         <div className="footer-copyright">

@@ -1,0 +1,106 @@
+.category-slider-section {
+    margin: auto;
+    overflow: var(--hidden);
+    width: var(--percent-100);
+    position: var(--position-relative);
+}
+
+.category-slider-section {
+    height: 500px;
+    max-width: 1000px;
+    display: var(--display-flex);
+    align-items: var(--display-center);
+    padding-top: 50px;
+    /* justify-content: var(--display-center); */
+    flex-direction: var(--flex-direction-column);
+}
+
+.category-card-container {
+    gap: var(--20-px);
+    padding-right: 58px;
+    width: var(--percent-100);
+    display: var(--display-flex);
+    transition: transform 0.5s ease-in-out;
+}
+
+.category-card {
+    /* padding: var(--20-px); */
+    border-radius: var(--8-px);
+    border: 1px solid lightgray;
+    flex: 1 0 var(--percent-100);
+    display: var(--display-flex);
+    text-align: var(--display-center);
+    align-items: var(--display-center);
+    transition: var(--transition-medium) !important;
+    background-color: rgba(255, 0, 153, 0.197);
+    flex-direction: var(--flex-direction-column);
+}
+
+.category-card:hover {
+    transform: translateY(-20px) !important;
+}
+
+.categoryimage {
+    width: 100%;
+    height: 100%;
+}
+
+.category-text-holder h1 {
+    font-size: var(--18-px);
+    margin: var(--10-px) var(--percent-0);
+}
+
+.category-text-holder p {
+    font-size: var(--14-px);
+    margin: var(--percent-0);
+}
+
+.category-text-holder {
+    position: absolute;
+}
+
+.dots-categories {
+    margin-top: var(--10-px);
+    display: var(--display-flex);
+    justify-content: var(--display-center);
+}
+
+.dot-categories {
+    width: var(--10-px);
+    height: var(--10-px);
+    margin: var(--percent-0) 5px;
+    cursor: var(--cursor-pointer);
+    border-radius: var(--percent-50);
+    background-color: var(--gray-color);
+    display: var(--display-inline-block);
+    transition: background-color 0.3s ease;
+}
+
+.dot-categories.active {
+    background-color: var(--main-blue-color);
+}
+
+@media (min-width: 600px) {
+    .category-card {
+        flex: 0 0 var(--percent-50);
+    }
+}
+
+@media (min-width: 1024px) {
+    .category-card {
+        flex: 0 0 33.3%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1224px) {
+    .category-card-container {
+        padding-right: var(--36-px);
+    }
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+    .category-card-container {
+        gap: var(--percent-0);
+        padding-right: var(--percent-0);
+    }
+}
