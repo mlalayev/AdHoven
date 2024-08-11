@@ -4,7 +4,12 @@ import '../../../Common/Root.css';
 import React, { useState, useEffect } from 'react';
 import CategoriesData from '../../../../SectionTwoCardsData.json';
 
-const Cards = ({ interval = 8000, language = 'en' }) => {
+interface CardsProps {
+    interval?: number;
+    language?: 'en' | 'az' | 'ru'; 
+}
+
+const Cards: React.FC<CardsProps> = ({ interval = 8000, language = 'en' }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleCards, setVisibleCards] = useState(1);
 
@@ -40,7 +45,7 @@ const Cards = ({ interval = 8000, language = 'en' }) => {
         });
     };
 
-    const handleDotClick = (index) => {
+    const handleDotClick = (index: number) => {
         setCurrentIndex(index * visibleCards);
     };
 

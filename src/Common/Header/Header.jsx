@@ -9,9 +9,7 @@ function Header() {
     i18n.changeLanguage(lng);
   };
   return (
-    <header style={{
-
-    }}>
+    <header>
       <StickyPart />
     </header>
   )

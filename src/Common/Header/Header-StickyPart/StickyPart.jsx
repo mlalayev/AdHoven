@@ -6,15 +6,13 @@ import { useState } from 'react';
 import Temprature from '../Header-Temprature/Temprature.tsx'
 import MenuNav from '../../../../HeaderMenu.json';
 
-
 function StickyPart() {
-
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-  }
+  };
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -23,24 +21,21 @@ function StickyPart() {
   return (
     <div className="sticky-part">
       <img src={logo} alt="logo" className='logo' />
+
       <ul className={`menu-ul ${isMenuOpen ? 'active' : ''}`}>
         {MenuNav[i18n.language].map((item) => (
           <li key={item.id}>
             <a href={item.link}>
-              <span style={{
-                cursor:"pointer"
-              }}>{item.name}</span>
+              <span>{item.name}</span>
             </a>
           </li>
         ))}
       </ul>
 
       <ul className='menu-ul-desktop'>
-        {MenuNav[i18n.language].map((item) => {
-          return (
-            <li key={item.id}><a href={item.link}><span>{item.name}</span></a></li>
-          )
-        })}
+        {MenuNav[i18n.language].map((item) => (
+          <li key={item.id}><a href={item.link}><span>{item.name}</span></a></li>
+        ))}
       </ul>
 
       <div className="sticky-part-right">
