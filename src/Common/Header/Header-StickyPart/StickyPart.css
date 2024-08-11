@@ -1,7 +1,7 @@
 .sticky-part {
     display: flex;
     margin: 0 auto;
-    max-width: 1350px;
+    max-width: 1200px;
     position: relative;
     align-items: center;
 }
@@ -16,6 +16,7 @@
 .logo {
     width: 150px;
     height: 50px;
+    /* margin-left: -28px; */
 }
 
 .menu-ul-desktop {
@@ -23,6 +24,7 @@
     margin: 0 auto;
     display: none;
     list-style: none;
+    font-size: 15px;
     padding: 0 260px 0 80px;
     justify-content: space-between;
     font-family: var(--Open-font-family);
@@ -102,7 +104,6 @@
     position: absolute;
     background-color: black;
     border-radius: calc(4px / 2);
-    /* background: #7b52b9; */
     transition: none 0.35s cubic-bezier(.5, -0.35, .35, 1.5) 0s;
 }
 
