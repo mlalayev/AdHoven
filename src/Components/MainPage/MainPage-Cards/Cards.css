@@ -1,11 +1,17 @@
 .custom-slides {
     display: flex;
     position: relative;
+    gap: 20px;
     transition: transform 0.5s ease-in-out;
+}
+
+.custom-slider{
+    position: relative;
 }
 
 .custom-slide {
     position: relative;
+    min-width: 90vw;
 }
 
 .custom-slide img {
@@ -42,6 +48,9 @@
     font-size: 18px;
     padding: 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .custom-prev {
@@ -55,7 +64,6 @@
 .custom-dots {
     text-align: center;
     padding: 10px 0;
-    margin: 50px;
 }
 
 .custom-dot {
