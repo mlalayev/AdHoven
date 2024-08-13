@@ -1,25 +1,21 @@
-.custom-slides {
-    display: flex;
+/* General slider container */
+.custom-slider {
     position: relative;
-    gap: 20px;
-    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+
 }
 
-.custom-slider{
+/* Custom slides container */
+.slick-slide {
     position: relative;
 }
 
-.custom-slide {
-    position: relative;
-    min-width: 90vw;
-}
-
-.custom-slide img {
+.slick-slide img {
     width: 100%;
     height: auto;
 }
 
-.custom-slide-content {
+.slick-slide-content {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -27,67 +23,106 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.custom-slide-content p {
+.slick-slide-content p {
     display: none;
     margin-top: 10px;
 }
 
-.custom-slide:hover .custom-slide-content p {
+.slick-slide:hover .slick-slide-content p {
     display: block;
     transform: translateX(-100%);
 }
 
-.custom-prev,
-.custom-next {
+/* Navigation arrows */
+.slick-prev,
+.slick-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: rgb(167, 11, 11);
     border: none;
     font-size: 18px;
     padding: 10px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.custom-prev {
+.slick-prev {
     left: 10px;
 }
 
-.custom-next {
+.slick-next {
     right: 10px;
 }
 
-.custom-dots {
+/* Dots for navigation */
+.slick-dots {
     text-align: center;
     padding: 10px 0;
 }
 
-.custom-dot {
-    height: 10px;
-    width: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
+.slick-dots li {
     margin: 0 5px;
-    cursor: pointer;
 }
 
-.custom-active-dot {
+.slick-dots button {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.slick-dots .slick-active button {
     background-color: #6351CE;
 }
 
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
-    .custom-slide {
+    .slick-slide {
         width: 50%;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .custom-slide {
+    .slick-slide {
         width: 100%;
     }
 }
+
+/* Customize the container for the dots */
+.slick-dots {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style each dot */
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* Style the button (dot) itself */
+.slick-dots button {
+    height: 12px; /* Change size */
+    width: 12px; /* Change size */
+    background-color: #bbb; /* Default color */
+    border-radius: 50%; /* Circle shape */
+    cursor: pointer;
+    border: none; /* Remove border */
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+/* Style the active dot */
+.slick-dots .slick-active button {
+    background-color: #6351CE; /* Active color */
+}
+
+/* Optional: Add hover effect */
+.slick-dots button:hover {
+    background-color: #aaa; /* Hover color */
+}
+

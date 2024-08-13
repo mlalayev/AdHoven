@@ -1,102 +1,64 @@
-import React, { useState, useEffect } from 'react';
-import './Cards.css';
-import jsonData from '../../../../SectionTwoCardsData.json';
+import React from 'react';
+import './Cards.css'
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import slides from '../../../../SectionTwoCardsData.json';
 
-interface Slide {
-    image: string;
-    title: {
-        en: string;
-        az: string;
-        ru: string;
-    };
-    courses: {
-        en: string;
-        az: string;
-        ru: string;
-    };
-}
+type Slide = {
+  image: string;
+  title: {
+    en: string;
+    az: string;
+    ru: string;
+  };
+  courses: {
+    en: string;
+    az: string;
+    ru: string;
+  };
+};
 
 const CustomSlider: React.FC = () => {
-    const [currentSlide, setCurrentSlide] = useState<number>(0);
-    const [visibleSlides, setVisibleSlides] = useState<number>(3);
-    const slides: Slide[] = jsonData;
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
-    const updateVisibleSlides = () => {
-        if (window.innerWidth <= 576) {
-            setVisibleSlides(1);
-        } else if (window.innerWidth <= 768) {
-            setVisibleSlides(2);
-        } else {
-            setVisibleSlides(3);
-        }
-    };
-
-    useEffect(() => {
-        updateVisibleSlides();
-        window.addEventListener('resize', updateVisibleSlides);
-        return () => window.removeEventListener('resize', updateVisibleSlides);
-    }, []);
-
-    const handleDotClick = (index: number) => {
-        setCurrentSlide((index * visibleSlides)/ dotsCount);
-    };
-
-    const dotsCount = Math.ceil(slides.length / visibleSlides);
-    const translateXValue = -(currentSlide * (100 / visibleSlides));
-
-    const handlePrevClick = () => {
-        if (currentSlide > 0) {
-            setCurrentSlide(currentSlide - 0.5);
-        }
-    };
-
-    const handleNextClick = () => {
-        if (currentSlide < slides.length - visibleSlides - 1.5) {
-            setCurrentSlide(currentSlide + 0.5);
-        }
-    };
-
-    return (
-        <div className="custom-slider">
-            <div
-                className="custom-slides"
-                style={{
-                    transform: `translateX(${translateXValue}%)`,
-                    width: `${slides.length * (100 / visibleSlides)}%`,
-                }}
-            >
-                {slides.map((slide, index) => (
-                    <div
-                        key={index}
-                        className="custom-slide"
-                        style={{ width: `${100 / visibleSlides}%` }}
-                    >
-                        <img src={slide.image} alt={slide.title.en} />
-                        <div className="custom-slide-content">
-                            <h1>{slide.title.en}</h1>
-                            <p>{slide.courses.en}</p>
-                        </div>
-                    </div>
-                ))}
+  return (
+    <div className="slick-slider-container">
+      <Slider {...settings}>
+        {slides.map((slide: Slide, index: number) => (
+          <div key={index} className="slick-slide">
+            <img className='slider-img' src={slide.image} alt={slide.title.en} />
+            <div className="slick-slide-content">
+              <h1>{slide.title.en}</h1>
+              <p>{slide.courses.en}</p>
             </div>
-            <button className="custom-prev" onClick={handlePrevClick} disabled={currentSlide === 0}>
-                ‹
-            </button>
-            <button className="custom-next" onClick={handleNextClick} disabled={currentSlide >= slides.length - visibleSlides}>
-                ›
-            </button>
-
-            <div className="custom-dots">
-                {Array.from({ length: dotsCount }).map((_, index) => (
-                    <span
-                        key={index}
-                        className={`custom-dot ${index === Math.floor(currentSlide / visibleSlides) ? 'custom-active-dot' : ''}`}
-                        onClick={() => handleDotClick(index)}
-                    ></span>
-                ))}
-            </div>
-        </div>
-    );
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
 };
 
 export default CustomSlider;
