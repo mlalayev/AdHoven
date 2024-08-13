@@ -1,4 +1,5 @@
 import './Switcher.css';
+import '../Root.css'
 import ruFlag from '../../assets/ru.svg';
 import gbFlag from '../../assets/gb.svg';
 import azFlag from '../../assets/az.svg';

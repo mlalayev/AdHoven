@@ -37,23 +37,24 @@ const CustomSlider: React.FC = () => {
         return () => window.removeEventListener('resize', updateVisibleSlides);
     }, []);
 
-    const goToPrevious = () => {
-        setCurrentSlide((prev) => Math.max(prev - visibleSlides, 0));
-    };
-
-    const goToNext = () => {
-        setCurrentSlide((prev) =>
-            Math.min(prev + visibleSlides, slides.length - visibleSlides)
-        );
-    };
-
     const handleDotClick = (index: number) => {
-        setCurrentSlide((index * visibleSlides) / dotsCount);
+        setCurrentSlide((index * visibleSlides)/ dotsCount);
     };
 
     const dotsCount = Math.ceil(slides.length / visibleSlides);
-
     const translateXValue = -(currentSlide * (100 / visibleSlides));
+
+    const handlePrevClick = () => {
+        if (currentSlide > 0) {
+            setCurrentSlide(currentSlide - 0.5);
+        }
+    };
+
+    const handleNextClick = () => {
+        if (currentSlide < slides.length - visibleSlides - 1.5) {
+            setCurrentSlide(currentSlide + 0.5);
+        }
+    };
 
     return (
         <div className="custom-slider">
@@ -78,15 +79,15 @@ const CustomSlider: React.FC = () => {
                     </div>
                 ))}
             </div>
-            <button className="custom-prev" onClick={goToPrevious}>
+            <button className="custom-prev" onClick={handlePrevClick} disabled={currentSlide === 0}>
                 ‹
             </button>
-            <button className="custom-next" onClick={goToNext}>
+            <button className="custom-next" onClick={handleNextClick} disabled={currentSlide >= slides.length - visibleSlides}>
                 ›
             </button>
 
             <div className="custom-dots">
-                {Array.from({ length: Math.ceil(jsonData.length / visibleSlides) }).map((_, index) => (
+                {Array.from({ length: dotsCount }).map((_, index) => (
                     <span
                         key={index}
                         className={`custom-dot ${index === Math.floor(currentSlide / visibleSlides) ? 'custom-active-dot' : ''}`}
