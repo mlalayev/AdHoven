@@ -4,6 +4,10 @@
     position: relative;
 }
 
+body{
+    margin: 0;
+}
+
 .sectionslider::after {
     content: "";
     position: absolute;

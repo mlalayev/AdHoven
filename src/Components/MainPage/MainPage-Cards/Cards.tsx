@@ -1,82 +1,95 @@
-import './Cards.css';
-import { t } from 'i18next';
-import '../../../Common/Root.css';
 import React, { useState, useEffect } from 'react';
-import CategoriesData from '../../../../SectionTwoCardsData.json';
+import './Cards.css';
+import jsonData from '../../../../SectionTwoCardsData.json';
 
-interface CardsProps {
-    interval?: number;
-    language?: 'en' | 'az' | 'ru'; 
+interface Slide {
+    image: string;
+    title: {
+        en: string;
+        az: string;
+        ru: string;
+    };
+    courses: {
+        en: string;
+        az: string;
+        ru: string;
+    };
 }
 
-const Cards: React.FC<CardsProps> = ({ interval = 8000, language = 'en' }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [visibleCards, setVisibleCards] = useState(1);
+const CustomSlider: React.FC = () => {
+    const [currentSlide, setCurrentSlide] = useState<number>(0);
+    const [visibleSlides, setVisibleSlides] = useState<number>(3);
+    const slides: Slide[] = jsonData;
+
+    const updateVisibleSlides = () => {
+        if (window.innerWidth <= 576) {
+            setVisibleSlides(1);
+        } else if (window.innerWidth <= 768) {
+            setVisibleSlides(2);
+        } else {
+            setVisibleSlides(3);
+        }
+    };
 
     useEffect(() => {
-        const updateVisibleCards = () => {
-            if (window.innerWidth >= 1024) {
-                setVisibleCards(3);
-            } else if (window.innerWidth >= 600) {
-                setVisibleCards(2);
-            } else {
-                setVisibleCards(1);
-            }
-        };
-
-        updateVisibleCards();
-        window.addEventListener('resize', updateVisibleCards);
-
-        return () => window.removeEventListener('resize', updateVisibleCards);
+        updateVisibleSlides();
+        window.addEventListener('resize', updateVisibleSlides);
+        return () => window.removeEventListener('resize', updateVisibleSlides);
     }, []);
 
-    useEffect(() => {
-        const autoSlide = setInterval(() => {
-            handleNext();
-        }, interval);
+    const goToPrevious = () => {
+        setCurrentSlide((prev) => Math.max(prev - visibleSlides, 0));
+    };
 
-        return () => clearInterval(autoSlide);
-    }, [interval, visibleCards]);
-
-    const handleNext = () => {
-        setCurrentIndex((prevIndex) => {
-            const newIndex = prevIndex + visibleCards;
-            return newIndex >= CategoriesData.length ? 0 : newIndex;
-        });
+    const goToNext = () => {
+        setCurrentSlide((prev) =>
+            Math.min(prev + visibleSlides, slides.length - visibleSlides)
+        );
     };
 
     const handleDotClick = (index: number) => {
-        setCurrentIndex(index * visibleCards);
+        setCurrentSlide((index * visibleSlides) / dotsCount);
     };
 
+    const dotsCount = Math.ceil(slides.length / visibleSlides);
+
+    const translateXValue = -(currentSlide * (100 / visibleSlides));
+
     return (
-        <div className='category-slider-section'>
+        <div className="custom-slider">
             <div
-                className="category-card-container"
-                style={{ transform: `translateX(-${(currentIndex / visibleCards) * 100}%)` }}
+                className="custom-slides"
+                style={{
+                    transform: `translateX(${translateXValue}%)`,
+                    width: `${slides.length * (100 / visibleSlides)}%`,
+                }}
             >
-                {CategoriesData.map((category, index) => (
+                {slides.map((slide, index) => (
                     <div
                         key={index}
-                        className="category-card"
-                        style={{ backgroundColor: category.bgColor, color: category.textColor }}
+                        className="custom-slide"
+                        style={{ width: `${100 / visibleSlides}%` }}
                     >
-                        <img src={category.image} alt="category" className='categoryimage' />
-                        <div className="category-text-holder">
-                            <h1>{category.title[language]}</h1>
-                            <p>{category.courses[language]}</p>
+                        <img src={slide.image} alt={slide.title.en} />
+                        <div className="custom-slide-content">
+                            <h1>{slide.title.en}</h1>
+                            <p>{slide.courses.en}</p>
                         </div>
                     </div>
                 ))}
             </div>
-            <div
-                style={{ margin: "40px 0 0 0" }}
-                className="dots-categories"
-            >
-                {Array.from({ length: Math.ceil(CategoriesData.length / visibleCards) }).map((_, index) => (
+            <button className="custom-prev" onClick={goToPrevious}>
+                ‹
+            </button>
+            <button className="custom-next" onClick={goToNext}>
+                ›
+            </button>
+
+            <div className="custom-dots">
+                {Array.from({ length: Math.ceil(jsonData.length / visibleSlides) }).map((_, index) => (
                     <span
                         key={index}
-                        className={`dot-categories ${index === Math.floor(currentIndex / visibleCards) ? 'active' : ''}`}
+                        className={`custom-dot ${index === Math.floor(currentSlide / visibleSlides) ? 'custom-active-dot' : ''}`}
                         onClick={() => handleDotClick(index)}
                     ></span>
                 ))}
@@ -85,4 +98,4 @@ const Cards: React.FC<CardsProps> = ({ interval = 8000, language = 'en' }) => {
     );
 };
 
-export default Cards;
+export default CustomSlider;

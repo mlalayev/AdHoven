@@ -10,9 +10,7 @@
             "en": "20 Courses",
             "az": "20 Kurs",
             "ru": "20 Курсов"
-        },
-        "bgColor": "#FEEFF4",
-        "textColor": "#F54A87"
+        }
     },
     {
         "image": "./src/assets/notifimg.jpg",
@@ -25,9 +23,7 @@
             "en": "15 Courses",
             "az": "15 Kurs",
             "ru": "15 Курсов"
-        },
-        "bgColor": "#ECF4FF",
-        "textColor": "#2873FF"
+        }
     },
     {
         "image": "./src/assets/seoimg.jpg",
@@ -40,12 +36,10 @@
             "en": "25 Courses",
             "az": "25 Kurs",
             "ru": "25 Курсов"
-        },
-        "bgColor": "#FFF9EE",
-        "textColor": "#F9AD1A"
+        }
     },
     {
-        "image": "./src/assets/categoryiconfour.png",
+        "image": "./src/assets/megaphone.jpg",
         "title": {
             "en": "Health & Medicine",
             "az": "Sağlamlıq və Tibb",
@@ -55,12 +49,10 @@
             "en": "18 Courses",
             "az": "18 Kurs",
             "ru": "18 Курсов"
-        },
-        "bgColor": "#EDFBF0",
-        "textColor": "#44CD3B"
+        }
     },
     {
-        "image": "./src/assets/categoryiconone.png",
+        "image": "./src/assets/seoimg.jpg",
         "title": {
             "en": "Social Sciences",
             "az": "Sosial Elmlər",
@@ -70,12 +62,10 @@
             "en": "12 Courses",
             "az": "12 Kurs",
             "ru": "12 Курсов"
-        },
-        "bgColor": "#FEEFF4",
-        "textColor": "#F54A87"
+        }
     },
     {
-        "image": "./src/assets/categoryicontwo.png",
+        "image": "./src/assets/notifimg.jpg",
         "title": {
             "en": "Languages & Literature",
             "az": "Dillər və Ədəbiyyat",
@@ -85,8 +75,6 @@
             "en": "30 Courses",
             "az": "30 Kurs",
             "ru": "30 Курсов"
-        },
-        "bgColor": "#ECF4FF",
-        "textColor": "#2873FF"
+        }
     }
 ]

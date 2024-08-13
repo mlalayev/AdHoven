@@ -1,153 +1,85 @@
-.category-slider-section {
-    margin: auto;
-    overflow: var(--hidden);
-    width: var(--percent-100);
-    position: var(--position-relative);
-}
-
-.category-slider-section {
-    max-width: 1200px;
-    padding-top: 50px;
-    display: var(--display-flex);
-    align-items: var(--display-center);
-    flex-direction: var(--flex-direction-column);
-}
-
-.category-card-container {
-    gap: 61px;
-    width: var(--percent-100);
-    display: var(--display-flex);
+.custom-slides {
+    display: flex;
+    position: relative;
     transition: transform 0.5s ease-in-out;
 }
 
-.category-card:nth-child(4) {
-    margin-left: -63px !important;
-}
-
-.category-card {
-    border-radius: var(--8-px);
-    border: 1px solid lightgray;
-    flex: 1 0 var(--percent-100);
-    display: var(--display-flex);
-    text-align: var(--display-center);
-    align-items: var(--display-center);
-    background-color: rgba(255, 0, 153, 0.197);
-    flex-direction: var(--flex-direction-column);
-    transition: var(--transition-medium) !important;
-}
-
-.category-card:hover {
-    transform: translateY(-10px) !important;
-}
-
-.categoryimage {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-}
-
-.category-text-holder h1 {
-    font-size: var(--18-px);
-    margin: var(--10-px) var(--percent-0);
-}
-
-.category-text-holder p {
-    font-size: var(--14-px);
-    margin: var(--percent-0);
-}
-
-.category-text-holder {
-    position: absolute;
-}
-
-.dots-categories {
-    margin-top: var(--10-px);
-    display: var(--display-flex);
-    justify-content: var(--display-center);
-}
-
-.dot-categories {
-    width: var(--10-px);
-    height: var(--10-px);
-    margin: var(--percent-0) 5px;
-    cursor: var(--cursor-pointer);
-    border-radius: var(--percent-50);
-    background-color: var(--gray-color);
-    display: var(--display-inline-block);
-    transition: background-color 0.3s ease;
-}
-
-.dot-categories.active {
-    background-color: var(--main-blue-color);
-}
-
-@media (min-width: 600px) {
-    .category-card {
-        flex: 0 0 var(--percent-50);
-    }
-}
-
-@media (min-width: 1024px) {
-    .category-card {
-        flex: 0 0 30%;
-        /* padding-left: 20px; */
-    }
-}
-
-@media (min-width: 600px) and (max-width: 1224px) {
-    .category-card-container {
-        padding-right: var(--36-px);
-    }
-}
-
-@media (min-width: 0px) and (max-width: 600px) {
-    .category-card-container {
-        gap: var(--percent-0);
-        padding-right: var(--percent-0);
-    }
-}
-
-.category-card-container {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.category-card {
+.custom-slide {
     position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease;
 }
 
-.category-image {
+.custom-slide img {
     width: 100%;
     height: auto;
 }
 
-.category-text-holder {
+.custom-slide-content {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    transition: transform 0.5s ease-in-out;
+}
+
+.custom-slide-content p {
+    display: none;
+    margin-top: 10px;
+}
+
+.custom-slide:hover .custom-slide-content p {
+    display: block;
+    transform: translateX(-100%);
+}
+
+.custom-prev,
+.custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
     color: white;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
 }
 
-.category-card:hover .category-text-holder {
-    transform: translateY(0);
+.custom-prev {
+    left: 10px;
 }
 
-.category-text-holder h1 {
-    margin: 0;
+.custom-next {
+    right: 10px;
 }
 
-.category-text-holder p {
-    margin: 0;
-    display: none;
+.custom-dots {
+    text-align: center;
+    padding: 10px 0;
+    margin: 50px;
 }
 
-.category-card:hover .category-text-holder p {
-    display: block;
+.custom-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.custom-active-dot {
+    background-color: #6351CE;
+}
+
+@media screen and (max-width: 768px) {
+    .custom-slide {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .custom-slide {
+        width: 100%;
+    }
 }
