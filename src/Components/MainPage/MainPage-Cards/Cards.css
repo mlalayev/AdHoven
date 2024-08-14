@@ -1,11 +1,8 @@
-/* General slider container */
 .custom-slider {
-    position: relative;
     overflow: hidden;
-
+    position: relative;
 }
 
-/* Custom slides container */
 .slick-slide {
     position: relative;
 }
@@ -16,10 +13,10 @@
 }
 
 .slick-slide-content {
-    position: absolute;
-    bottom: 20px;
     left: 20px;
+    bottom: 20px;
     color: white;
+    position: absolute;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -30,21 +27,22 @@
 
 .slick-slide:hover .slick-slide-content p {
     display: block;
-    transform: translateX(-100%);
+    transition: 0.5s;
+    transform: translateY(-100%);
 }
 
-/* Navigation arrows */
 .slick-prev,
 .slick-next {
+    top: 500px;
+    border: none;
+    padding: 10px;
+    z-index: 99999;
+    cursor: pointer;
+    font-size: 18px;
     position: absolute;
-    top: 50%;
+    color: rgb(167, 11, 11);
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
-    color: rgb(167, 11, 11);
-    border: none;
-    font-size: 18px;
-    padding: 10px;
-    cursor: pointer;
 }
 
 .slick-prev {
@@ -55,30 +53,12 @@
     right: 10px;
 }
 
-/* Dots for navigation */
-.slick-dots {
-    text-align: center;
-    padding: 10px 0;
-}
-
-.slick-dots li {
-    margin: 0 5px;
-}
-
-.slick-dots button {
-    height: 10px;
-    width: 10px;
-    background-color: black;
-    border-radius: 50%;
-    cursor: pointer;
-    border: none;
-}
-
 .slick-dots .slick-active button {
+    z-index: 999;
+    position: absolute;
     background-color: #6351CE;
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .slick-slide {
         width: 50%;
@@ -91,38 +71,29 @@
     }
 }
 
-/* Customize the container for the dots */
-.slick-dots {
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Style each dot */
-.slick-dots li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-/* Style the button (dot) itself */
 .slick-dots button {
-    height: 12px; /* Change size */
-    width: 12px; /* Change size */
-    background-color: #bbb; /* Default color */
-    border-radius: 50%; /* Circle shape */
-    cursor: pointer;
-    border: none; /* Remove border */
-    padding: 0;
     margin: 0;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    border: none;
     outline: none;
+    z-index: 9999;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #7665d6;
 }
+
 
 /* Style the active dot */
 .slick-dots .slick-active button {
-    background-color: #6351CE; /* Active color */
+    background-color: #6351CE;
+    /* Active color */
 }
 
 /* Optional: Add hover effect */
 .slick-dots button:hover {
-    background-color: #aaa; /* Hover color */
+    background-color: #5b47cd;
+    /* Hover color */
 }
-
