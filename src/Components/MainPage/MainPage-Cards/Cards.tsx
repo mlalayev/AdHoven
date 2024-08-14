@@ -26,6 +26,11 @@ const CustomSlider: React.FC = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    swipe: true,
+    arrows: true,
+    autoplay: true,
+    dotsClass: "slick-dots",
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 768,
