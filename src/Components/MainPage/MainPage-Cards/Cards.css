@@ -53,10 +53,43 @@
     right: 10px;
 }
 
+.slick-dots {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex !important;
+    margin: 10px 0 !important;
+    position: relative !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    z-index: 9999;
+    display: block;
+    cursor: pointer;
+    top: 0 !important;
+    border-radius: 50%;
+    bottom: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #7665d6;
+    position: absolute !important;
+}
+
 .slick-dots .slick-active button {
-    z-index: 999;
-    position: absolute;
-    background-color: #6351CE;
+    background-color: #7564d9 !important;
+}
+
+.slick-dots button:hover {
+    background-color: #5b47cd !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -71,65 +104,27 @@
     }
 }
 
-.slick-dots li{
-    position: relative;
+.slick-dots li.slick-active button:before {
+    color: transparent !important;
+}
+
+.slick-dots button:before {
+    color: transparent !important;
 }
 
 .slick-dots button {
-    margin: 0;
-    padding: 0;
-    width: 8px !important;
-    height: 8px !important;
-    z-index: 9999;
-    cursor: pointer;
-    position: absolute;
-    border-radius: 50%;
-    background-color: #7665d6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #CCD6EA !important;
 }
 
-.slick-dots .slick-active button {
-    margin: 0;
-    padding: 0;
-    width: 8px !important;
-    height: 8px !important;
-    z-index: 9999;
-    cursor: pointer;
-    position: absolute;
-    border-radius: 50%;
-    background-color: #978fc3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slick-dots button::before{
+    display: none;
+    background-color: #b2abda !important;
 }
 
-
-/* Style the active dot */
-.slick-dots .slick-active button {
-    background-color: #6351CE;
-    background-color: #7564d9 !important;
-
-    /* Active color */
-}
-
-/* Optional: Add hover effect */
-.slick-dots button:hover {
-    background-color: #5b47cd;
-    /* Hover color */
-}
-
-.slick-dots li button:before {
-    /* display: none !important; */
-    color: #7564d9 !important;
-}
-
-.slick-dots li.slick-active button:after {
-    display: none !important;
-    color: transparent !important;
-}
-
-.slick-dots li.slick-active button {
-    color: transparent !important;
+.slick-dots li{
+    height: 12px !important;
+    display: flex !important;
+    margin-top: -30px !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
