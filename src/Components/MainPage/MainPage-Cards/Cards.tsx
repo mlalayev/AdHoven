@@ -1,5 +1,6 @@
 import React from 'react';
-import './Cards.css'
+import { useNavigate } from 'react-router-dom';
+import './Cards.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -17,9 +18,12 @@ type Slide = {
     az: string;
     ru: string;
   };
+  path: string;
 };
 
 const CustomSlider: React.FC = () => {
+  const navigate = useNavigate(); // useNavigate instead of useHistory
+
   const settings = {
     dots: true,
     infinite: true,
@@ -49,12 +53,22 @@ const CustomSlider: React.FC = () => {
     ],
   };
 
+  const handleImageClick = (path: string) => {
+    navigate(path); // navigate to the specified path
+  };
+
   return (
     <div className="slick-slider-container">
       <Slider {...settings}>
         {slides.map((slide: Slide, index: number) => (
           <div key={index} className="slick-slide">
-            <img className='slider-img' src={slide.image} alt={slide.title.en} />
+            <img
+              className="slider-img"
+              src={slide.image}
+              alt={slide.title.en}
+              onClick={() => handleImageClick(slide.path)}
+              style={{ cursor: 'pointer' }}
+            />
             <div className="slick-slide-content">
               <h1>{slide.title.en}</h1>
               <p>{slide.courses.en}</p>
