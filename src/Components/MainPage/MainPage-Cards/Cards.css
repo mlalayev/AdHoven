@@ -7,6 +7,10 @@
     position: relative;
 }
 
+.slick-list{
+    max-width: 1200px !important;
+}
+
 .slick-slide img {
     width: 100%;
     height: auto;
