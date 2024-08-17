@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the articles */
+.article-container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual article card */
+.article-card {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.article-card:hover {
+  transform: scale(1.02);
+}
+
+/* Image styling */
+.article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content styling */
+.article-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-date {
+  color: #999;
+  font-size: 14px;
+}
+
+.article-title {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.article-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.article-category {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #6351CE;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.article-image {
+  position: relative;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.read-more {
+  padding: 10px 20px;
+  background-color: #6351CE;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.read-more:hover {
+  background-color: #4a39a7;
+}
+
+/* Load More button styling */
+.load-more-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.load-more {
+  padding: 10px 20px;
+  background-color: #6351CE;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.load-more:hover {
+  background-color: #4a39a7;
+}
+
+/* Disabled state for the Load More button */
+.load-more.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.load-more.disabled:hover {
+  background-color: #ccc;
+}

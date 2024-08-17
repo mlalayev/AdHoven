@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import React, { useEffect, useState } from 'react'
 import ImageSlider from '../Imageslider/Imageslider.jsx';
 import Faq from './MainPage-FAQ/FAQ.js';
+import News from './MainPage-News/News.js';
 
 function MainPage() {
 
@@ -34,8 +35,19 @@ function MainPage() {
         <Card />
       </section>
 
-      <section className="sectionthird">
-        <Faq />
+      <section
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+        className="sectionthird">
+        <div className="sectionthird-leftpart">
+          <News />
+          <Faq />
+        </div>
+        <div className="sectionthird-rightpart">
+
+        </div>
       </section>
     </div>
   )
