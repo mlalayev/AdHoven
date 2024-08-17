@@ -6,6 +6,7 @@ import ImageSlider from '../Imageslider/Imageslider.jsx';
 import Faq from './MainPage-FAQ/FAQ.js';
 import News from './MainPage-News/News.js';
 import Profile from './MainPage-Profile/Profile.js';
+import Social from './MainPage-Social/Social.js';
 
 function MainPage() {
 
@@ -47,6 +48,7 @@ function MainPage() {
         </div>
         <div className="sectionthird-rightpart">
           <Profile />
+          <Social />
         </div>
       </section>
     </div>
