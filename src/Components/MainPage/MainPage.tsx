@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import ImageSlider from '../Imageslider/Imageslider.jsx';
 import Faq from './MainPage-FAQ/FAQ.js';
 import News from './MainPage-News/News.js';
+import Profile from './MainPage-Profile/Profile.js';
 
 function MainPage() {
 
@@ -38,7 +39,6 @@ function MainPage() {
       <section
         style={{
           display: 'flex',
-          flexDirection: 'column',
         }}
         className="sectionthird">
         <div className="sectionthird-leftpart">
@@ -46,7 +46,7 @@ function MainPage() {
           <Faq />
         </div>
         <div className="sectionthird-rightpart">
-
+          <Profile />
         </div>
       </section>
     </div>
