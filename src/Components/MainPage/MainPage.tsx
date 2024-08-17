@@ -7,6 +7,7 @@ import Faq from './MainPage-FAQ/FAQ.js';
 import News from './MainPage-News/News.js';
 import Profile from './MainPage-Profile/Profile.js';
 import Social from './MainPage-Social/Social.js';
+import MostRead from './MainPage-MostRead/MostRead.js';
 
 function MainPage() {
 
@@ -49,6 +50,7 @@ function MainPage() {
         <div className="sectionthird-rightpart">
           <Profile />
           <Social />
+          <MostRead />
         </div>
       </section>
     </div>
