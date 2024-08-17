@@ -38,5 +38,8 @@ body{
 
 .sectionthird{
     display: flex;
-    justify-content: flex-start !important;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 1200px;
+    /* justify-content: flex-start !important; */
 }
