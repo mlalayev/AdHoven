@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import slides from '../../../../SectionTwoCardsData.json';
+import { CustomLeftArrow, CustomRightArrow } from '../../../Common/ArrowsSlickSlider/Arrows' // Import custom arrows
 
 type Slide = {
   image: string;
@@ -22,7 +23,7 @@ type Slide = {
 };
 
 const CustomSlider: React.FC = () => {
-  const navigate = useNavigate(); // useNavigate instead of useHistory
+  const navigate = useNavigate();
 
   const settings = {
     dots: true,
@@ -35,6 +36,8 @@ const CustomSlider: React.FC = () => {
     autoplay: true,
     dotsClass: "slick-dots",
     autoplaySpeed: 3000,
+    nextArrow: <CustomRightArrow />, // Use custom right arrow
+    prevArrow: <CustomLeftArrow />,  // Use custom left arrow
     responsive: [
       {
         breakpoint: 768,
@@ -54,7 +57,7 @@ const CustomSlider: React.FC = () => {
   };
 
   const handleImageClick = (path: string) => {
-    navigate(path); // navigate to the specified path
+    navigate(path);
   };
 
   return (
