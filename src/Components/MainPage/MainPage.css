@@ -35,3 +35,9 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.sectionthird{
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-start !important;
+}
