@@ -91,16 +91,16 @@
     bottom: 0 !important;
     width: 10px !important;
     height: 10px !important;
-    background-color: #7665d6;
     position: absolute !important;
+    background-color: var(--main-purple-color);
 }
 
 .slick-dots .slick-active button {
-    background-color: #7564d9 !important;
+    background-color: var(--main-purple-color) !important;
 }
 
 .slick-dots button:hover {
-    background-color: #5b47cd !important;
+    background-color: var(--main-purple-hover-color) !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -159,4 +159,36 @@
 .slick-arrow.slick-next::before,
 .slick-arrow.slick-prev::before{
     display: none;
+}
+
+.slick-slide-content {
+    left: 20px;
+    bottom: 20px;
+    color: white;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(0); /* Ensure it starts at the bottom */
+}
+
+.slick-slide-content h1 {
+    margin: 0;
+    padding: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slick-slide-content p {
+    display: block;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(20px); /* Initially hidden below the h1 */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slick-slide:hover .slick-slide-content h1,
+.slick-slide:hover .slick-slide-content p {
+    transform: translateY(-20px); /* Move both h1 and p up */
+}
+
+.slick-slide:hover .slick-slide-content p {
+    opacity: 1; /* Fade in the p tag */
 }
