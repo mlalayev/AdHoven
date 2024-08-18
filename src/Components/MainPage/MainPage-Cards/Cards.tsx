@@ -5,7 +5,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import slides from '../../../../SectionTwoCardsData.json';
-import { CustomLeftArrow, CustomRightArrow } from '../../../Common/ArrowsSlickSlider/Arrows' // Import custom arrows
+import { CustomLeftArrow, CustomRightArrow } from '../../../Common/ArrowsSlickSlider/Arrows'; // Import custom arrows
+import { useTranslation } from 'react-i18next'; // Import useTranslation from react-i18next
 
 type Slide = {
   image: string;
@@ -24,6 +25,7 @@ type Slide = {
 
 const CustomSlider: React.FC = () => {
   const navigate = useNavigate();
+  const { i18n } = useTranslation(); // Access i18n instance
 
   const settings = {
     dots: true,
@@ -60,6 +62,11 @@ const CustomSlider: React.FC = () => {
     navigate(path);
   };
 
+  const getLanguageContent = (content: { en: string; az: string; ru: string }) => {
+    const currentLanguage = i18n.language;
+    return content[currentLanguage as keyof typeof content] || content.en; // Fallback to 'en' if language is not available
+  };
+
   return (
     <div className="slick-slider-container">
       <Slider {...settings}>
@@ -68,13 +75,13 @@ const CustomSlider: React.FC = () => {
             <img
               className="slider-img"
               src={slide.image}
-              alt={slide.title.en}
+              alt={getLanguageContent(slide.title)}
               onClick={() => handleImageClick(slide.path)}
               style={{ cursor: 'pointer' }}
             />
             <div className="slick-slide-content">
-              <h1>{slide.title.en}</h1>
-              <p>{slide.courses.en}</p>
+              <h1>{getLanguageContent(slide.title)}</h1>
+              <p>{getLanguageContent(slide.courses)}</p>
             </div>
           </div>
         ))}
