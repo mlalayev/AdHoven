@@ -2,85 +2,85 @@
     {
         "image": "./src/assets/megaphone.jpg",
         "title": {
-            "en": "Art & Humanities",
-            "az": "İncəsənət və Humanitar Elmlər",
-            "ru": "Искусство и Гуманитарные науки"
+            "en": "What is Targeting? Types and Proper Targeting Guidelines",
+            "az": "Targetinq Nədir? Növləri və Düzgün Hədəfləmə Qaydası",
+            "ru": "Что такое таргетинг? Виды и правила правильного таргетинга"
         },
         "courses": {
-            "en": "20 Courses",
-            "az": "20 Kurs",
-            "ru": "20 Курсов"
+            "en": "In recent times, marketing approaches have significantly evolved, focusing on understanding consumer behavior. The primary goal of marketing strategies is...",
+            "az": "Son dövrlərdə marketinq yanaşmaları əhəmiyyətli dərəcədə inkişaf edib və əsas məqsəd istehlakçı davranışını başa düşməyə yönəlib. Marketinq strategiyaları is düzgün...",
+            "ru": "В последнее время маркетинговые подходы значительно эволюционировали, и основной целью является понимание поведения потребителей. Маркетинговые стратегии направлены на..."
         },
-        "path": "/art-humanities"
+        "path": "/targetinq-nedir"
     },
     {
         "image": "./src/assets/notifimg.jpg",
         "title": {
-            "en": "Science & Technology",
-            "az": "Elm və Texnologiya",
-            "ru": "Наука и Технологии"
+            "en": "Who is a Digital Marketing Specialist?",
+            "az": "Rəqəmsal Marketinq Mütəxəssisi Kimdir?",
+            "ru": "Кто такой специалист по цифровому маркетингу?"
         },
         "courses": {
-            "en": "15 Courses",
-            "az": "15 Kurs",
-            "ru": "15 Курсов"
+            "en": "In today's business world, digital marketing has become an indispensable tool. Companies use it to connect with customers, promote their brands, and increase sales...",
+            "az": "Müasir biznes dünyasında rəqəmsal marketinq əvəzolunmaz bir vasitəyə çevrilib. Şirkətlər müştəriləri ilə əlaqə qurmaq, brendlərini tanıtmaq və satışlarını artırmaq üçün...",
+            "ru": "В современном мире бизнеса цифровой маркетинг стал незаменимым инструментом. Компании используют его для связи с клиентами, продвижения своих брендов и увеличения продаж..."
         },
         "path": "/science-technology"
     },
     {
         "image": "./src/assets/seoimg.jpg",
         "title": {
-            "en": "Business & Management",
-            "az": "Biznes və Menecment",
-            "ru": "Бизнес и Менеджмент"
+            "en": "What is SEO? A Comprehensive Guide to Search Engine Optimization",
+            "az": "SEO Nədir? A-dan Z-ə Axtarış Motoru Optimizasiyası Haqqında",
+            "ru": "Что такое SEO? Полное руководство по оптимизации для поисковых систем"
         },
         "courses": {
-            "en": "25 Courses",
-            "az": "25 Kurs",
-            "ru": "25 Курсов"
+            "en": "SEO stands for search engine optimization, which involves optimizing your web pages to rank higher in search engine results pages (SERPs)...",
+            "az": "SEO axtarış motoru optimizasiyası deməkdir və bu, axtarış motoru nəticələri səhifələrində (SERPs) ilk sıralarda yer tutmaq üçün veb səhifələrinizi optimallaşdırmaq...",
+            "ru": "SEO означает оптимизацию для поисковых систем, которая включает в себя оптимизацию ваших веб-страниц для более высокого ранжирования на страницах результатов поисковых систем (SERPs)..."
         },
-        "path": "/business-management"
+        "path": "/seo-axtaris-motoru"
     },
     {
-        "image": "./src/assets/megaphone.jpg",
+        "image": "./src/assets/metaicon.webp",
         "title": {
-            "en": "Health & Medicine",
-            "az": "Sağlamlıq və Tibb",
-            "ru": "Здоровье и Медицина"
+            "en": "What is Meta Business Manager? A Complete Usage Guide",
+            "az": "Meta Business Manager Nədir? A-dan Z-ə istifadə Qaydası",
+            "ru": "Что такое Meta Business Manager? Полное руководство по использованию"
         },
         "courses": {
-            "en": "18 Courses",
-            "az": "18 Kurs",
-            "ru": "18 Курсов"
+            "en": "Formerly known as Facebook Business Manager, Meta Business Manager allows users to manage Facebook, Messenger, and Instagram pages, messages, ads, comments, post shares...",
+            "az": "Əvvəllər Facebook Business Manager kimi tanınan Meta Business Manager istifadəçilərə Facebook, Messenger və Instagram səhifələrini, mesajları, reklamlrı, şərhləri, post paylaşımlarını...",
+            "ru": "Ранее известный как Facebook Business Manager, Meta Business Manager позволяет пользователям управлять страницами Facebook, Messenger и Instagram, сообщениями, рекламой, комментариями, публикациями..."
         },
-        "path": "/health-medicine"
+        "path": "/meta-business-manager"
     },
     {
-        "image": "./src/assets/seoimg.jpg",
+        "image": "./src/assets/doctorimg.webp",
         "title": {
-            "en": "Social Sciences",
-            "az": "Sosial Elmlər",
-            "ru": "Социальные науки"
+            "en": "The Importance of Digital Marketing in the Medical Sector",
+            "az": "Tibb Sektorunda Rəqəmsal Marketinqin Önəmi",
+            "ru": "Значение цифрового маркетинга в медицинском секторе"
         },
         "courses": {
-            "en": "12 Courses",
-            "az": "12 Kurs",
-            "ru": "12 Курсов"
+            "en": "The medical sector is undergoing digital development, and it is crucial to consider effective digital marketing strategies. As online connections become easier...",
+            "az": "Tibbi sektor rəqəmsal inkişafdadır və burada effektiv rəqəmsal marketinq strategiyalarını gözardı etmək olmaz. Getdikcə onlayn əlaqələrin daha asan qurula bildiyi...",
+            "ru": "Медицинский сектор развивается в цифровом направлении, и здесь нельзя игнорировать эффективные стратегии цифрового маркетинга. По мере того, как онлайн-связи становятся более доступными..."
         },
-        "path": "/social-sciences"
+        "path": "/tibbi-sektorda-marketing"
     },
     {
-        "image": "./src/assets/notifimg.jpg",
+        "image": "./src/assets/talkingguys.webp",
         "title": {
-            "en": "Languages & Literature",
-            "az": "Dillər və Ədəbiyyat",
-            "ru": "Языки и Литература"
+            "en": "SMM Companies and Their Services",
+            "az": "SMM Şirkətləri və Göstərdikləri Xidmətlər",
+            "ru": "SMM-компании и их услуги"
         },
         "courses": {
-            "en": "30 Courses",
-            "az": "30 Kurs",
-            "ru": "30 Курсов"
+            "en": "In Azerbaijan, millions of people actively use various social media platforms, making it an integral part of daily life. This massive...",
+            "az": "Azərbaycanda milyonlarla insan müxtəlif sosial media platformalarından aktiv şəkildə istifadə edir və bu gündəlik həyatımızın ayrılmaz hissəsinə çevrilib. Bu nəhəng...",
+            "ru": "В Азербайджане миллионы людей активно используют различные социальные медиа-платформы, что делает их неотъемлемой частью повседневной жизни. Эта массовая..."
         },
-        "path": "/languages-literature"
+        "path": "/smm-sirketleri"
     }
 ]

@@ -162,16 +162,23 @@
 }
 
 .slick-slide-content {
-    left: 20px;
+    left: 3px;
     bottom: 20px;
     color: white;
+    padding: 0 20px;
+    height: 130px;
+    max-width: 391px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     position: absolute;
+    background-color: rgba(128, 128, 128, 0.345);
     transition: transform 0.5s ease-in-out;
-    transform: translateY(0); /* Ensure it starts at the bottom */
+    transform: translateY(20px); /* Ensure it starts at the bottom */
 }
 
 .slick-slide-content h1 {
     margin: 0;
+    font-size: 18px;
     padding: 0;
     transition: transform 0.5s ease-in-out;
 }
@@ -179,14 +186,15 @@
 .slick-slide-content p {
     display: block;
     margin-top: 10px;
+    font-size: 12px;
     opacity: 0;
-    transform: translateY(20px); /* Initially hidden below the h1 */
+    transform: translateY(80px); /* Initially hidden below the h1 */
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .slick-slide:hover .slick-slide-content h1,
 .slick-slide:hover .slick-slide-content p {
-    transform: translateY(-20px); /* Move both h1 and p up */
+    transform: translateY(0px); /* Move both h1 and p up */
 }
 
 .slick-slide:hover .slick-slide-content p {
