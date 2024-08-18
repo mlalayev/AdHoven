@@ -1,31 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MostRead.css';
+import { FaCircle } from 'react-icons/fa';
+import MostReadTopics from '../../../../MostReadTopics.json';
+import { TbRectangleVerticalFilled } from "react-icons/tb";
+
+interface Post {
+    date: string;
+    title: string;
+}
 
 const MostRead: React.FC = () => {
+    const [posts] = useState<Post[]>(MostReadTopics);
+
     return (
         <div className="posts-card">
-            <h3>Ən Çox Oxunan Yazılar</h3>
+            <span className='spanicon'><TbRectangleVerticalFilled color='#6351CE' size={20} /><h3>Ən Çox Oxunan Yazılar</h3></span>
             <ul className="post-list">
-                <li>
-                    <span>25 Dekabr 2023</span>
-                    <p>Top 53 Ən Yaxşı Telegram Kanalları, Qrupları və Botları</p>
-                </li>
-                <li>
-                    <span>17 Aprel 2024</span>
-                    <p>2024-cü il üzrə SMM Təqvimi və Əlamətdar Günlər</p>
-                </li>
-                <li>
-                    <span>23 Dekabr 2023</span>
-                    <p>SWOT Analiz Haqqında Bilməli Olduğunuz Məlumatlar</p>
-                </li>
-                <li>
-                    <span>25 Dekabr 2023</span>
-                    <p>Marketinq Strategiyası: Hazırlanma Qaydası və Şablonlar</p>
-                </li>
-                <li>
-                    <span>25 Dekabr 2023</span>
-                    <p>Rəqəmsal Marketinq Nədir? A-dan Z-ə Geniş Təlimat</p>
-                </li>
+                {posts.map((post, index) => (
+                    <li key={index} className="post-item">
+                        <div className="timeline">
+                            <FaCircle className="dot-icon" />
+                            {index !== posts.length && <div className="line"></div>}
+                        </div>
+                        <div className="post-content">
+                            <span>{post.date}</span>
+                            <p>{post.title}</p>
+                        </div>
+                    </li>
+                ))}
             </ul>
         </div>
     );
