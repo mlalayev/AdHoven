@@ -10,6 +10,7 @@ import { FaFacebook, FaTwitter, FaGoogle, FaInstagram, FaLinkedin, FaGithub } fr
 import footerDataOne from '../../../FooterColumnFirst.json';
 import footerDataTwo from '../../../FooterColumnSecond.json';
 import footerDataThree from '../../../FooterColumnThird.json';
+import Scroll from './ScrollToTop/Scroll';
 
 // Ensure that the JSON data is typed correctly
 const footerDataOneTyped: FooterDataSet = footerDataOne;
@@ -117,6 +118,7 @@ const Footer = () => {
           <a className="footer-link" href="https://Adhoven.com/">Adhoven.com</a>
         </div>
       </footer>
+      <Scroll />
     </div>
   );
 };

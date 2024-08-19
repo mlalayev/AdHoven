@@ -5,7 +5,7 @@
     "title": "B2B və B2C Rəqəmsal Marketinq Strategiyaları",
     "description": "Rəqəmsal dünyada marketinq strategiyaları sürətlə dəyişir və inkişaf edir...",
     "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
+    "image": "./src/assets/notifimg.webp"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "title": "Rəqəmsal Marketinq Mütəxəssisi Kimdir?",
     "description": "Müasir biznes dünyasında rəqəmsal marketinq əvəzolunmaz bir vasitəyə çevrilib...",
     "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
+    "image": "./src/assets/seoimg.webp"
   },
   {
     "id": 3,
@@ -21,190 +21,22 @@
     "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
     "description": "...",
     "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
+    "image": "./src/assets/metaicon.webp"
   },
   {
-    "id": 3,
+    "id": 4,
     "date": "08 Avqust 2024",
     "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
     "description": "...",
     "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
+    "image": "./src/assets/doctorimg.webp"
   },
   {
-    "id": 3,
+    "id": 5,
     "date": "08 Avqust 2024",
     "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
     "description": "...",
     "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.jpg"
+    "image": "./src/assets/talkingguys.webp"
   }
 ]
