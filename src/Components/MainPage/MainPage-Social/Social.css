@@ -8,7 +8,7 @@
     background-color: white;
     margin-bottom: 20px;
 }
- 
+
 .icons {
     display: flex;
     justify-content: space-between;
@@ -23,14 +23,67 @@
     border-radius: 5px;
 }
 
-.icons .icon{
+.icons .icon {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.icon.facebook { background-color: #3b5998; }
-.icon.linkedin { background-color: #0e76a8; }
-.icon.youtube { background-color: #c4302b; }
-.icon.instagram { background-color: #e1306c; }
-.icon.telegram { background-color: #0088cc; }
+.icon.facebook {
+    background-color: #3b5998;
+    transition: 0.3s;
+}
+
+.icon.linkedin {
+    background-color: #0e76a8;
+    transition: 0.3s;
+}
+
+.icon.youtube {
+    background-color: #c4302b;
+    transition: 0.3s;
+}
+
+.icon.instagram {
+    background-color: #e1306c;
+    transition: 0.3s;
+}
+
+.icon.telegram {
+    background-color: #0088cc;
+    transition: 0.3s;
+}
+
+.icon.facebook:hover {
+    background-color: #1e4394;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* LinkedIn */
+.icon.linkedin:hover {
+    background-color: #016492;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* YouTube */
+.icon.youtube:hover {
+    background-color: #9d1510;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Instagram */
+.icon.instagram:hover {
+    background-color: #c13584;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Telegram */
+.icon.telegram:hover {
+    background-color: #006aab;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

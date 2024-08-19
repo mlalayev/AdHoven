@@ -52,8 +52,13 @@
     align-items: center;
 }
 
+.dot-icon {
+    border-radius: 50%;
+}
+
 .post-item:hover .dot-icon {
     color: #6351CE; /* Color change of the dot on hover */
+    box-shadow: 0px 0px 6px #6451cee7;
 }
 
 .post-content span {

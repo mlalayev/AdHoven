@@ -1,42 +1,130 @@
-[
-  {
-    "id": 1,
-    "date": "11 Avqust 2024",
-    "title": "B2B və B2C Rəqəmsal Marketinq Strategiyaları",
-    "description": "Rəqəmsal dünyada marketinq strategiyaları sürətlə dəyişir və inkişaf edir...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/notifimg.webp"
-  },
-  {
-    "id": 2,
-    "date": "10 Avqust 2024",
-    "title": "Rəqəmsal Marketinq Mütəxəssisi Kimdir?",
-    "description": "Müasir biznes dünyasında rəqəmsal marketinq əvəzolunmaz bir vasitəyə çevrilib...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/seoimg.webp"
-  },
-  {
-    "id": 3,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/metaicon.webp"
-  },
-  {
-    "id": 4,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/doctorimg.webp"
-  },
-  {
-    "id": 5,
-    "date": "08 Avqust 2024",
-    "title": "Rəqəmsal Marketinqdə SMART Məqsədlər",
-    "description": "...",
-    "category": "Rəqəmsal Marketinq",
-    "image": "./src/assets/talkingguys.webp"
+{
+  "notifications": {
+    "az": [
+      {
+        "id": 1,
+        "date": "11 Avqust 2024",
+        "title": "B2B və B2C Rəqəmsal Marketinq Strategiyaları",
+        "description": "Rəqəmsal dünyada marketinq strategiyaları sürətlə dəyişir və inkişaf edir. Şirkətlər üçün bu dəyişikliklərə uyğunlaşmaq və doğru hədəf auditoriyası ilə əlaqə qurmaq vacibdir. B2B və B2C üçün fərqli strategiyalar bu məqalədə ətraflı şəkildə izah edilir.",
+        "category": "Rəqəmsal Marketinq",
+        "image": "./src/assets/notifimg.webp"
+      },
+      {
+        "id": 2,
+        "date": "10 Avqust 2024",
+        "title": "Rəqəmsal Marketinq Mütəxəssisi Kimdir?",
+        "description": "Müasir biznes dünyasında rəqəmsal marketinq əvəzolunmaz bir vasitəyə çevrilib. Rəqəmsal marketinq mütəxəssisi olmaq üçün hansı bacarıqlar lazımdır və bu sahədə necə mütəxəssis olmaq olar?",
+        "category": "Rəqəmsal Marketinq",
+        "image": "./src/assets/seoimg.webp"
+      },
+      {
+        "id": 3,
+        "date": "08 Avqust 2024",
+        "title": "SEO ilə Uğura Nail Olmaq",
+        "description": "Axtarış motoru optimallaşdırması (SEO) ilə şirkətinizin onlayn mövcudluğunu necə artırmaq olar? Bu məqalədə SEO-nun əhəmiyyəti və əsas prinsipləri müzakirə olunur.",
+        "category": "SEO",
+        "image": "./src/assets/metaicon.webp"
+      },
+      {
+        "id": 4,
+        "date": "08 Avqust 2024",
+        "title": "Brend İdarəçiliyində Sosial Medianın Rolu",
+        "description": "Sosial media, brendinizi formalaşdırmaq və idarə etmək üçün güclü bir vasitədir. Bu məqalədə, sosial medianın brend idarəçiliyində necə istifadə oluna biləcəyi izah olunur.",
+        "category": "Sosial Media",
+        "image": "./src/assets/doctorimg.webp"
+      },
+      {
+        "id": 5,
+        "date": "08 Avqust 2024",
+        "title": "Email Marketinq Kampaniyaları Necə Uğurlu Olur?",
+        "description": "Email marketinq kampaniyalarınızı necə effektiv idarə edə bilərsiniz? Bu məqalədə, müvəffəqiyyətli email marketinq kampaniyalarının əsasları müzakirə olunur.",
+        "category": "Email Marketinq",
+        "image": "./src/assets/talkingguys.webp"
+      }
+    ],
+    "en": [
+      {
+        "id": 1,
+        "date": "August 11, 2024",
+        "title": "B2B and B2C Digital Marketing Strategies",
+        "description": "Digital marketing strategies are rapidly evolving in the digital world. For companies, it is crucial to adapt to these changes and connect with the right target audience. This article details different strategies for B2B and B2C.",
+        "category": "Digital Marketing",
+        "image": "./src/assets/notifimg.webp"
+      },
+      {
+        "id": 2,
+        "date": "August 10, 2024",
+        "title": "Who is a Digital Marketing Specialist?",
+        "description": "In today's business world, digital marketing has become an indispensable tool. What skills are needed to become a digital marketing specialist, and how can one excel in this field?",
+        "category": "Digital Marketing",
+        "image": "./src/assets/seoimg.webp"
+      },
+      {
+        "id": 3,
+        "date": "August 08, 2024",
+        "title": "Achieving Success with SEO",
+        "description": "How can you enhance your company's online presence with Search Engine Optimization (SEO)? This article discusses the importance and key principles of SEO.",
+        "category": "SEO",
+        "image": "./src/assets/metaicon.webp"
+      },
+      {
+        "id": 4,
+        "date": "August 08, 2024",
+        "title": "The Role of Social Media in Brand Management",
+        "description": "Social media is a powerful tool for shaping and managing your brand. This article explains how social media can be leveraged in brand management.",
+        "category": "Social Media",
+        "image": "./src/assets/doctorimg.webp"
+      },
+      {
+        "id": 5,
+        "date": "August 08, 2024",
+        "title": "How to Run Successful Email Marketing Campaigns",
+        "description": "How can you manage your email marketing campaigns effectively? This article discusses the fundamentals of successful email marketing campaigns.",
+        "category": "Email Marketing",
+        "image": "./src/assets/talkingguys.webp"
+      }
+    ],
+    "ru": [
+      {
+        "id": 1,
+        "date": "11 Августа 2024",
+        "title": "Стратегии цифрового маркетинга для B2B и B2C",
+        "description": "Стратегии цифрового маркетинга стремительно развиваются в цифровом мире. Для компаний важно адаптироваться к этим изменениям и находить связь с нужной аудиторией. В этой статье подробно описываются различные стратегии для B2B и B2C.",
+        "category": "Цифровой Маркетинг",
+        "image": "./src/assets/notifimg.webp"
+      },
+      {
+        "id": 2,
+        "date": "10 Августа 2024",
+        "title": "Кто такой специалист по цифровому маркетингу?",
+        "description": "В современном бизнесе цифровой маркетинг стал незаменимым инструментом. Какие навыки необходимы для того, чтобы стать специалистом по цифровому маркетингу, и как можно преуспеть в этой области?",
+        "category": "Цифровой Маркетинг",
+        "image": "./src/assets/seoimg.webp"
+      },
+      {
+        "id": 3,
+        "date": "08 Августа 2024",
+        "title": "Как добиться успеха с помощью SEO",
+        "description": "Как вы можете улучшить присутствие вашей компании в Интернете с помощью поисковой оптимизации (SEO)? В этой статье обсуждается важность и основные принципы SEO.",
+        "category": "SEO",
+        "image": "./src/assets/metaicon.webp"
+      },
+      {
+        "id": 4,
+        "date": "08 Августа 2024",
+        "title": "Роль социальных сетей в управлении брендом",
+        "description": "Социальные сети — это мощный инструмент для формирования и управления вашим брендом. В этой статье объясняется, как можно использовать социальные сети в управлении брендом.",
+        "category": "Социальные Сети",
+        "image": "./src/assets/doctorimg.webp"
+      },
+      {
+        "id": 5,
+        "date": "08 Августа 2024",
+        "title": "Как успешно проводить кампании по email-маркетингу",
+        "description": "Как эффективно управлять вашими кампаниями по email-маркетингу? В этой статье обсуждаются основы успешных кампаний по email-маркетингу.",
+        "category": "Email Маркетинг",
+        "image": "./src/assets/talkingguys.webp"
+      }
+    ]
   }
-]
+}
