@@ -14,7 +14,7 @@
         "path": "/targetinq-nedir"
     },
     {
-        "image": "./src/assets/notifimg.jpg",
+        "image": "./src/assets/notifimg.webp",
         "title": {
             "en": "Who is a Digital Marketing Specialist?",
             "az": "Rəqəmsal Marketinq Mütəxəssisi Kimdir?",
@@ -28,7 +28,7 @@
         "path": "/science-technology"
     },
     {
-        "image": "./src/assets/seoimg.jpg",
+        "image": "./src/assets/seoimg.webp",
         "title": {
             "en": "What is SEO? A Comprehensive Guide to Search Engine Optimization",
             "az": "SEO Nədir? A-dan Z-ə Axtarış Motoru Optimizasiyası Haqqında",
