@@ -17,24 +17,52 @@
 }
 
 .slick-slide-content {
-    left: 20px;
+    left: 3px;
     bottom: 20px;
     color: white;
+    padding: 10px 20px;
+    max-height: 100px; /* Initial height showing only h1 */
+    max-width: 391px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.601);
+    transition: 0.5s !important;
+    transform: translateY(20px); /* Ensure it starts at the bottom */
+}
+
+.slick-slide-content h1 {
+    margin: 0;
+    font-size: 18px;
+    padding: 0;
     transition: transform 0.5s ease-in-out;
 }
 
 .slick-slide-content p {
-    display: none;
+    display: block;
     margin-top: 10px;
+    font-size: 12px;
+    opacity: 0;
+    transform: translateY(100px); /* Initially hidden below the h1 */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* On hover, expand the content and show the p tag */
+.slick-slide:hover .slick-slide-content {
+    max-height: 180px; /* Expanded height to show both h1 and p */
+    transform: translateY(20px); /* Slide up the content */
+}
+
+.slick-slide:hover .slick-slide-content h1,
+.slick-slide:hover .slick-slide-content p {
+    transform: translateY(0); /* Move both h1 and p up */
 }
 
 .slick-slide:hover .slick-slide-content p {
-    display: block;
-    transition: 0.5s;
-    transform: translateY(-100%);
+    opacity: 1; /* Fade in the p tag */
 }
 
+/* Slick arrows */
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
     height: 50px;
@@ -55,15 +83,24 @@
 }
 
 .slick-prev {
-    /* left: 0px !important; */
     left: 4px !important;
 }
 
 .slick-next {
-    /* right: 0px !important; */
     right: 4px !important;
 }
 
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:hover {
+    background-color: black;
+}
+
+.slick-arrow.slick-next::before,
+.slick-arrow.slick-prev::before {
+    display: none;
+}
+
+/* Slick dots */
 .slick-dots {
     margin: 0;
     padding: 0;
@@ -127,12 +164,12 @@
     background-color: #CCD6EA !important;
 }
 
-.slick-dots button::before{
+.slick-dots button::before {
     display: none;
     background-color: #b2abda !important;
 }
 
-.slick-dots li{
+.slick-dots li {
     height: 12px !important;
     display: flex !important;
     margin-top: -30px !important;
@@ -149,54 +186,4 @@
 .slick-list {
     margin: 0 -2px; /* Negative margin to counteract the padding on the slides */
     width: min(1200px, 84vw);
-}
-
-.slick-arrow.slick-next:hover,
-.slick-arrow.slick-prev:hover{
-    background-color: black;
-}
-
-.slick-arrow.slick-next::before,
-.slick-arrow.slick-prev::before{
-    display: none;
-}
-
-.slick-slide-content {
-    left: 3px;
-    bottom: 20px;
-    color: white;
-    padding: 0 20px;
-    height: 130px;
-    max-width: 391px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: absolute;
-    background-color: rgba(128, 128, 128, 0.345);
-    transition: transform 0.5s ease-in-out;
-    transform: translateY(20px); /* Ensure it starts at the bottom */
-}
-
-.slick-slide-content h1 {
-    margin: 0;
-    font-size: 18px;
-    padding: 0;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slick-slide-content p {
-    display: block;
-    margin-top: 10px;
-    font-size: 12px;
-    opacity: 0;
-    transform: translateY(80px); /* Initially hidden below the h1 */
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-
-.slick-slide:hover .slick-slide-content h1,
-.slick-slide:hover .slick-slide-content p {
-    transform: translateY(0px); /* Move both h1 and p up */
-}
-
-.slick-slide:hover .slick-slide-content p {
-    opacity: 1; /* Fade in the p tag */
 }

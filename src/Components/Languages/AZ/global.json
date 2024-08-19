@@ -6,5 +6,12 @@
         "services": "Xidmətlər",
         "usefullinks": "Faydalı bağlantılar",
         "contacts": "Əlaqə"
+    },
+    "profile": {
+        "about": "Haqqımda",
+        "name": "Yusif Muradlı",
+        "title": "Rəqəmsal Marketoloq",
+        "description": "Şirkətlərin biznes məqsədlərinə çatmaları üçün rəqəmsal marketing kanalları üzrə strategiyalar hazırlayıram. SEO, SEM, Sosial Media və E-mail marketing vasitələrindən istifadə edərək, potensial müştərilərinizin onlayn alış davranışlarını yüksəltmək və brendinizi tanıtmaq üçün çalışıram.",
+        "button": "Haqqımda"
     }
 }

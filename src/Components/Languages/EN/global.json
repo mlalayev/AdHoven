@@ -6,5 +6,12 @@
         "services": "Services",
         "usefullinks": "Useful Links",
         "contacts": "Contacts"
+    },
+    "profile": {
+        "about": "About Me",
+        "name": "Yusif Muradlı",
+        "title": "Digital Marketer",
+        "description": "I develop strategies for digital marketing channels to help companies achieve their business goals. I work to enhance your potential customers' online shopping behaviors and promote your brand using SEO, SEM, Social Media, and Email marketing tools.",
+        "button": "About Me"
     }
 }
