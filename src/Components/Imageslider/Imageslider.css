@@ -95,8 +95,11 @@
 }
 
 .slider-images {
-    max-width: 800px;
-    width: 350px;
+    width: 600px !important;
+    height: 350px !important;
+    border-radius: 20px;
+    /* max-width: 1000px; */
+    /* width: 350px; */
 }
 
 .slide {
@@ -107,7 +110,8 @@
     text-align: center;
     align-items: center;
     flex-direction: column;
-    background-color: #CCD6EA;
+    /* background-color: #CCD6EA; */
+    background-color: #6451ce41;
     justify-content: space-between;
     box-sizing: var(--border-sizing);
     position: var(--position-relative);
@@ -245,8 +249,8 @@
     .slide {
         flex-direction: row;
         justify-content: space-around;
-        max-height: 400px;
         min-height: 500px;
+        min-height: 92vh;
         position: relative;
     }
 

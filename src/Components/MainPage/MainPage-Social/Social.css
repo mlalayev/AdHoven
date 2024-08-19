@@ -23,6 +23,10 @@
     border-radius: 5px;
 }
 
+.iconssm{
+    margin-left: 1px;
+}
+
 .icons .icon {
     display: flex;
     align-items: center;
