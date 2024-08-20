@@ -109,7 +109,6 @@
     text-align: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: #CCD6EA; */
     background-color: #6451ce41;
     justify-content: space-between;
     box-sizing: var(--border-sizing);
