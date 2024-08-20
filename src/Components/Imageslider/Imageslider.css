@@ -96,10 +96,9 @@
 
 .slider-images {
     width: 600px !important;
-    height: 350px !important;
+    height: 390px !important;
     border-radius: 20px;
-    /* max-width: 1000px; */
-    /* width: 350px; */
+    /* object-fit: cover; */
 }
 
 .slide {
