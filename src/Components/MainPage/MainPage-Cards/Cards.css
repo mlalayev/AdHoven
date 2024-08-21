@@ -20,29 +20,29 @@
     left: 3px;
     bottom: 20px;
     color: white;
-    padding: 10px 20px;
     max-height: 94px; /* Initial height showing only h1 */
     max-width: 391px;
+    padding: 10px 20px;
+    position: absolute;
+    transform: translateY(20px); /* Ensure it starts at the bottom */
+    transition: 0.5s !important;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    position: absolute;
     background-color: rgba(0, 0, 0, 0.601);
-    transition: 0.5s !important;
-    transform: translateY(20px); /* Ensure it starts at the bottom */
 }
 
 .slick-slide-content h1 {
     margin: 0;
-    font-size: 18px;
     padding: 0;
+    font-size: 18px;
     transition: transform 0.5s ease-in-out;
 }
 
 .slick-slide-content p {
-    display: block;
-    margin-top: 10px;
-    font-size: 12px;
     opacity: 0;
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
     transform: translateY(100px); /* Initially hidden below the h1 */
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
@@ -65,9 +65,9 @@
 /* Slick arrows */
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
-    height: 50px;
     width: 26px;
     border: none;
+    height: 50px;
     display: flex;
     padding: 10px;
     z-index: 99999;

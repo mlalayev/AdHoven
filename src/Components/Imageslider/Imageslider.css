@@ -6,8 +6,8 @@
 
 .img-slider-img {
     height: 500px;
-    width: 800px !important;
     object-fit: cover;
+    width: 800px !important;
     flex-grow: var(--percent-0);
     display: var(--display-block);
     flex-shrink: var(--percent-0);
@@ -230,26 +230,26 @@
 
 @media screen and (min-width:1000px) {
     .img-slider-btn {
-        display: flex;
-        margin: 20px;
-        height: 40px;
-        width: 40px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 8px;
         top: 36%;
         bottom: 0;
+        width: 40px;
+        margin: 20px;
+        height: 40px;
+        display: flex;
         position: absolute;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 @media screen and (min-width:800px) {
     .slide {
+        min-height: 92vh;
+        min-height: 500px;
+        position: relative;
         flex-direction: row;
         justify-content: space-around;
-        min-height: 500px;
-        min-height: 92vh;
-        position: relative;
     }
 
     .slide img {
