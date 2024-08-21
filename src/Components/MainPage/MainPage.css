@@ -1,6 +1,6 @@
 .sectionslider {
-    max-width: 1600px;
     margin: 0 auto;
+    max-width: 1600px;
     position: relative;
 }
 
@@ -9,25 +9,25 @@ body{
 }
 
 .sectionslider::after {
+    top: 0;
+    left: 0;
     content: "";
-    position: absolute;
-    background-color: #CCD6EA;
     z-index: -1;
     width: 100vw;
     height: 100%;
-    top: 0;
-    left: 0;
+    position: absolute;
+    background-color: #CCD6EA;
 }
 
 .sectionslider::before {
-    content: "";
-    position: absolute;
-    background-color: #CCD6EA;
-    z-index: -1;
-    width: 100vw;
-    height: 100%;
     top: 0;
     right: 0;
+    z-index: -1;
+    content: "";
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    background-color: #CCD6EA;
 }
 
 .sectionsecond{
@@ -37,9 +37,9 @@ body{
 }
 
 .sectionthird{
-    display: flex;
     margin: auto;
-    justify-content: space-between;
+    display: flex;
     max-width: 1200px;
+    justify-content: space-between;
     /* justify-content: flex-start !important; */
 }

@@ -1,48 +1,48 @@
 .card {
-    max-width: 400px;
     margin: auto;
+    max-width: 400px;
+    margin-top: 20px;
     padding: 20px 40px;
     text-align: center;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    background-color: white;
-    margin-top: 20px;
     margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .avatar {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
     object-fit: cover;
+    border-radius: 50%;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 24px;
     margin: 10px 0;
+    font-size: 24px;
 }
 
 .title {
-    font-size: 18px;
     color: gray;
+    font-size: 18px;
     margin-bottom: 16px;
 }
 
 .description {
-    font-size: 14px;
     color: #555;
+    font-size: 14px;
     margin-bottom: 20px;
 }
 
 .button {
-    padding: 10px 20px;
-    background-color: #6351CE;
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #6351CE;
     transition: background-color 0.3s;
 }
 
