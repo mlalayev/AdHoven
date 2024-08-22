@@ -177,13 +177,3 @@
     justify-content: center !important;
 }
 
-.slick-slide {
-    outline: none;
-    padding: 0 2px; /* Add padding to create space between slides */
-    position: relative;
-}
-
-.slick-list {
-    margin: 0 -2px; /* Negative margin to counteract the padding on the slides */
-    width: min(1200px, 84vw);
-}
