@@ -30,8 +30,12 @@ function MainPage() {
 
   return (
     <div>
-      <section className="sectionslider">
-        {/* {slides.length > 0 ? <ImageSlider slides={slides} /> : <p>Loading...</p>} */}
+      <section className="sectionslider"
+      style={{
+        height:"92vh"
+      }}
+      >
+        {slides.length > 0 ? <ImageSlider slides={slides} /> : <p>Loading...</p>}
       </section>
 
       <section className="sectionsecond">
