@@ -4,6 +4,15 @@
     margin: 0 auto;
 }
 
+.footer-column {
+    font-family: var(--Open-font-family);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer {
     text-align: center;
     color: white;

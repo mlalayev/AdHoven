@@ -212,11 +212,12 @@
 }
 
 @media screen and (min-width:1270px) {
-    .slider-button {
+    .img-slider-btn {
         width: 200px;
         height: 60px;
         border-radius: var(--30-px);
     }
+
 }
 
 .slide-caption {

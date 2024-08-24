@@ -2,7 +2,7 @@ import './MainPage.css';
 import Card from './MainPage-Cards/Cards';
 import { useTranslation } from 'react-i18next';
 import React, { useEffect, useState } from 'react'
-import ImageSlider from '../Imageslider/Imageslider.jsx';
+import ImageSlider from '../Imageslider/Imageslider.js';
 import Faq from './MainPage-FAQ/FAQ.js';
 import News from './MainPage-News/News.js';
 import Profile from './MainPage-Profile/Profile.js';
@@ -31,7 +31,7 @@ function MainPage() {
   return (
     <div>
       <section className="sectionslider">
-        {slides.length > 0 ? <ImageSlider slides={slides} /> : <p>Loading...</p>}
+        {/* {slides.length > 0 ? <ImageSlider slides={slides} /> : <p>Loading...</p>} */}
       </section>
 
       <section className="sectionsecond">
