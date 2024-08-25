@@ -35,7 +35,7 @@ function MainPage() {
         height:"92vh"
       }}
       >
-        {slides.length > 0 ? <ImageSlider slides={slides} /> : <p>Loading...</p>}
+        {slides.length > 0 ? <ImageSlider /> : <p>Loading...</p>}
       </section>
 
       <section className="sectionsecond">
