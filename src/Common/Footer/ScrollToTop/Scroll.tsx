@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Scroll.css';
+import { IoIosArrowUp } from "react-icons/io";
 
 const ScrollToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,7 +32,7 @@ const ScrollToTop: React.FC = () => {
       <button
         onClick={scrollToTop}
         className={`scroll-to-top ${isVisible ? 'visible' : 'hidden'}`}
-      >{'>'}</button>
+      ><IoIosArrowUp size={20} /></button>
     </div>
   );
 };

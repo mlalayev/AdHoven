@@ -1,8 +1,8 @@
 .posts-card {
     margin: auto;
-    padding: 20px 40px;
     max-width: 400px;
     border-radius: 8px;
+    padding: 20px 40px;
     background-color: white;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
@@ -40,8 +40,8 @@
     width: 2px;
     height: 50px; /* Adjust height to the spacing between dots */
     margin-top: 5px;
-    background-color: rgba(128, 128, 128, 0.375);
     margin-bottom: -5px; /* Adjust margin to align the line correctly */
+    background-color: rgba(128, 128, 128, 0.375);
 }
 
 .spanicon {
@@ -52,22 +52,27 @@
     align-items: center;
 }
 
+.dot-icon {
+    border-radius: 50%;
+}
+
 .post-item:hover .dot-icon {
     color: #6351CE; /* Color change of the dot on hover */
+    box-shadow: 0px 0px 6px #6451cee7;
 }
 
 .post-content span {
+    color: gray;
     display: block;
     font-size: 12px;
-    color: gray;
     margin-bottom: 5px;
 }
 
 .post-content p {
-    font-size: 14px;
-    color: #333;
-    font-weight: 500;
     margin: 0;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 

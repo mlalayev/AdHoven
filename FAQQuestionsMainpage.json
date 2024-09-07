@@ -1,15 +1,44 @@
-[
+{
+  "az": [
     {
       "question": "Yusif Muradli Kimdir?",
-      "answer": "5 ildən çoxdur ki, Rəqəmsal Marketinq sahəsində fəaliyyətim ilə 40-dan çox şirkətlə əməkdaşlıq etmişəm. Hal-hazırda Rəqəmsal Marketinq üzrə frilans olaraq xidmət göstərməklə bərabər, təlimlər də tədris etməkdəyəm. Asudə zamanlarımda isə bu sahəyə daha da maraq oyatmaq, maarifləndirmə və Azərbaycan dilində asan tapıla biləcək məlumatlar əldə edilməsi məqsədilə bloq yazıları və video dərsliklər hazırlayıram. Davamı üçün > Haqqımda səhifəsinə keçid edin."
+      "answer": "5 ildən çoxdur ki, Rəqəmsal Marketinq sahəsində fəaliyyətim ilə 40-dan çox şirkətlə əməkdaşlıq etmişəm. Hal-hazırda Rəqəmsal Marketinq üzrə frilans olaraq xidmət göstərməklə bərabər, təlimlər də tədris etməkdəyəm. Asudə zamanlarımda isə bu sahəyə daha da maraq oyatmaq, maarifləndirmə və Azərbaycan dilində asan tapıla biləcək məlumatlar əldə edilməsi məqsədilə bloq yazıları və video dərsliklər hazırlayıram. Davamı üçün <a href='/about'>Haqqımda səhifəsinə keçid edin</a>."
     },
     {
       "question": "Hansı Kateqoriyalarda Kontentlər Hazırlayırsınız?",
-      "answer": "Hal-hazırda Rəqəmsal Marketinq, Sosial Media İdarəçiliyi və Axtarış Motoru Optimallaşdırması (SEO) üzrə kontentlər hazırlayıram."
+      "answer": "Hazırda Rəqəmsal Marketinq, Sosial Media İdarəçiliyi, Axtarış Motoru Optimallaşdırması (SEO), və brend strategiyası üzrə kontentlər hazırlayıram. Hər kontent müştəri və ya istifadəçi təcrübəsini ön planda tutaraq hazırlanır."
     },
     {
       "question": "Hansı Sahələrdə Təlimləriniz Var?",
-      "answer": "Rəqəmsal Marketinq, SEO, Sosial Media Marketinqi, və İnternet Reklamcılığı üzrə təlimlərim var."
+      "answer": "Rəqəmsal Marketinq, SEO, Sosial Media Marketinqi, və İnternet Reklamcılığı üzrə təlimlərim mövcuddur. Təlimlər real həyatda tətbiq olunan biliklər və müasir metodologiyalar əsasında hazırlanmışdır."
+    }
+  ],
+  "en": [
+    {
+      "question": "Who is Yusif Muradli?",
+      "answer": "With over 5 years of experience in Digital Marketing, I have collaborated with more than 40 companies. Currently, I provide freelance digital marketing services and also conduct training. In my spare time, I write blog posts and create video tutorials to raise awareness in this field and make accessible information available in Azerbaijani. For more, visit the <a href='/about'>About page</a>."
+    },
+    {
+      "question": "What Categories of Content Do You Create?",
+      "answer": "I currently create content in Digital Marketing, Social Media Management, Search Engine Optimization (SEO), and brand strategy. Every content piece is designed with a focus on client or user experience."
+    },
+    {
+      "question": "What Training Do You Offer?",
+      "answer": "I offer training in Digital Marketing, SEO, Social Media Marketing, and Internet Advertising. The training is designed with practical knowledge and up-to-date methodologies."
+    }
+  ],
+  "ru": [
+    {
+      "question": "Кто такой Юсиф Мурадли?",
+      "answer": "Имея более 5 лет опыта в сфере цифрового маркетинга, я сотрудничал с более чем 40 компаниями. В настоящее время я предоставляю услуги в качестве фрилансера в области цифрового маркетинга и также провожу обучение. В свободное время я пишу блоги и создаю видеоуроки, чтобы повысить интерес к этой сфере и сделать доступную информацию на азербайджанском языке. Для продолжения перейдите на <a href='/about'>страницу Обо мне</a>."
+    },
+    {
+      "question": "В каких категориях вы создаете контент?",
+      "answer": "В настоящее время я создаю контент в сферах цифрового маркетинга, управления социальными сетями, оптимизации поисковых систем (SEO) и бренд-стратегии. Каждый контент разрабатывается с учетом опыта клиентов или пользователей."
+    },
+    {
+      "question": "Какие тренинги вы предлагаете?",
+      "answer": "Я предлагаю тренинги по цифровому маркетингу, SEO, маркетингу в социальных сетях и интернет-рекламе. Обучение основано на практических знаниях и современных методологиях."
     }
   ]
-  
+}

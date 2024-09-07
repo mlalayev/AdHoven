@@ -9,7 +9,7 @@
         },
         {
             "id": 2,
-            "image": "./src/assets/sliderone.jpg",
+            "image": "./src/assets/sliderimg.webp",
             "title": "Leave Your Work to Experts",
             "caption": "You will notice the change on your page from the first week.",
             "button": "Go"
@@ -32,7 +32,7 @@
         },
         {
             "id": 2,
-            "image": "./src/assets/sliderone.jpg",
+            "image": "./src/assets/sliderimg.webp",
             "title": "İşinizi mütəxəssislərə həvalə edin",
             "caption": "Səhifənizdə olan dəyişimi elə ilk həftədən hiss edəcəksiniz",
             "button": "Keçid"
@@ -55,7 +55,7 @@
         },
         {
             "id": 2,
-            "image": "./src/assets/sliderone.jpg",
+            "image": "./src/assets/sliderimg.webp",
             "title": "Передайте свою работу экспертам",
             "caption": "Вы заметите изменения на вашей странице с первой недели.",
             "button": "Перейти"

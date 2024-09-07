@@ -1,36 +1,93 @@
 .social-card {
-    max-width: 400px;
     margin: auto;
+    max-width: 400px;
     padding: 20px 40px;
     text-align: center;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    background-color: white;
     margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
- 
+
 .icons {
     display: flex;
-    justify-content: space-between;
     margin-top: 20px;
+    justify-content: space-between;
 }
 
 .icon {
     width: 40px;
     height: 40px;
+    border-radius: 5px;
     display: inline-block;
     background-size: cover;
-    border-radius: 5px;
 }
 
-.icons .icon{
+.iconssm{
+    margin-left: 1px;
+}
+
+.icons .icon {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.icon.facebook { background-color: #3b5998; }
-.icon.linkedin { background-color: #0e76a8; }
-.icon.youtube { background-color: #c4302b; }
-.icon.instagram { background-color: #e1306c; }
-.icon.telegram { background-color: #0088cc; }
+.icon.facebook {
+    transition: 0.3s;
+    background-color: #3b5998;
+}
+
+.icon.linkedin {
+    transition: 0.3s;
+    background-color: #0e76a8;
+}
+
+.icon.youtube {
+    transition: 0.3s;
+    background-color: #c4302b;
+}
+
+.icon.instagram {
+    transition: 0.3s;
+    background-color: #e1306c;
+}
+
+.icon.telegram {
+    transition: 0.3s;
+    background-color: #0088cc;
+}
+
+.icon.facebook:hover {
+    transform: scale(1.1);
+    background-color: #1e4394;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* LinkedIn */
+.icon.linkedin:hover {
+    transform: scale(1.1);
+    background-color: #016492;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* YouTube */
+.icon.youtube:hover {
+    transform: scale(1.1);
+    background-color: #9d1510;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Instagram */
+.icon.instagram:hover {
+    transform: scale(1.1);
+    background-color: #c13584;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Telegram */
+.icon.telegram:hover {
+    transform: scale(1.1);
+    background-color: #006aab;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

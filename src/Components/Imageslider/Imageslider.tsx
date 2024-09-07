@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Cards.css';
+import '../../Components/MainPage/MainPage-Cards/Cards.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import slides from '../../../../SectionTwoCardsData.json';
-import { CustomLeftArrow, CustomRightArrow } from '../../../Common/ArrowsSlickSlider/Arrows'; // Import custom arrows
+import slides from '../../../SectionTwoCardsData.json';
+import { CustomLeftArrow, CustomRightArrow } from '../../Common/ArrowsSlickSlider/Arrows'; // Import custom arrows
 import { useTranslation } from 'react-i18next'; // Import useTranslation from react-i18next
 
 type Slide = {
@@ -23,7 +23,7 @@ type Slide = {
   path: string;
 };
 
-const CustomSlider: React.FC = () => {
+const ImageSlider: React.FC = () => {
   const navigate = useNavigate();
   const { i18n } = useTranslation(); // Access i18n instance
   const [startX, setStartX] = useState<number | null>(null);
@@ -112,4 +112,4 @@ const CustomSlider: React.FC = () => {
   );
 };
 
-export default CustomSlider;
+export default ImageSlider;
