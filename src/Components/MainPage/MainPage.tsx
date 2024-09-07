@@ -40,6 +40,7 @@ function MainPage() {
 
       <section className="sectionsecond">
         <Card />
+        truip
       </section>
 
       <section
