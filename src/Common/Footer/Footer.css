@@ -161,3 +161,11 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     right: 0;
 }
+
+@media screen and (max-width:1180px) {
+    .footer-links {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
