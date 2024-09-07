@@ -41,6 +41,7 @@ const CustomSlider: React.FC = () => {
     autoplay: true,
     dotsClass: "slick-dots",
     autoplaySpeed: 3000,
+    adaptiveHeight: true,
     nextArrow: <CustomRightArrow />, // Use custom right arrow
     prevArrow: <CustomLeftArrow />,  // Use custom left arrow
     responsive: [

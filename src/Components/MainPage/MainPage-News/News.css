@@ -134,3 +134,36 @@ body {
 .load-more.disabled:hover {
   background-color: #ccc;
 }
+
+@media screen and (max-width:1180px) {
+  .article-container {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .article-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .article-container {
+    padding: 0;
+  }
+
+  .article-image {
+    min-width: none;
+    max-width: none;
+  }
+
+  .article-card img {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .logo {
+    width: 120px;
+  }
+}
