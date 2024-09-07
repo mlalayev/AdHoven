@@ -49,3 +49,9 @@ h2 {
 .button:hover {
     background-color: #4a39a7;
 }
+
+@media screen and (max-width:1180px) {
+    .card {
+        min-width: 100%;
+    }
+}

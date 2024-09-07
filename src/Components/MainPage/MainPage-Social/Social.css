@@ -12,7 +12,7 @@
 .icons {
     display: flex;
     margin-top: 20px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .icon {
@@ -23,7 +23,7 @@
     background-size: cover;
 }
 
-.iconssm{
+.iconssm {
     margin-left: 1px;
 }
 
@@ -90,4 +90,20 @@
     transform: scale(1.1);
     background-color: #006aab;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icons-holder{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1180px) {
+    .social-card {
+        min-width: 100%;
+    }
+
+    .icons-holder{
+        width: 400px;
+    }
 }

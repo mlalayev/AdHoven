@@ -33,8 +33,9 @@
 .menu-ul {
     transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
     top: 60px;
-    width: 100%;
+    width: 100vw;
     height: 200px;
+    border: 2px solid red;
     list-style: none;
     position: absolute;
     z-index: 999;
@@ -44,6 +45,17 @@
     background-color: #fff;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.menu-ul::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    z-index: -1;
+    width: 1000000vw;
+    top: -10px;
+    height: 100vh;
 }
 
 .menu-ul.active {

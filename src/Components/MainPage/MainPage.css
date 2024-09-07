@@ -47,6 +47,5 @@ body {
     .sectionthird {
         display: flex;
         flex-direction: column ;
-        border: 2px solid red;
     }
 }
