@@ -17,14 +17,16 @@
 }
 
 .slick-slide-content {
-    left: 3px;
+    /* left: 2px; */
     bottom: 20px;
     color: white;
-    max-height: 94px; /* Initial height showing only h1 */
-    max-width: 391px;
+    max-height: 94px;
+    /* Initial height showing only h1 */
+    /* max-width: 392px !important; */
     padding: 10px 20px;
     position: absolute;
-    transform: translateY(20px); /* Ensure it starts at the bottom */
+    transform: translateY(20px);
+    /* Ensure it starts at the bottom */
     transition: 0.5s !important;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -43,23 +45,28 @@
     display: block;
     font-size: 12px;
     margin-top: 10px;
-    transform: translateY(100px); /* Initially hidden below the h1 */
+    transform: translateY(100px);
+    /* Initially hidden below the h1 */
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 /* On hover, expand the content and show the p tag */
 .slick-slide:hover .slick-slide-content {
-    max-height: 180px; /* Expanded height to show both h1 and p */
-    transform: translateY(20px); /* Slide up the content */
+    max-height: 180px;
+    /* Expanded height to show both h1 and p */
+    transform: translateY(20px);
+    /* Slide up the content */
 }
 
 .slick-slide:hover .slick-slide-content h1,
 .slick-slide:hover .slick-slide-content p {
-    transform: translateY(0); /* Move both h1 and p up */
+    transform: translateY(0);
+    /* Move both h1 and p up */
 }
 
 .slick-slide:hover .slick-slide-content p {
-    opacity: 1; /* Fade in the p tag */
+    opacity: 1;
+    /* Fade in the p tag */
 }
 
 /* Slick arrows */
@@ -178,12 +185,20 @@
 }
 
 .slick-slide {
+    gap: 2px !important;
     outline: none;
-    padding: 0 2px; /* Add padding to create space between slides */
+    padding: 0px;
+    /* Add padding to create space between slides */
     position: relative;
+    /* margin: 0 -2px; */
 }
 
 .slick-list {
-    margin: 0 -2px; /* Negative margin to counteract the padding on the slides */
+    flex-direction: column !important;
+    display: flex !important;
+    gap: 10px !important;
+    margin: 0 -2px;
+    /* padding: 0 2px; */
+    /* Negative margin to counteract the padding on the slides */
     width: min(1200px, 84vw);
 }

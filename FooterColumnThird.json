@@ -6,7 +6,7 @@
           "contactDetails": [
             {
               "icon": "fas fa-home",
-              "text": "New York, NY 10012, US"
+              "text": "Baku, Azerbaijan"
             },
             {
               "icon": "fas fa-envelope",
@@ -14,11 +14,11 @@
             },
             {
               "icon": "fas fa-phone",
-              "text": "+01 234 567 88"
+              "text": "+994 50 555 81 79"
             },
             {
               "icon": "fas fa-print",
-              "text": "+01 234 567 89"
+              "text": "+994 50 555 81 79"
             }
           ]
         }

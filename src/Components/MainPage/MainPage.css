@@ -4,7 +4,7 @@
     position: relative;
 }
 
-body{
+body {
     margin: 0;
 }
 
@@ -30,16 +30,23 @@ body{
     background-color: #CCD6EA;
 }
 
-.sectionsecond{
+.sectionsecond {
     padding: 20px;
     display: flex;
     justify-content: center;
 }
 
-.sectionthird{
+.sectionthird {
     margin: auto;
     display: flex;
     max-width: 1200px;
     justify-content: space-between;
-    /* justify-content: flex-start !important; */
+}
+
+@media screen and (max-width:1180px) {
+    .sectionthird {
+        display: flex;
+        flex-direction: column ;
+        border: 2px solid red;
+    }
 }

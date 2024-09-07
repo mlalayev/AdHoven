@@ -29,7 +29,9 @@ function MainPage() {
   }, [i18n.language]);
 
   return (
-    <div>
+    <div style={{
+      padding:"0 20px"
+    }}>
       <section className="sectionslider"
       style={{
         height:"92vh"
@@ -42,11 +44,7 @@ function MainPage() {
         <Card />
       </section>
 
-      <section
-        style={{
-          display: 'flex',
-        }}
-        className="sectionthird">
+      <section className="sectionthird">
         <div className="sectionthird-leftpart">
           <News />
           <Faq />
