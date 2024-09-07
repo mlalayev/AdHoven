@@ -56,3 +56,9 @@
 .faq-answer p {
     margin: 0;
 }
+
+@media screen and (max-width:1180px) {
+    .faq-container {
+        min-width: 100%;
+    }
+}
