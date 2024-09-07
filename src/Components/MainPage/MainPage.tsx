@@ -39,7 +39,7 @@ function MainPage() {
       </section>
 
       <section className="sectionsecond">
-        <Card />hh
+        <Card />
       </section>
 
       <section
