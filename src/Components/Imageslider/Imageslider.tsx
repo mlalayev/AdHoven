@@ -4,7 +4,7 @@ import './Imageslider.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import slides from '../../../SectionTwoCardsData.json';
+import slidesData from '../../../ImageSliderData.json'; // Import the JSON file
 import { CustomLeftArrow, CustomRightArrow } from '../../Common/ArrowsSlickSlider/Arrows';
 import { useTranslation } from 'react-i18next';
 
@@ -28,7 +28,7 @@ const ImageSlider: React.FC = () => {
   const { i18n } = useTranslation();
   const [startX, setStartX] = useState<number | null>(null);
   const [isDragging, setIsDragging] = useState<boolean>(false);
-  const sliderRef = useRef<Slider | null>(null);
+  const sliderRefer = useRef<Slider | null>(null);
 
   const settings = {
     dots: true,
@@ -85,10 +85,23 @@ const ImageSlider: React.FC = () => {
     return content[currentLanguage as keyof typeof content] || content.en;
   };
 
-  return (
-    <div className="">
-      <Slider ref={sliderRef} {...settings}>
+  // Make sure to access the slides array from the JSON file
+  const slides = slidesData.slides;
 
+  return (
+    <div className="image-slider">
+      <Slider ref={sliderRefer} {...settings}>
+        {slides.map((data: Slide, index: number) => (
+          <div
+          className='slickSliderHolder'
+          key={index}>
+            <img
+              className='slickSliderImage'
+              src={data.image}
+              alt={getLanguageContent(data.title)} // Use the getLanguageContent function for title
+            />
+          </div>
+        ))}
       </Slider>
     </div>
   );
