@@ -1,0 +1,32 @@
+{
+    "slides": [
+        {
+            "image": "./src/assets/ImageSliderFirst.webp",
+            "title": {
+                "en": "Title in English",
+                "az": "Title in Azerbaijani",
+                "ru": "Title in Russian"
+            },
+            "courses": {
+                "en": "Course in English",
+                "az": "Course in Azerbaijani",
+                "ru": "Course in Russian"
+            },
+            "path": "/some-path"
+        },
+        {
+            "image": "path/to/image2.jpg",
+            "title": {
+                "en": "Title in English",
+                "az": "Title in Azerbaijani",
+                "ru": "Title in Russian"
+            },
+            "courses": {
+                "en": "Course in English",
+                "az": "Course in Azerbaijani",
+                "ru": "Course in Russian"
+            },
+            "path": "/another-path"
+        }
+    ]
+}

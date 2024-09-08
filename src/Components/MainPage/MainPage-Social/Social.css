@@ -96,14 +96,11 @@
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
+    gap: 10px !important;
 }
 
 @media screen and (max-width:1180px) {
     .social-card {
         min-width: 100%;
-    }
-
-    .icons-holder{
-        width: 400px;
     }
 }
