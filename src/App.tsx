@@ -37,7 +37,7 @@ function App() {
           {/* Dynamic routes based on paths from the JSON file */}
           <Route path="/path1" element={<PageWithTextPart />} />
           <Route path="/path2" element={<PageWithTextPart />} />
-          <Route path="/default" element={<PageWithTextPart />} />
+          <Route path="/aboutme" element={<PageWithTextPart />} />
         </Routes>
       </I18nextProvider>
     </Router>
