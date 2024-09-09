@@ -49,7 +49,11 @@ const Footer = () => {
   console.log(footerDataOne);
 
   return (
-    <div className="footer-container">
+    <div
+    style={{
+      marginTop:"20px"
+    }}
+    className="footer-container">
       <footer className="footer">
         <section className="social-media">
           <div className="social-media-text">
