@@ -7,8 +7,8 @@
 }
 
 .sticky-part-right {
-    right: 0px;
     gap: 20px;
+    right: 0px;
     display: flex;
     position: absolute;
 }
@@ -21,48 +21,49 @@
 
 .menu-ul-desktop {
     width: 100%;
-    margin: 0 auto;
     display: none;
-    list-style: none;
+    margin: 0 auto;
     font-size: 15px;
+    list-style: none;
     padding: 0 260px 0 80px;
     justify-content: space-between;
     font-family: var(--Open-font-family);
 }
 
 .menu-ul {
-    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
     top: 60px;
     width: 100vw;
     height: 200px;
-    border: 2px solid red;
+    opacity: 0;
+    z-index: 999;
     list-style: none;
     position: absolute;
-    z-index: 999;
-    transform: translateY(70px);
-    opacity: 0;
     visibility: hidden;
-    background-color: #fff;
+    border: 2px solid red;
     flex-direction: column;
+    background-color: #fff;
+    transform: translateY(70px);
     justify-content: space-around;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .menu-ul::before{
+    right: 0;
+    top: -10px;
     content: "";
+    z-index: -1;
+    height: 100vh;
+    width: 1000000vw;
     position: absolute;
     background-color: #fff;
-    right: 0;
-    z-index: -1;
-    width: 1000000vw;
-    top: -10px;
-    height: 100vh;
 }
 
 .menu-ul.active {
+    opacity: 1;
+    left: -21px;
+    visibility: visible;
     background-color: #fff;
     transform: translateY(0px);
-    opacity: 1;
-    visibility: visible;
 }
 
 
@@ -75,6 +76,15 @@
 }
 
 .menu-ul li:hover {
+    background-color: lightgray;
+}
+
+.menu-ul li:hover .menu-ul::before{
+    content: "";
+    width: 100vw;
+    height: 50px;
+    z-index: 9999999;
+    border: 2px solid red ;
     background-color: lightgray;
 }
 
