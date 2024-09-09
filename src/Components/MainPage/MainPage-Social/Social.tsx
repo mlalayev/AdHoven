@@ -10,7 +10,7 @@ import { TbRectangleVerticalFilled } from "react-icons/tb";
 const Social: React.FC = () => {
     return (
         <div className="social-card">
-            <span className='spanicon'><TbRectangleVerticalFilled color='#6351CE' size={20} /><h3>Sosial’da İzlɛ</h3></span>
+            <span className='spanicon'><TbRectangleVerticalFilled color='#6351CE' size={20} /><h3>Sosial’da İzle</h3></span>
 
             <div className="icons">
                 <div className="icons-holder">
