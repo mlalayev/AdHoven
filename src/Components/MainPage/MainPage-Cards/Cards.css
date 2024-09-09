@@ -22,7 +22,8 @@
     color: white;
     max-height: 94px;
     /* Initial height showing only h1 */
-    /* max-width: 392px !important; */
+    /* max-width: 392px; */
+    max-width: 99%;
     padding: 10px 20px;
     position: absolute;
     transform: translateY(20px);
@@ -185,20 +186,16 @@
 }
 
 .slick-slide {
-    gap: 2px !important;
     outline: none;
-    padding: 0px;
     /* Add padding to create space between slides */
     position: relative;
-    /* margin: 0 -2px; */
+    padding: 0 2px;
 }
 
 .slick-list {
     flex-direction: column !important;
     display: flex !important;
-    gap: 10px !important;
     margin: 0 -2px;
-    /* padding: 0 2px; */
     /* Negative margin to counteract the padding on the slides */
     width: min(1200px, 84vw);
 }
