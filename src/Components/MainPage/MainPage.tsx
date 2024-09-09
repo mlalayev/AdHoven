@@ -34,7 +34,9 @@ function MainPage() {
     }}>
       <section className="sectionslider"
       style={{
-        height:"92vh"
+        height:"92vh",
+        display:"flex",
+        justifyContent:"center"
       }}
       >
         {slides.length > 0 ? <ImageSlider /> : <p>Loading...</p>}
