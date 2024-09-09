@@ -7,8 +7,8 @@
       "title": "Path 2 Content",
       "description": "This is the content for path 2."
     },
-    "/default": {
-      "title": "Default Content",
+    "/aboutme": {
+      "title": "Default aboutme Content",
       "description": "This is the default content."
     }
   }

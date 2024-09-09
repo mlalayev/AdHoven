@@ -16,7 +16,11 @@ function RightPart({ isNewsTrue, isTextPart, currentPath }: RightPartProps) {
     return (
         <div>
             <section className="sectionthird">
-                <div className="sectionthird-leftpart">
+                <div 
+                style={{
+                    marginTop:"20px"
+                }}
+                className="sectionthird-leftpart">
                     {isTextPart && <TextPart currentPath={currentPath} />}  {/* Pass currentPath to TextPart */}
                     {isNewsTrue && <News />}
                     <Faq />

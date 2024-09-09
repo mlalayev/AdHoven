@@ -15,8 +15,11 @@ function AboutMe({ isNewsTrue }: RightPartProps) {
 
   return (
     <div>
-      {/* Pass isNewsTrue, isTextPart, and currentPath to RightPart */}
-      <RightPart isNewsTrue={isNewsTrue} isTextPart={!isTextPart} currentPath={currentPath} />
+      <RightPart
+        currentPath={location.pathname}
+        isNewsTrue={isNewsTrue}
+        isTextPart={isTextPart}
+      />
     </div>
   );
 }
