@@ -1,13 +1,18 @@
-.slickSliderImage{
-    min-width: 100%;
-    border: 1px solid red;
-    border-radius: 0 !important;
+.image-slider{
+    min-width: 100vw;
+    height: 300px;
 }
 
-.slickSliderHolder{
-    display: flex;
-    border: 2px solid blue;
+.image-slider .slick-list{
     width: 100vw;
-    align-items: center;
-    justify-content: center;
+}
+
+.image-slider img{
+    height: 300px;
+    border-radius: 0px;
+}
+
+.sectionslider{
+    height: 330px;
+    /* border: 2px solid red; */
 }

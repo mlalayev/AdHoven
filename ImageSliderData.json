@@ -15,7 +15,7 @@
             "path": "/some-path"
         },
         {
-            "image": "path/to/image2.jpg",
+            "image": "./src/assets/Untitled.webp",
             "title": {
                 "en": "Title in English",
                 "az": "Title in Azerbaijani",

@@ -1,18 +1,18 @@
+import React, { useState, useEffect } from 'react';
 import './MainPage.css';
 import Card from './MainPage-Cards/Cards';
 import { useTranslation } from 'react-i18next';
-import React, { useEffect, useState } from 'react'
-import ImageSlider from '../Imageslider/Imageslider.js';
-import Faq from './MainPage-FAQ/FAQ.js';
-import News from './MainPage-News/News.js';
-import Profile from './MainPage-Profile/Profile.js';
-import Social from './MainPage-Social/Social.js';
-import MostRead from './MainPage-MostRead/MostRead.js';
+import ImageSlider from '../Imageslider/Imageslider';
+import RightPart from '../PageRightPart/RightPart';
+import { useLocation } from 'react-router-dom';
+import TextPart from '../TextPart/TextPart';
 
-function MainPage() {
-
+const MainPage: React.FC = () => {
   const { i18n } = useTranslation();
-  const [slides, setSlides] = useState([]);
+  const location = useLocation();
+  const [slides, setSlides] = useState<any[]>([]);
+  const [isNewsTrue, setIsNewsTrue] = useState(true);
+  const [isTextPart, setIsTextPart] = useState(true);
 
   useEffect(() => {
     const fetchSlides = async () => {
@@ -28,17 +28,15 @@ function MainPage() {
     fetchSlides();
   }, [i18n.language]);
 
+  useEffect(() => {
+    // Simulating logic to check if News is true and TextPart should be displayed
+    setIsNewsTrue(true);  // Set based on actual condition or API response
+    setIsTextPart(true);  // Set based on actual condition or API response
+  }, []);
+
   return (
-    <div style={{
-      padding:"0 20px"
-    }}>
-      <section className="sectionslider"
-      style={{
-        height:"92vh",
-        display:"flex",
-        justifyContent:"center"
-      }}
-      >
+    <div style={{ padding: '0 20px' }}>
+      <section className="sectionslider" style={{ display: 'flex', justifyContent: 'center' }}>
         {slides.length > 0 ? <ImageSlider /> : <p>Loading...</p>}
       </section>
 
@@ -46,19 +44,14 @@ function MainPage() {
         <Card />
       </section>
 
-      <section className="sectionthird">
-        <div className="sectionthird-leftpart">
-          <News />
-          <Faq />
-        </div>
-        <div className="sectionthird-rightpart">
-          <Profile />
-          <Social />
-          <MostRead />
-        </div>
-      </section>
-    </div>
-  )
-}
+      <RightPart
+        isNewsTrue={isNewsTrue}
+        isTextPart={!isTextPart}
+        currentPath={location.pathname} // Pass currentPath
+      />
 
-export default MainPage
+    </div>
+  );
+};
+
+export default MainPage;
