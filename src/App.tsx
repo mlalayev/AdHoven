@@ -9,7 +9,11 @@ import TextPart from './Components/TextPart/TextPart';
 import MainPage from './Components/MainPage/MainPage';
 import RightPart from './Components/PageRightPart/RightPart';
 
-function App() {
+interface RightPartProps {
+  isNewsTrue: boolean;
+}
+
+function App({ isNewsTrue }: RightPartProps) {
   return (
     <Router>
       <I18nextProvider i18n={i18n}>
@@ -24,20 +28,10 @@ function App() {
               </>
             }
           />
-          <Route
-            path="/about"
-            element={
-              <>
-                <Header />
-                <AboutMe />
-                <Footer />
-              </>
-            }
-          />
           {/* Dynamic routes based on paths from the JSON file */}
           <Route path="/path1" element={<PageWithTextPart />} />
           <Route path="/path2" element={<PageWithTextPart />} />
-          <Route path="/aboutme" element={<PageWithTextPart />} />
+          <Route path="/about" element={<PageWithTextPart />} />
         </Routes>
       </I18nextProvider>
     </Router>

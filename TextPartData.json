@@ -1,15 +1,47 @@
 {
-    "/path1": {
-      "title": "Path 1 Content",
-      "description": "This is the content for path 1."
-    },
-    "/path2": {
-      "title": "Path 2 Content",
-      "description": "This is the content for path 2."
-    },
-    "/aboutme": {
-      "title": "Default aboutme Content",
-      "description": "This is the default content."
-    }
+  "/path1": {
+    "title": "Path 1 Content",
+    "image": "./src/assets/notifimg.webp",
+    "description": "This is the content for path 1.",
+    "titlefirst": "First Section Title for Path 1",
+    "descriptionfirst": "This is the first section description for path 1.",
+    "titlesecond": "Second Section Title for Path 1",
+    "descriptionsecond": "This is the second section description for path 1.",
+    "titlethird": "Third Section Title for Path 1",
+    "descriptionthird": "This is the third section description for path 1.",
+    "titlefourth": "Fourth Section Title for Path 1",
+    "descriptionfourth": "This is the fourth section description for path 1.",
+    "titlefifth": "Fifth Section Title for Path 1",
+    "descriptionfifth": "This is the fifth section description for path 1."
+  },
+  "/path2": {
+    "title": "Path 2 Content",
+    "image": "./src/assets/notifimg.webp",
+    "description": "This is the content for path 2.",
+    "titlefirst": "First Section Title for Path 2",
+    "descriptionfirst": "This is the first section description for path 2.",
+    "titlesecond": "Second Section Title for Path 2",
+    "descriptionsecond": "This is the second section description for path 2.",
+    "titlethird": "Third Section Title for Path 2",
+    "descriptionthird": "This is the third section description for path 2.",
+    "titlefourth": "Fourth Section Title for Path 2",
+    "descriptionfourth": "This is the fourth section description for path 2.",
+    "titlefifth": "Fifth Section Title for Path 2",
+    "descriptionfifth": "This is the fifth section description for path 2."
+  },
+  "/about": {
+    "title": "Default aboutme Content",
+    "image": "./src/assets/notifimg.webp",
+    "description": "This is the default content.",
+    "titlefirst": "First Section Title for About",
+    "descriptionfirst": "This is the first section description for about.",
+    "titlesecond": "Second Section Title for About",
+    "descriptionsecond": "This is the second section description for about.",
+    "titlethird": "Third Section Title for About",
+    "descriptionthird": "This is the third section description for about.",
+    "titlefourth": "Fourth Section Title for About",
+    "descriptionfourth": "This is the fourth section description for about.",
+    "titlefifth": "Fifth Section Title for About",
+    "descriptionfifth": "This is the fifth section description for about."
   }
-  
+}
