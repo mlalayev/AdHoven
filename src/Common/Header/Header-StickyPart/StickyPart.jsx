@@ -20,16 +20,26 @@ function StickyPart() {
 
   return (
     <div className="sticky-part">
-      <img src={logo} alt="logo" className="logo" />
+      <img src={logo} alt="logo" className='logo' />
+
+      <ul className={`menu-ul ${isMenuOpen ? 'active' : ''}`}>
+        {MenuNav[i18n.language].map((item) => (
+          <li key={item.id}>
+            <a href={item.link}>
+              <span>{item.name}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
 
       <ul className={`menu-ul-desktop ${isMenuOpen ? 'active' : ''}`}>
         {MenuNav[i18n.language].map((item) => (
           <li key={item.id} className={item.submenu ? 'has-submenu' : ''}>
-            <a href={item.link}>
+            <a className='donttry' href={item.link}>
               <span>{item.name}</span>
             </a>
             {item.submenu && (
-              <ul className="submenu">
+              <ul className="submenul">
                 {item.submenu.map((subItem) => (
                   <li key={subItem.id}>
                     <a href={subItem.link}>{subItem.name}</a>
@@ -43,7 +53,8 @@ function StickyPart() {
 
       <div className="sticky-part-right">
         <Temprature />
-        <div className="hamburger-menu">
+
+        <div className='hamburger-menu'>
           <input
             type="checkbox"
             id="checkbox"
