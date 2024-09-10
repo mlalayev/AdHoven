@@ -4,7 +4,7 @@
     "image": "./src/assets/metaicon.webp",
     "description": "This is the content for path 1.",
     "titlefirst": "First Section \n Title for Path 1",
-    "descriptionfirst": "This is the \r\n\r\n first section description for path 1. <p>This is a <strong>paragraph</strong> with <a href='https://stackoverflow.com/questions/37797056/get-html-in-json-to-render-as-html-in-react-component'>salam</a> </br> </br> some <em>HTML</em> tags.</p>"
+    "descriptionfirst": "This is the \r\n\r\n first section description for path 1. <p>This is a <strong>paragraph</strong> with <a class='ibnsina' href='https://stackoverflow.com/questions/37797056/get-html-in-json-to-render-as-html-in-react-component'>salam</a> </br> </br> some <em>HTML</em> tags.</p>"
   },
   "/path2": {
     "title": "Path 2 Content",

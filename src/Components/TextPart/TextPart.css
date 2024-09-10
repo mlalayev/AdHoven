@@ -1,3 +1,11 @@
 .textpart-images{
     max-width: 100%;
 }
+
+.ibnsina{
+    /* background-color: red; */
+}
+
+*{
+    border: 1px solid red;
+}
