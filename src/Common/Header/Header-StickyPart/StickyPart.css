@@ -32,10 +32,10 @@
 
 .menu-ul {
     top: 60px;
-    width: 100vw;
-    height: 200px;
     opacity: 0;
     z-index: 999;
+    width: 100vw;
+    height: 200px;
     list-style: none;
     position: absolute;
     visibility: hidden;
@@ -102,6 +102,10 @@
     margin-top: 1px;
     border-bottom: 1px solid black;
     cursor: pointer;
+}
+
+.menu-ul-desktop span{
+    min-height: 100%;
 }
 
 #checkbox {
