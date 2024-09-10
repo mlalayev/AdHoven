@@ -8,7 +8,7 @@
 }
 
 .sticky-part-right {
-    gap: 20px;
+    gap: 10px;
     right: 0px;
     display: flex;
     position: absolute;
@@ -35,12 +35,12 @@
     font-family: var(--Open-font-family);
 }
 
-.none{
+.none {
     padding: 0 !important;
 }
 
 .menu-ul {
-    top: 60px;
+    top: 58px;
     opacity: 0;
     z-index: 999;
     width: 100vw;
@@ -56,7 +56,7 @@
     transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.menu-ul::before{
+.menu-ul::before {
     right: 0;
     top: -10px;
     content: "";
@@ -88,12 +88,12 @@
     background-color: lightgray;
 }
 
-.menu-ul li:hover .menu-ul::before{
+.menu-ul li:hover .menu-ul::before {
     content: "";
     width: 100vw;
     height: 50px;
     z-index: 9999999;
-    border: 2px solid red ;
+    border: 2px solid red;
     background-color: lightgray;
 }
 
@@ -101,10 +101,18 @@
 .menu-ul-desktop a {
     width: 100%;
     height: 100%;
+    color: black;
     display: flex;
-    color: white;
-        align-items: center;
+    align-items: center;
     text-decoration: none;
+}
+
+body{
+    background-color: #f2f2f2 !important;
+}
+
+.donttry{
+    color: white !important;
 }
 
 .menu-ul-desktop li:hover {
@@ -113,7 +121,7 @@
     transition: 0.3s;
 }
 
-.has-submenu span{
+.has-submenu span {
     min-width: 100%;
     min-height: 100%;
 }
@@ -125,7 +133,7 @@
     /* background-color: #6351CE; */
 }
 
-.menu-ul-desktop li{
+.menu-ul-desktop li {
     padding: 20px;
 }
 
@@ -134,11 +142,14 @@
 }
 
 .toggle {
-    width: 40px;
-    margin: auto;
+    width: 30px;
+    margin: auto auto;
     display: block;
     cursor: pointer;
     position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
     height: calc(4px * 3 + 11px * 2);
 }
 
@@ -149,7 +160,8 @@
     height: 4px;
     color: inherit;
     position: absolute;
-    background-color: black;
+    width: 30px;
+    background-color: #f2f2f2;
     border-radius: calc(4px / 2);
     transition: none 0.35s cubic-bezier(.5, -0.35, .35, 1.5) 0s;
 }
@@ -238,7 +250,7 @@
     background-color: lightgray;
 }
 
-.menu-ul-desktop li{
+.menu-ul-desktop li {
     justify-content: center;
     display: flex;
     position: relative;
