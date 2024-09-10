@@ -36,7 +36,11 @@ const MainPage: React.FC = () => {
 
   return (
     <div style={{ padding: '0 20px' }}>
-      <section className="sectionslider" style={{ display: 'flex', justifyContent: 'center' }}>
+      <section className="sectionslider"
+        style={{
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
         {slides.length > 0 ? <ImageSlider /> : <p>Loading...</p>}
       </section>
 
