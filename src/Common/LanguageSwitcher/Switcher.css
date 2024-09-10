@@ -17,9 +17,10 @@
 }
 
 .language-menu {
-    top: 40px;
+    top: 50px;
     z-index: 1;
     width: 40px;
+    background-color: #1C2331;
     display: var(--display-flex);
     align-items: var(--display-center);
     position: var(--position-absolute);

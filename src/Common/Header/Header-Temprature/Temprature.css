@@ -1,6 +1,7 @@
 .weather-info{
     display: flex;
     align-items: center;
+    color: white;
     font-family: var(--Open-font-family);
 }
 

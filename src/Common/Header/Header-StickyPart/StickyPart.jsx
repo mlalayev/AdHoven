@@ -41,7 +41,7 @@ function StickyPart() {
             {item.submenu && (
               <ul className="submenul">
                 {item.submenu.map((subItem) => (
-                  <li key={subItem.id}>
+                  <li className='none' key={subItem.id}>
                     <a href={subItem.link}>{subItem.name}</a>
                   </li>
                 ))}
