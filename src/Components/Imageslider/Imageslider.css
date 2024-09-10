@@ -1,19 +1,21 @@
-.image-slider{
+.image-slider {
     min-width: 100vw;
-    height: 300px;
+    height: 92vh;
 }
 
-.image-slider .slick-list{
+.image-slider .slick-list {
     width: 100vw;
 }
 
-.image-slider img{
+.image-slider img {
     height: 300px;
+    height: 92vh;
     border-radius: 0px;
     /* max-width: 1600px !important; */
 }
 
-.sectionslider{
+.sectionslider {
     height: 330px;
+    height: 92vh;
     /* border: 2px solid red; */
 }
