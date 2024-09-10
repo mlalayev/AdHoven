@@ -2,55 +2,133 @@
     "en": [
         {
             "id": 1,
-            "name": "About Us"
+            "name": "Xidmətlər",
+            "link": "#",
+            "submenu": [
+                {
+                    "id": 1,
+                    "name": "SMM Xidməti",
+                    "link": "/smm"
+                },
+                {
+                    "id": 2,
+                    "name": "Google Reklamları",
+                    "link": "/google-ads"
+                },
+                {
+                    "id": 3,
+                    "name": "SEO Xidməti",
+                    "link": "/seo"
+                }
+            ]
         },
         {
             "id": 2,
-            "name": "Services"
+            "name": "Kateqoriyalar",
+            "link": "/categories"
         },
         {
             "id": 3,
-            "name": "Contact Us"
+            "name": "Kurslar",
+            "link": "/courses"
         },
         {
             "id": 4,
-            "name": "FAQ"
-        }
-    ],
-    "az": [
-        {
-            "id": 1,
-            "name": "Haqqımızda"
+            "name": "Haqqımda",
+            "link": "/about"
         },
         {
-            "id": 2,
-            "name": "Servislər"
-        },
-        {
-            "id": 3,
-            "name": "Kontakt"
-        },
-        {
-            "id": 4,
-            "name": "FAQ"
+            "id": 5,
+            "name": "Əlaqə",
+            "link": "/contact"
         }
     ],
     "ru": [
         {
             "id": 1,
-            "name": "О нас"
+            "name": "Xidmətlər",
+            "link": "#",
+            "submenu": [
+                {
+                    "id": 1,
+                    "name": "SMM Xidməti",
+                    "link": "/smm"
+                },
+                {
+                    "id": 2,
+                    "name": "Google Reklamları",
+                    "link": "/google-ads"
+                },
+                {
+                    "id": 3,
+                    "name": "SEO Xidməti",
+                    "link": "/seo"
+                }
+            ]
         },
         {
             "id": 2,
-            "name": "Услуги"
+            "name": "Kateqoriyalar",
+            "link": "/categories"
         },
         {
             "id": 3,
-            "name": "Контакты"
+            "name": "Kurslar",
+            "link": "/courses"
         },
         {
             "id": 4,
-            "name": "Вопросы"
+            "name": "Haqqımda",
+            "link": "/about"
+        },
+        {
+            "id": 5,
+            "name": "Əlaqə",
+            "link": "/contact"
+        }
+    ],
+    "az": [
+        {
+            "id": 1,
+            "name": "Xidmətlər",
+            "link": "#",
+            "submenu": [
+                {
+                    "id": 1,
+                    "name": "SMM Xidməti",
+                    "link": "/smm"
+                },
+                {
+                    "id": 2,
+                    "name": "Google Reklamları",
+                    "link": "/google-ads"
+                },
+                {
+                    "id": 3,
+                    "name": "SEO Xidməti",
+                    "link": "/seo"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Kateqoriyalar",
+            "link": "/categories"
+        },
+        {
+            "id": 3,
+            "name": "Kurslar",
+            "link": "/courses"
+        },
+        {
+            "id": 4,
+            "name": "Haqqımda",
+            "link": "/about"
+        },
+        {
+            "id": 5,
+            "name": "Əlaqə",
+            "link": "/contact"
         }
     ]
 }

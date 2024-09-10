@@ -189,3 +189,33 @@
     }
 }
 
+.menu-ul-desktop li.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    top: 100%;
+    width: 200px;
+}
+
+.submenu li a {
+    color: black;
+    padding: 10px 20px;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: lightgray;
+}
+
+.menu-ul-desktop li{
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
