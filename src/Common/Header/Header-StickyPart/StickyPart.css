@@ -4,6 +4,11 @@
     max-width: 1200px;
     position: relative;
     align-items: center;
+    min-height: 100%;
+}
+
+*{
+    /* border: 1px solid red; */
 }
 
 .sticky-part-right {
@@ -21,6 +26,7 @@
 
 .menu-ul-desktop {
     width: 100%;
+    height: 60px;
     display: none;
     margin: 0 auto;
     font-size: 15px;
@@ -98,14 +104,26 @@
     text-decoration: none;
 }
 
-.menu-ul-desktop span:hover {
-    margin-top: 1px;
-    border-bottom: 1px solid black;
+.menu-ul-desktop .has-submenu:hover {
     cursor: pointer;
+    background-color: #6351CE;
+    transition: 1s;
 }
 
-.menu-ul-desktop span{
+.has-submenu span{
+    min-width: 100%;
     min-height: 100%;
+}
+
+.menu-ul-desktop .has-submenu:hover .donttry {
+    transition: 0.1s;
+    cursor: pointer;
+    color: white;
+    /* background-color: #6351CE; */
+}
+
+.menu-ul-desktop .has-submenu{
+    padding: 20px;
 }
 
 #checkbox {
@@ -189,28 +207,31 @@
     }
 }
 
-.menu-ul-desktop li.has-submenu:hover .submenu {
+.menu-ul-desktop li.has-submenu:hover .submenul {
     display: block;
 }
 
-.submenu {
+.submenul {
     display: none;
     position: absolute;
     background-color: white;
     list-style: none;
     padding: 10px 0;
     border-radius: 5px;
-    top: 100%;
+    /* top: 100%; */
+    top: 60px;
+    /* left: 0; */
+    border: 1px solid black;
     width: 200px;
 }
 
-.submenu li a {
+.submenul li a {
     color: black;
     padding: 10px 20px;
     display: block;
 }
 
-.submenu li a:hover {
+.submenul li a:hover {
     background-color: lightgray;
 }
 
