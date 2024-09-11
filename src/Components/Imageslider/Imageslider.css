@@ -1,10 +1,10 @@
 .image-slider {
     height: 92vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .image-slider .slick-list {
-    width: 100%;
+    width: 100vw;
 }
 
 .image-slider img {
@@ -16,4 +16,17 @@
 .sectionslider {
     height: 330px;
     height: 96vh;
+}
+
+.image-slider .slick-slide{
+    padding: 0;
+    margin: 0;
+}
+
+.image-slider .slick-prev {
+    left: 0px !important;
+}
+
+.image-slider .slick-next {
+    right: 0px !important;
 }

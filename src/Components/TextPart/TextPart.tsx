@@ -49,7 +49,7 @@ const TextPart: React.FC<TextPartProps> = ({ currentPath, isNewsTrue, isTextPart
     }, [currentPath]);
 
     return (
-        <div style={{ marginBottom: "10px" }} className="faq-container margin-bottom">
+        <div style={{ marginBottom: "10px", padding:"0 20px" }} className="faq-container margin-bottom">
             <div>
                 <span> <a href="/">asas</a> </span>
                 <h1>{content.title}</h1>

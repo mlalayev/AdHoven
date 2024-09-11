@@ -58,10 +58,6 @@
     position: relative;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 .social-media::before {
     content: "";
     height: 100%;

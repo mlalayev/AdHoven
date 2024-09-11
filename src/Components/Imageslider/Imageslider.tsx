@@ -39,7 +39,7 @@ const ImageSlider: React.FC = () => {
     swipe: true,
     arrows: true,
     autoplay: true,
-    dotsClass: "slick-dots firstone",
+    dotsClass: "slick-dots",
     autoplaySpeed: 30000000,
     nextArrow: <CustomRightArrow />,
     prevArrow: <CustomLeftArrow />,
@@ -47,8 +47,8 @@ const ImageSlider: React.FC = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
       {

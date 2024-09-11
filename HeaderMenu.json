@@ -1,246 +1,245 @@
 {
-    "az": [
-      {
-        "id": 1,
-        "name": "Xidmətlər",
-        "link": "#",
-        "submenu": [
-          {
-            "id": 1,
-            "name": "SMM Xidməti",
-            "link": "/smm"
-          },
-          {
-            "id": 2,
-            "name": "Google Reklamları",
-            "link": "/google-ads"
-          },
-          {
-            "id": 3,
-            "name": "SEO Xidməti",
-            "link": "/seo"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Kateqoriyalar",
-        "link": "/categories",
-        "submenu": [
-          {
-            "id": 1,
-            "name": "Rəqəmsal Marketinq",
-            "link": "/smm"
-          },
-          {
-            "id": 2,
-            "name": "SEO",
-            "link": "/google-ads"
-          },
-          {
-            "id": 3,
-            "name": "Sosial Media Marketinqi",
-            "link": "/seo"
-          },
-          {
-            "id": 4,
-            "name": "Marketinq",
-            "link": "/seo"
-          },
-          {
-            "id": 5,
-            "name": "Google Analytics",
-            "link": "/seo"
-          },
-          {
-            "id": 6,
-            "name": "Meta Business Manager",
-            "link": "/seo"
-          },
-          {
-            "id": 7,
-            "name": "Facebook",
-            "link": "/seo"
-          },
-          {
-            "id": 8,
-            "name": "Şəxsi İnkişaf",
-            "link": "/seo"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "name": "Haqqımda",
-        "link": "/about"
-      },
-      {
-        "id": 4,
-        "name": "Əlaqə",
-        "link": "/contact"
-      }
-    ],
-    "en": [
-      {
-        "id": 1,
-        "name": "Services",
-        "link": "#",
-        "submenu": [
-          {
-            "id": 1,
-            "name": "SMM Service",
-            "link": "/smm"
-          },
-          {
-            "id": 2,
-            "name": "Google Ads",
-            "link": "/google-ads"
-          },
-          {
-            "id": 3,
-            "name": "SEO Service",
-            "link": "/seo"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Categories",
-        "link": "/categories",
-        "submenu": [
-          {
-            "id": 1,
-            "name": "Digital Marketing",
-            "link": "/smm"
-          },
-          {
-            "id": 2,
-            "name": "SEO",
-            "link": "/google-ads"
-          },
-          {
-            "id": 3,
-            "name": "Social Media Marketing",
-            "link": "/seo"
-          },
-          {
-            "id": 4,
-            "name": "Marketing",
-            "link": "/seo"
-          },
-          {
-            "id": 5,
-            "name": "Google Analytics",
-            "link": "/seo"
-          },
-          {
-            "id": 6,
-            "name": "Meta Business Manager",
-            "link": "/seo"
-          },
-          {
-            "id": 7,
-            "name": "Facebook",
-            "link": "/seo"
-          },
-          {
-            "id": 8,
-            "name": "Personal Development",
-            "link": "/seo"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "name": "About",
-        "link": "/about"
-      },
-      {
-        "id": 4,
-        "name": "Contact",
-        "link": "/contact"
-      }
-    ],
-    "ru": [
-      {
-        "id": 1,
-        "name": "Услуги",
-        "link": "#",
-        "submenu": [
-          {
-            "id": 1,
-            "name": "SMM Услуга",
-            "link": "/smm"
-          },
-          {
-            "id": 2,
-            "name": "Реклама в Google",
-            "link": "/google-ads"
-          },
-          {
-            "id": 3,
-            "name": "SEO Услуга",
-            "link": "/seo"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Категории",
-        "link": "/categories",
-        "submenu": [
-          {
-            "id": 1,
-            "name": "Цифровой маркетинг",
-            "link": "/smm"
-          },
-          {
-            "id": 2,
-            "name": "SEO",
-            "link": "/google-ads"
-          },
-          {
-            "id": 3,
-            "name": "Маркетинг в социальных сетях",
-            "link": "/seo"
-          },
-          {
-            "id": 4,
-            "name": "Маркетинг",
-            "link": "/seo"
-          },
-          {
-            "id": 5,
-            "name": "Google Analytics",
-            "link": "/seo"
-          },
-          {
-            "id": 6,
-            "name": "Meta Business Manager",
-            "link": "/seo"
-          },
-          {
-            "id": 7,
-            "name": "Facebook",
-            "link": "/seo"
-          },
-          {
-            "id": 8,
-            "name": "Личное развитие",
-            "link": "/seo"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "name": "О нас",
-        "link": "/about"
-      },
-      {
-        "id": 4,
-        "name": "Контакты",
-        "link": "/contact"
-      }
-    ]
-  }
-  
+  "az": [
+    {
+      "id": 1,
+      "name": "Xidmətlər",
+      "link": "#",
+      "submenu": [
+        {
+          "id": 1,
+          "name": "SMM Xidməti",
+          "link": "/smm"
+        },
+        {
+          "id": 2,
+          "name": "Google Reklamları",
+          "link": "/google-ads"
+        },
+        {
+          "id": 3,
+          "name": "SEO Xidməti",
+          "link": "/seo"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Kateqoriyalar",
+      "link": "/categories",
+      "submenu": [
+        {
+          "id": 1,
+          "name": "Rəqəmsal Marketinq",
+          "link": "/smm"
+        },
+        {
+          "id": 2,
+          "name": "SEO",
+          "link": "/google-ads"
+        },
+        {
+          "id": 3,
+          "name": "Sosial Media Marketinqi",
+          "link": "/seo"
+        },
+        {
+          "id": 4,
+          "name": "Marketinq",
+          "link": "/seo"
+        },
+        {
+          "id": 5,
+          "name": "Google Analytics",
+          "link": "/seo"
+        },
+        {
+          "id": 6,
+          "name": "Meta Business Manager",
+          "link": "/seo"
+        },
+        {
+          "id": 7,
+          "name": "Facebook",
+          "link": "/seo"
+        },
+        {
+          "id": 8,
+          "name": "Şəxsi İnkişaf",
+          "link": "/seo"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Haqqımda",
+      "link": "/about"
+    },
+    {
+      "id": 4,
+      "name": "Əlaqə",
+      "link": "/contact"
+    }
+  ],
+  "en": [
+    {
+      "id": 1,
+      "name": "Services",
+      "link": "#",
+      "submenu": [
+        {
+          "id": 1,
+          "name": "SMM Service",
+          "link": "/smm"
+        },
+        {
+          "id": 2,
+          "name": "Google Ads",
+          "link": "/google-ads"
+        },
+        {
+          "id": 3,
+          "name": "SEO Service",
+          "link": "/seo"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Categories",
+      "link": "/categories",
+      "submenu": [
+        {
+          "id": 1,
+          "name": "Digital Marketing",
+          "link": "/smm"
+        },
+        {
+          "id": 2,
+          "name": "SEO",
+          "link": "/google-ads"
+        },
+        {
+          "id": 3,
+          "name": "Social Media Marketing",
+          "link": "/seo"
+        },
+        {
+          "id": 4,
+          "name": "Marketing",
+          "link": "/seo"
+        },
+        {
+          "id": 5,
+          "name": "Google Analytics",
+          "link": "/seo"
+        },
+        {
+          "id": 6,
+          "name": "Meta Business Manager",
+          "link": "/seo"
+        },
+        {
+          "id": 7,
+          "name": "Facebook",
+          "link": "/seo"
+        },
+        {
+          "id": 8,
+          "name": "Personal Development",
+          "link": "/seo"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "About",
+      "link": "/about"
+    },
+    {
+      "id": 4,
+      "name": "Contact",
+      "link": "/contact"
+    }
+  ],
+  "ru": [
+    {
+      "id": 1,
+      "name": "Услуги",
+      "link": "#",
+      "submenu": [
+        {
+          "id": 1,
+          "name": "SMM Услуга",
+          "link": "/smm"
+        },
+        {
+          "id": 2,
+          "name": "Реклама в Google",
+          "link": "/google-ads"
+        },
+        {
+          "id": 3,
+          "name": "SEO Услуга",
+          "link": "/seo"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Категории",
+      "link": "/categories",
+      "submenu": [
+        {
+          "id": 1,
+          "name": "Цифровой маркетинг",
+          "link": "/smm"
+        },
+        {
+          "id": 2,
+          "name": "SEO",
+          "link": "/google-ads"
+        },
+        {
+          "id": 3,
+          "name": "Маркетинг в социальных сетях",
+          "link": "/seo"
+        },
+        {
+          "id": 4,
+          "name": "Маркетинг",
+          "link": "/seo"
+        },
+        {
+          "id": 5,
+          "name": "Google Analytics",
+          "link": "/seo"
+        },
+        {
+          "id": 6,
+          "name": "Meta Business Manager",
+          "link": "/seo"
+        },
+        {
+          "id": 7,
+          "name": "Facebook",
+          "link": "/seo"
+        },
+        {
+          "id": 8,
+          "name": "Личное развитие",
+          "link": "/seo"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "О нас",
+      "link": "/about"
+    },
+    {
+      "id": 4,
+      "name": "Контакты",
+      "link": "/contact"
+    }
+  ]
+}
