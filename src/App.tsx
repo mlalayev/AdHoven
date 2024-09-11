@@ -1,19 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from './Common/Footer/Footer';
-import Header from './Common/Header/Header';
+import Header from './Common/Header/Header.jsx';
 import i18n from './Components/I18N/I18N';
 import { I18nextProvider } from 'react-i18next';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import AboutMe from './Components/AboutMe/AboutMe';
-import TextPart from './Components/TextPart/TextPart';
 import MainPage from './Components/MainPage/MainPage';
 import RightPart from './Components/PageRightPart/RightPart';
 
 interface RightPartProps {
   isNewsTrue: boolean;
+  isFaqsTrue: boolean;
+  isTextPart: boolean;
 }
 
-function App({ isNewsTrue }: RightPartProps) {
+function App() {
   return (
     <Router>
       <I18nextProvider i18n={i18n}>
@@ -28,10 +28,19 @@ function App({ isNewsTrue }: RightPartProps) {
               </>
             }
           />
-          {/* Dynamic routes based on paths from the JSON file */}
-          <Route path="/path1" element={<PageWithTextPart />} />
-          <Route path="/path2" element={<PageWithTextPart />} />
-          <Route path="/about" element={<PageWithTextPart />} />
+          {/* Dynamic routes with manually controlled props */}
+          <Route
+            path="/path1"
+            element={<PageWithTextPart isFaqsTrue={true} isNewsTrue={true} isTextPart={true} />}
+          />
+          <Route
+            path="/path2"
+            element={<PageWithTextPart isFaqsTrue={false} isNewsTrue={false} isTextPart={true} />}
+          />
+          <Route
+            path="/about"
+            element={<PageWithTextPart isFaqsTrue={false} isNewsTrue={false} isTextPart={true} />}
+          />
         </Routes>
       </I18nextProvider>
     </Router>
@@ -39,12 +48,9 @@ function App({ isNewsTrue }: RightPartProps) {
 }
 
 // A reusable component to handle routes with dynamic text content
-const PageWithTextPart = () => {
+const PageWithTextPart = ({ isNewsTrue, isTextPart, isFaqsTrue }: RightPartProps) => {
   const location = useLocation();
 
-  // You can add logic to set isNewsTrue based on specific paths
-  const isNewsTrue = location.pathname.includes("news"); // Modify as needed
-  const isTextPart = true; // You can adjust this logic too
 
   return (
     <>
@@ -53,6 +59,7 @@ const PageWithTextPart = () => {
         currentPath={location.pathname}
         isNewsTrue={isNewsTrue}
         isTextPart={isTextPart}
+        isFaqsTrue={isFaqsTrue}
       />
       <Footer />
     </>

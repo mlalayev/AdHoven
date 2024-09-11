@@ -9,21 +9,28 @@ import TextPart from '../TextPart/TextPart';
 interface RightPartProps {
     isNewsTrue: boolean;
     isTextPart: boolean;
-    currentPath: string;  // Add currentPath to props
+    isFaqsTrue: boolean;
+    currentPath: string;
 }
 
-function RightPart({ isNewsTrue, isTextPart, currentPath }: RightPartProps) {
+function RightPart({ isNewsTrue, isTextPart, currentPath, isFaqsTrue }: RightPartProps) {
     return (
         <div>
             <section className="sectionthird">
                 <div 
                 style={{
-                    marginTop:"20px"
+                    marginTop: "20px"
                 }}
                 className="sectionthird-leftpart">
-                    {isTextPart && <TextPart currentPath={currentPath} />}  {/* Pass currentPath to TextPart */}
+                    {isTextPart && (
+                        <TextPart 
+                            currentPath={currentPath} 
+                            isNewsTrue={false} 
+                            isTextPart={false} 
+                        />
+                    )}
                     {isNewsTrue && <News />}
-                    <Faq />
+                    {isFaqsTrue && <Faq />}
                 </div>
                 <div className="sectionthird-rightpart">
                     <Profile />

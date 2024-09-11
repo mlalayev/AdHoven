@@ -39,7 +39,7 @@ const ImageSlider: React.FC = () => {
     swipe: true,
     arrows: true,
     autoplay: true,
-    dotsClass: "slick-dots",
+    dotsClass: "slick-dots firstone",
     autoplaySpeed: 30000000,
     nextArrow: <CustomRightArrow />,
     prevArrow: <CustomLeftArrow />,

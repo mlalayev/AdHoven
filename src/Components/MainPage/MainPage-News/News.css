@@ -10,7 +10,12 @@ body {
 /* Container for the articles */
 .article-container {
   max-width: 740px;
-  margin: 20px auto;
+  /* margin: 20px auto; */
+}
+
+body{
+  width: 100vw !important;
+  overflow-x:hidden;
 }
 
 .article-list {
