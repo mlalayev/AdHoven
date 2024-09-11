@@ -15,11 +15,13 @@ interface RightPartProps {
 
 function RightPart({ isNewsTrue, isTextPart, currentPath, isFaqsTrue }: RightPartProps) {
     return (
-        <div>
+        <div style={{
+            padding:"0 20px"
+        }}>
             <section className="sectionthird">
                 <div 
                 style={{
-                    marginTop: "20px"
+                    marginTop: "20px",
                 }}
                 className="sectionthird-leftpart">
                     {isTextPart && (

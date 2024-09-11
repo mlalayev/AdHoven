@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-.sectionslider::after {
+/* .sectionslider::after {
     top: 0;
     left: 0;
     content: "";
@@ -16,10 +16,9 @@ body {
     width: 100vw;
     height: 100%;
     position: absolute;
-    /* background-color: #CCD6EA; */
-}
+} */
 
-.sectionslider::before {
+/* .sectionslider::before {
     top: 0;
     right: 0;
     z-index: -1;
@@ -27,8 +26,7 @@ body {
     width: 100vw;
     height: 100%;
     position: absolute;
-    /* background-color: #CCD6EA; */
-}
+} */
 
 .sectionsecond {
     padding: 20px;

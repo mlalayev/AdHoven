@@ -27,6 +27,34 @@
                 "ru": "Course in Russian"
             },
             "path": "/another-path"
+        },
+        {
+            "image": "./src/assets/sliderimg.webp",
+            "title": {
+                "en": "Title in English",
+                "az": "Title in Azerbaijani",
+                "ru": "Title in Russian"
+            },
+            "courses": {
+                "en": "Course in English",
+                "az": "Course in Azerbaijani",
+                "ru": "Course in Russian"
+            },
+            "path": "/another-path"
+        },
+        {
+            "image": "./src/assets/SliderImageThird.webp",
+            "title": {
+                "en": "Title in English",
+                "az": "Title in Azerbaijani",
+                "ru": "Title in Russian"
+            },
+            "courses": {
+                "en": "Course in English",
+                "az": "Course in Azerbaijani",
+                "ru": "Course in Russian"
+            },
+            "path": "/another-path"
         }
     ]
 }

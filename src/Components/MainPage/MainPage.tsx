@@ -29,23 +29,20 @@ const MainPage: React.FC = () => {
   }, [i18n.language]);
 
   useEffect(() => {
-    // Simulating logic to check if News is true and TextPart should be displayed
-    setIsNewsTrue(true);  // Set based on actual condition or API response
-    setIsTextPart(true);  // Set based on actual condition or API response
-    setIsFaqsTrue(true);  // Set based on actual condition or API response
+    setIsNewsTrue(true); 
+    setIsTextPart(true); 
+    setIsFaqsTrue(true); 
   }, []);
 
   return (
-    <div style={{ padding: '0 20px' }}>
-      {/* <section className="sectionslider"
+    <div>
+      <section className="sectionslider"
         style={{
           display: 'flex',
-          marginLeft:'-18px',
           justifyContent: 'center'
         }}>
         {slides.length > 0 ? <ImageSlider /> : <p>Loading...</p>}
-      </section> */}
-
+      </section>
       <section className="sectionsecond">
         <Card />
       </section>
@@ -56,7 +53,6 @@ const MainPage: React.FC = () => {
         isFaqsTrue={isFaqsTrue}
         currentPath={location.pathname} // Pass currentPath
       />
-
     </div>
   );
 };
