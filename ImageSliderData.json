@@ -11,8 +11,7 @@
                 "en": "Course in English",
                 "az": "Course in Azerbaijani",
                 "ru": "Course in Russian"
-            },
-            "path": "/some-path"
+            }
         },
         {
             "image": "./src/assets/Untitled.webp",
@@ -25,8 +24,7 @@
                 "en": "Course in English",
                 "az": "Course in Azerbaijani",
                 "ru": "Course in Russian"
-            },
-            "path": "/another-path"
+            }
         },
         {
             "image": "./src/assets/sliderimg.webp",
@@ -39,11 +37,10 @@
                 "en": "Course in English",
                 "az": "Course in Azerbaijani",
                 "ru": "Course in Russian"
-            },
-            "path": "/another-path"
+            }
         },
         {
-            "image": "./src/assets/SliderImageThird.webp",
+            "image": "./src/assets/mobilesliderone.webp",
             "title": {
                 "en": "Title in English",
                 "az": "Title in Azerbaijani",
@@ -53,8 +50,33 @@
                 "en": "Course in English",
                 "az": "Course in Azerbaijani",
                 "ru": "Course in Russian"
+            }
+        },
+        {
+            "image": "./src/assets/mobileslidertwo.webp",
+            "title": {
+                "en": "Title in English",
+                "az": "Title in Azerbaijani",
+                "ru": "Title in Russian"
             },
-            "path": "/another-path"
+            "courses": {
+                "en": "Course in English",
+                "az": "Course in Azerbaijani",
+                "ru": "Course in Russian"
+            }
+        },
+        {
+            "image": "./src/assets/mobilesliderthree.webp",
+            "title": {
+                "en": "Title in English",
+                "az": "Title in Azerbaijani",
+                "ru": "Title in Russian"
+            },
+            "courses": {
+                "en": "Course in English",
+                "az": "Course in Azerbaijani",
+                "ru": "Course in Russian"
+            }
         }
     ]
 }

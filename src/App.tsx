@@ -31,7 +31,7 @@ function App() {
           {/* Dynamic routes with manually controlled props */}
           <Route
             path="/path1"
-            element={<PageWithTextPart isFaqsTrue={true} isNewsTrue={true} isTextPart={true} />}
+            element={<PageWithTextPart isFaqsTrue={true} isNewsTrue={false} isTextPart={true} />}
           />
           <Route
             path="/path2"
