@@ -7,25 +7,3 @@ header {
     padding: 0px 20px;
     background-color: #1C2331;
 }
-
-header::after{
-    top: 0;
-    left: 0;
-    z-index: -1;
-    content: "";
-    width: 100vw;
-    height: 56px;
-    position: absolute;
-    background-color: #1C2331;
-}
-
-header::before{
-    top: 0;
-    right: 0;
-    z-index: -1;
-    content: "";
-    height: 56px;
-    width: 100vw;
-    position: absolute;
-    background-color: #1C2331;
-}

@@ -61,7 +61,7 @@
     content: "";
     z-index: -1;
     height: 100vh;
-    width: 1000000vw;
+    width: 100vw;
     position: absolute;
     background-color: #1C2331;
 }
@@ -73,7 +73,6 @@
     background-color: #1C2331;
     transform: translateY(0px);
 }
-
 
 .menu-ul li {
     gap: 10px;
@@ -96,9 +95,15 @@
     /* background-color: lightgray; */
 }
 
-.logo{
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+.logo {
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
+}
+
+::selection{
+    background-color: #6351CE;
+    color: white;
 }
 
 .menu-ul a,
@@ -111,11 +116,15 @@
     text-decoration: none;
 }
 
-body{
-    background-color: #f2f2f2 !important;
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw !important;
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
 }
-
-.donttry{
+.donttry {
     color: white !important;
 }
 
@@ -228,6 +237,7 @@ body{
 
 .menu-ul-desktop li.has-submenu:hover .submenul {
     display: block;
+    box-shadow: 1px 1px 6px#6351CE;
 }
 
 .submenul {

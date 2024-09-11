@@ -49,3 +49,11 @@ body {
         flex-direction: column ;
     }
 }
+
+/* .sectionthird-rightpart{
+    position: sticky !important;
+    border: 1px solid red !important;
+    height: 100%;
+    top: 1% !important;
+    overflow-y: scroll;
+} */

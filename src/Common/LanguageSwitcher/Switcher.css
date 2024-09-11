@@ -18,8 +18,8 @@
 
 .language-menu {
     top: 46px;
-    z-index: 1;
     width: 40px;
+    z-index: 9999999;
     background-color: #1C2331;
     display: var(--display-flex);
     align-items: var(--display-center);

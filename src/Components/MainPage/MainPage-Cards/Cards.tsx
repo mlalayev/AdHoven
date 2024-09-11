@@ -39,7 +39,7 @@ const CustomSlider: React.FC = () => {
     swipe: true,
     arrows: true,
     autoplay: true,
-    dotsClass: "slick-dots",
+    dotsClass: "slick-dots marginbottom",
     autoplaySpeed: 3000,
     PaddingLeft: '40px',
     adaptiveHeight: true,
@@ -90,7 +90,11 @@ const CustomSlider: React.FC = () => {
   };
 
   return (
-    <div className="slick-slider-container">
+    <div 
+    style={{
+      padding:"20px 0"
+    }}
+    className="slick-slider-container">
       <Slider ref={sliderRef} {...settings}>
         {slides.map((slide: Slide, index: number) => (
           <div key={index} className="slick-slide">
