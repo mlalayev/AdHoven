@@ -9,86 +9,64 @@ interface TextPartProps {
     isTextPart: boolean;
 }
 
+// Adjust the interface to match your JSON structure
 interface TextData {
     [key: string]: {
-        title: string;
-        description: string;
-        image: string;
-        titlefirst?: string;
-        descriptionfirst?: string;
-        titlesecond?: string;
-        descriptionsecond?: string;
-        titlethird?: string;
-        descriptionthird?: string;
-        titlefourth?: string;
-        descriptionfourth?: string;
-        titlefifth?: string;
-        descriptionfifth?: string;
+        az: {
+            title: string;
+            description: string;
+            image: string;
+            titlefirst?: string;
+            descriptionfirst?: string;
+        };
+        en: {
+            title: string;
+            description: string;
+            image: string;
+            titlefirst?: string;
+            descriptionfirst?: string;
+        };
+        ru: {
+            title: string;
+            description: string;
+            image: string;
+            titlefirst?: string;
+            descriptionfirst?: string;
+        };
     };
 }
 
 const TextPart: React.FC<TextPartProps> = ({ currentPath, isNewsTrue, isTextPart }) => {
-    const { t, i18n } = useTranslation();
-    const [content, setContent] = useState<TextData[keyof TextData]>({
+    const { i18n } = useTranslation();
+    const [content, setContent] = useState({
         title: '',
         description: '',
         image: '',
         titlefirst: '',
-        descriptionfirst: '',
-        titlesecond: '',
-        descriptionsecond: '',
-        titlethird: '',
-        descriptionthird: '',
-        titlefourth: '',
-        descriptionfourth: '',
-        titlefifth: '',
-        descriptionfifth: ''
+        descriptionfirst: ''
     });
 
     useEffect(() => {
         const data = textDatas as TextData;
 
         // Get the current language
-        const currentLanguage = i18n.language;
+        const currentLanguage = i18n.language as 'az' | 'en' | 'ru';
 
-        // Get content based on path and language, or use default if not found
+        // Get content based on path and language
         const pathData = data[currentPath];
-        if (pathData) {
-            const languageData = pathData[currentLanguage] || data['/default']?.[currentLanguage];
-            setContent(languageData || {
-                title: '',
-                description: '',
-                image: '',
-                titlefirst: '',
-                descriptionfirst: '',
-                titlesecond: '',
-                descriptionsecond: '',
-                titlethird: '',
-                descriptionthird: '',
-                titlefourth: '',
-                descriptionfourth: '',
-                titlefifth: '',
-                descriptionfifth: ''
-            });
+        if (pathData && pathData[currentLanguage]) {
+            setContent(pathData[currentLanguage]);
         } else {
-            setContent(data['/default']?.[currentLanguage] || {
-                title: '',
+            // Fallback content in case the path or language isn't found
+            setContent({
+                title: 'Content not found',
                 description: '',
                 image: '',
                 titlefirst: '',
-                descriptionfirst: '',
-                titlesecond: '',
-                descriptionsecond: '',
-                titlethird: '',
-                descriptionthird: '',
-                titlefourth: '',
-                descriptionfourth: '',
-                titlefifth: '',
-                descriptionfifth: ''
+                descriptionfirst: ''
             });
         }
     }, [currentPath, i18n.language]);
-
 
     return (
         <div style={{ marginBottom: "10px", padding: "0 20px" }} className="faq-container margin-bottom">
@@ -97,8 +75,7 @@ const TextPart: React.FC<TextPartProps> = ({ currentPath, isNewsTrue, isTextPart
                 <h1>{content.title}</h1>
                 <p>{content.description}</p>
                 <br />
-                <img className="textpart-images" src={content.image} alt="" />
-
+                {content.image && <img className="textpart-images" src={content.image} alt="Content related" />}
                 {content.titlefirst && (
                     <p dangerouslySetInnerHTML={{ __html: content.titlefirst }} />
                 )}
