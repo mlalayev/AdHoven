@@ -13,12 +13,18 @@
     /* max-width: 1600px !important; */
 }
 
+/* @media screen and (min-width: 700px) {
+    .slick-track:nth-child(0) {
+        display: none !important;
+    }
+} */
+
 .sectionslider {
     height: 330px;
     height: 96vh;
 }
 
-.image-slider .slick-slide{
+.image-slider .slick-slide {
     padding: 0;
     margin: 0;
 }
