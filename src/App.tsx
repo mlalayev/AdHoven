@@ -38,6 +38,18 @@ function App() {
             element={<PageWithTextPart isFaqsTrue={false} isNewsTrue={false} isTextPart={true} />}
           />
           <Route
+            path="/path3"
+            element={<PageWithTextPart isFaqsTrue={false} isNewsTrue={false} isTextPart={true} />}
+          />
+          <Route
+            path="/path4"
+            element={<PageWithTextPart isFaqsTrue={false} isNewsTrue={false} isTextPart={true} />}
+          />
+          <Route
+            path="/path5"
+            element={<PageWithTextPart isFaqsTrue={false} isNewsTrue={false} isTextPart={true} />}
+          />
+          <Route
             path="/about"
             element={<PageWithTextPart isFaqsTrue={false} isNewsTrue={false} isTextPart={true} />}
           />
