@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Imageslider.css';
 import Slider from 'react-slick';
@@ -20,7 +20,7 @@ type Slide = {
     az: string;
     ru: string;
   };
-  path: string;
+  path: string; // This is required
 };
 
 const ImageSlider: React.FC = () => {
@@ -29,6 +29,33 @@ const ImageSlider: React.FC = () => {
   const [startX, setStartX] = useState<number | null>(null);
   const [isDragging, setIsDragging] = useState<boolean>(false);
   const sliderRefer = useRef<Slider | null>(null);
+
+  // State to hold the filtered slides based on screen size
+  const [filteredSlides, setFilteredSlides] = useState<Slide[]>([]);
+
+  // Detect screen size and adjust slides
+  const filterSlidesByScreenSize = () => {
+    const screenWidth = window.innerWidth;
+    const slides = slidesData.slides;
+
+    // Show first 3 slides for desktop, last 3 slides for mobile
+    if (screenWidth > 700) {
+      setFilteredSlides(slides.slice(0, 3)); // First 3 slides for desktop
+    } else {
+      setFilteredSlides(slides.slice(-3)); // Last 3 slides for mobile
+    }
+  };
+
+  // Listen to window resize and filter slides accordingly
+  useEffect(() => {
+    filterSlidesByScreenSize();
+    window.addEventListener('resize', filterSlidesByScreenSize);
+    
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', filterSlidesByScreenSize);
+    };
+  }, []);
 
   const settings = {
     dots: true,
@@ -39,26 +66,10 @@ const ImageSlider: React.FC = () => {
     swipe: true,
     arrows: true,
     autoplay: true,
-    dotsClass: "slick-dots",
+    dotsClass: 'slick-dots nthchild',
     autoplaySpeed: 30000000,
     nextArrow: <CustomRightArrow />,
     prevArrow: <CustomLeftArrow />,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
   };
 
   const handleMouseDown = (e: React.MouseEvent) => {
@@ -85,20 +96,21 @@ const ImageSlider: React.FC = () => {
     return content[currentLanguage as keyof typeof content] || content.en;
   };
 
-  // Make sure to access the slides array from the JSON file
-  const slides = slidesData.slides;
-
   return (
     <div className="image-slider">
       <Slider ref={sliderRefer} {...settings}>
-        {slides.map((data: Slide, index: number) => (
+        {filteredSlides.map((data: Slide, index: number) => (
           <div
-          className='slickSliderHolder'
-          key={index}>
+            className="slickSliderHolder"
+            key={index}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={(e) => handleMouseUp(e, data.path)}
+          >
             <img
-              className='slickSliderImage'
+              className="slickSliderImage"
               src={data.image}
-              alt={getLanguageContent(data.title)} // Use the getLanguageContent function for title
+              alt={getLanguageContent(data.title)}
             />
           </div>
         ))}

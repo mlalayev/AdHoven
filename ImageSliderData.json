@@ -11,7 +11,8 @@
                 "en": "Course in English",
                 "az": "Course in Azerbaijani",
                 "ru": "Course in Russian"
-            }
+            },
+            "path":"/#"
         },
         {
             "image": "./src/assets/Untitled.webp",
@@ -24,7 +25,8 @@
                 "en": "Course in English",
                 "az": "Course in Azerbaijani",
                 "ru": "Course in Russian"
-            }
+            },
+            "path":"/#"
         },
         {
             "image": "./src/assets/sliderimg.webp",
@@ -37,7 +39,8 @@
                 "en": "Course in English",
                 "az": "Course in Azerbaijani",
                 "ru": "Course in Russian"
-            }
+            },
+            "path":"/#"
         },
         {
             "image": "./src/assets/mobilesliderone.webp",
@@ -50,7 +53,8 @@
                 "en": "Course in English",
                 "az": "Course in Azerbaijani",
                 "ru": "Course in Russian"
-            }
+            },
+            "path":"/#"
         },
         {
             "image": "./src/assets/mobileslidertwo.webp",
@@ -63,7 +67,8 @@
                 "en": "Course in English",
                 "az": "Course in Azerbaijani",
                 "ru": "Course in Russian"
-            }
+            },
+            "path":"/#"
         },
         {
             "image": "./src/assets/mobilesliderthree.webp",
@@ -76,7 +81,8 @@
                 "en": "Course in English",
                 "az": "Course in Azerbaijani",
                 "ru": "Course in Russian"
-            }
+            },
+            "path":"/#"
         }
     ]
 }
