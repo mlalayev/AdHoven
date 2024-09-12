@@ -4,7 +4,7 @@ import './Imageslider.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import slidesData from '../../../ImageSliderData.json'; // Import the JSON file
+import slidesData from '../../../ImageSliderData.json';
 import { CustomLeftArrow, CustomRightArrow } from '../../Common/ArrowsSlickSlider/Arrows';
 import { useTranslation } from 'react-i18next';
 
@@ -15,7 +15,7 @@ type Slide = {
     az: string;
     ru: string;
   };
-  courses: {
+  subtitle: {
     en: string;
     az: string;
     ru: string;
@@ -50,7 +50,7 @@ const ImageSlider: React.FC = () => {
   useEffect(() => {
     filterSlidesByScreenSize();
     window.addEventListener('resize', filterSlidesByScreenSize);
-    
+
     // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener('resize', filterSlidesByScreenSize);
@@ -112,6 +112,10 @@ const ImageSlider: React.FC = () => {
               src={data.image}
               alt={getLanguageContent(data.title)}
             />
+            <div className='slider-content-text'>
+              <h1>{getLanguageContent(data.title)}</h1>
+              <p>{getLanguageContent(data.subtitle)}</p>
+            </div>
           </div>
         ))}
       </Slider>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import textDatas from '../../../TextPartData.json';
 import './TextPart.css';
 
@@ -27,6 +28,7 @@ interface TextData {
 }
 
 const TextPart: React.FC<TextPartProps> = ({ currentPath, isNewsTrue, isTextPart }) => {
+    const { t, i18n } = useTranslation();
     const [content, setContent] = useState<TextData[keyof TextData]>({
         title: '',
         description: '',
@@ -44,20 +46,62 @@ const TextPart: React.FC<TextPartProps> = ({ currentPath, isNewsTrue, isTextPart
     });
 
     useEffect(() => {
-        // Set content based on the current path, or use default if not found
-        setContent((textDatas as TextData)[currentPath] || (textDatas as TextData)['/default']);
-    }, [currentPath]);
+        const data = textDatas as TextData;
+
+        // Get the current language
+        const currentLanguage = i18n.language;
+
+        // Get content based on path and language, or use default if not found
+        const pathData = data[currentPath];
+        if (pathData) {
+            const languageData = pathData[currentLanguage] || data['/default']?.[currentLanguage];
+            setContent(languageData || {
+                title: '',
+                description: '',
+                image: '',
+                titlefirst: '',
+                descriptionfirst: '',
+                titlesecond: '',
+                descriptionsecond: '',
+                titlethird: '',
+                descriptionthird: '',
+                titlefourth: '',
+                descriptionfourth: '',
+                titlefifth: '',
+                descriptionfifth: ''
+            });
+        } else {
+            setContent(data['/default']?.[currentLanguage] || {
+                title: '',
+                description: '',
+                image: '',
+                titlefirst: '',
+                descriptionfirst: '',
+                titlesecond: '',
+                descriptionsecond: '',
+                titlethird: '',
+                descriptionthird: '',
+                titlefourth: '',
+                descriptionfourth: '',
+                titlefifth: '',
+                descriptionfifth: ''
+            });
+        }
+    }, [currentPath, i18n.language]);
+
 
     return (
-        <div style={{ marginBottom: "10px", padding:"0 20px" }} className="faq-container margin-bottom">
+        <div style={{ marginBottom: "10px", padding: "0 20px" }} className="faq-container margin-bottom">
             <div>
-                <span> <a href="/">asas</a> </span>
+                <span> <a href="/">link</a> </span>
                 <h1>{content.title}</h1>
                 <p>{content.description}</p>
                 <br />
                 <img className="textpart-images" src={content.image} alt="" />
 
-                {content.titlefirst && <h1>{content.titlefirst}</h1>}
+                {content.titlefirst && (
+                    <p dangerouslySetInnerHTML={{ __html: content.titlefirst }} />
+                )}
                 {content.descriptionfirst && (
                     <p dangerouslySetInnerHTML={{ __html: content.descriptionfirst }} />
                 )}

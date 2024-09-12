@@ -19,7 +19,11 @@ function StickyPart() {
   };
 
   return (
-    <div className="sticky-part">
+    <div
+      style={{
+        // maxWidth: "20.vw"
+      }}
+      className="sticky-part">
       <img src={logo} alt="logo" className='logo' />
 
       <ul className={`menu-ul ${isMenuOpen ? 'active' : ''}`}>
