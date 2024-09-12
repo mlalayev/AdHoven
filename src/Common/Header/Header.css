@@ -4,6 +4,7 @@ header {
     position: sticky;
     z-index: 99999999;
     height: 56px;
-    padding: 0px 20px;
     background-color: #1C2331;
+    padding: 0px 20px;
+    overflow: hidden;
 }
