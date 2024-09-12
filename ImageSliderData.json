@@ -3,86 +3,86 @@
         {
             "image": "./src/assets/ImageSliderFirst.webp",
             "title": {
-                "en": "Title in English",
-                "az": "Title in Azerbaijani",
-                "ru": "Title in Russian"
+                "en": "Want to Increase Your Business Revenue?",
+                "az": "Biznes gəlirinizi artırmaq istəyirsiniz?",
+                "ru": "Хотите увеличить доход своего бизнеса?"
             },
-            "courses": {
-                "en": "Course in English",
-                "az": "Course in Azerbaijani",
-                "ru": "Course in Russian"
+            "subtitle": {
+                "en": "Leave Your Work to Experts.",
+                "az": "İşinizi mütəxəssislərə həvalə edin.",
+                "ru": "Доверьте свою работу экспертам."
             },
-            "path":"/#"
+            "path": "/#"
         },
         {
             "image": "./src/assets/Untitled.webp",
             "title": {
-                "en": "Title in English",
-                "az": "Title in Azerbaijani",
-                "ru": "Title in Russian"
+                "en": "Official Meta Certificate",
+                "az": "Rəsmi Meta Sertifikatı",
+                "ru": "Официальный сертификат Meta"
             },
-            "courses": {
-                "en": "Course in English",
-                "az": "Course in Azerbaijani",
-                "ru": "Course in Russian"
+            "subtitle": {
+                "en": "We learned this directly from Facebook.",
+                "az": "Bunu birbaşa Facebook-dan öyrəndik.",
+                "ru": "Мы узнали это напрямую от Facebook."
             },
-            "path":"/#"
+            "path": "/#"
         },
         {
             "image": "./src/assets/sliderimg.webp",
             "title": {
-                "en": "Title in English",
-                "az": "Title in Azerbaijani",
-                "ru": "Title in Russian"
+                "en": "You will notice the change on your page from the first week.",
+                "az": "Dəyişikliyi birinci həftədən səhifənizdə hiss edəcəksiniz.",
+                "ru": "Вы заметите изменения на своей странице с первой недели."
             },
-            "courses": {
-                "en": "Course in English",
-                "az": "Course in Azerbaijani",
-                "ru": "Course in Russian"
+            "subtitle": {
+                "en": "You will notice the change on your page from the first week.All processes are conducted with special expertise.",
+                "az": "Bütün proseslər xüsusi peşəkarlıqla aparılır.",
+                "ru": "Все процессы выполняются с особой компетентностью."
             },
-            "path":"/#"
+            "path": "/#"
         },
         {
             "image": "./src/assets/mobilesliderone.webp",
             "title": {
-                "en": "Title in English",
-                "az": "Title in Azerbaijani",
-                "ru": "Title in Russian"
+                "en": "Want to Increase Your Business Revenue?",
+                "az": "Biznes gəlirinizi artırmaq istəyirsiniz?",
+                "ru": "Хотите увеличить доход своего бизнеса?"
             },
-            "courses": {
-                "en": "Course in English",
-                "az": "Course in Azerbaijani",
-                "ru": "Course in Russian"
+            "subtitle": {
+                "en": "Leave Your Work to Experts.",
+                "az": "İşinizi mütəxəssislərə həvalə edin.",
+                "ru": "Доверьте свою работу экспертам."
             },
-            "path":"/#"
+            "path": "/#"
         },
         {
             "image": "./src/assets/mobileslidertwo.webp",
             "title": {
-                "en": "Title in English",
-                "az": "Title in Azerbaijani",
-                "ru": "Title in Russian"
+                "en": "Official Meta Certificate",
+                "az": "Rəsmi Meta Sertifikatı",
+                "ru": "Официальный сертификат Meta"
             },
-            "courses": {
-                "en": "Course in English",
-                "az": "Course in Azerbaijani",
-                "ru": "Course in Russian"
+            "subtitle": {
+                "en": "We learned this directly from Facebook.",
+                "az": "Bunu birbaşa Facebook-dan öyrəndik.",
+                "ru": "Мы узнали это напрямую от Facebook."
             },
-            "path":"/#"
+            "path": "/#"
         },
         {
             "image": "./src/assets/mobilesliderthree.webp",
             "title": {
-                "en": "Title in English",
-                "az": "Title in Azerbaijani",
-                "ru": "Title in Russian"
+                "en": "You will notice the change on your page from the first week.",
+                "az": "Dəyişikliyi birinci həftədən səhifənizdə hiss edəcəksiniz.",
+                "ru": "Вы заметите изменения на своей странице с первой недели."
             },
-            "courses": {
-                "en": "Course in English",
-                "az": "Course in Azerbaijani",
-                "ru": "Course in Russian"
+            "subtitle": {
+                "en": "All processes are conducted with special expertise.",
+                "az": "Bütün proseslər xüsusi peşəkarlıqla aparılır.",
+                "ru": "Все процессы выполняются с особой компетентностью."
             },
-            "path":"/#"
+            "path": "/#"
         }
     ]
 }

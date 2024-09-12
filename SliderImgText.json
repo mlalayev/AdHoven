@@ -3,22 +3,22 @@
         {
             "id": 1,
             "image": "./src/assets/metacertificate.png",
-            "title": "Official Meta Certificate",
-            "caption": "We learned this directly from Facebook.",
+            "title": "",
+            "caption": "",
             "button": "Go"
         },
         {
             "id": 2,
             "image": "./src/assets/sliderimg.webp",
-            "title": "Leave Your Work to Experts",
-            "caption": "You will notice the change on your page from the first week.",
+            "title": "",
+            "caption": "",
             "button": "Go"
         },
         {
             "id": 3,
             "image": "./src/assets/slidertwo.png",
-            "title": "Want to Increase Your Business Revenue?",
-            "caption": "All processes are conducted with special expertise.",
+            "title": "",
+            "caption": "",
             "button": "Go"
         }
     ],

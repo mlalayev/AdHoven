@@ -15,15 +15,9 @@ interface RightPartProps {
 
 function RightPart({ isNewsTrue, isTextPart, currentPath, isFaqsTrue }: RightPartProps) {
     return (
-        <div style={{
-            padding:"0 20px"
-        }}>
+        <div style={{ padding: "0 20px" }}>
             <section className="sectionthird">
-                <div 
-                style={{
-                    marginTop: "20px",
-                }}
-                className="sectionthird-leftpart">
+                <div style={{ marginTop: "20px" }} className="sectionthird-leftpart">
                     {isTextPart && (
                         <TextPart 
                             currentPath={currentPath} 
@@ -37,7 +31,9 @@ function RightPart({ isNewsTrue, isTextPart, currentPath, isFaqsTrue }: RightPar
                 <div className="sectionthird-rightpart">
                     <Profile />
                     <Social />
-                    <MostRead />
+                    <div style={{ position: "sticky", top: "68px" }}>
+                        <MostRead />
+                    </div>
                 </div>
             </section>
         </div>
