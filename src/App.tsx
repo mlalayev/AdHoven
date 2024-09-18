@@ -21,7 +21,11 @@ function App() {
           <Route
             path="/"
             element={
-
+              <>
+                <Header />
+                <MainPage />
+                <Footer />
+              </>
             }
           />
           {/* Dynamic routes with manually controlled props */}
