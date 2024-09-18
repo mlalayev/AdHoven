@@ -21,37 +21,51 @@ function App() {
           <Route
             path="/"
             element={
-              <>
-                <Header />
-                <MainPage />
-                <Footer />
-              </>
+
             }
           />
           {/* Dynamic routes with manually controlled props */}
           <Route
             path="/path1"
-            element={<PageWithTextPart isFaqsTrue={true} isNewsTrue={false} isTextPart={true} />}
+            element={<PageWithTextPart
+              isFaqsTrue={true}
+              isNewsTrue={false}
+              isTextPart={true} />}
           />
           <Route
             path="/path2"
-            element={<PageWithTextPart isFaqsTrue={false} isNewsTrue={false} isTextPart={true} />}
+            element={<PageWithTextPart
+              isFaqsTrue={false}
+              isNewsTrue={false}
+              isTextPart={true} />}
           />
           <Route
             path="/path3"
-            element={<PageWithTextPart isFaqsTrue={false} isNewsTrue={false} isTextPart={true} />}
+            element={<PageWithTextPart
+              isFaqsTrue={false}
+              isNewsTrue={false}
+              isTextPart={true} />}
           />
           <Route
             path="/path4"
-            element={<PageWithTextPart isFaqsTrue={false} isNewsTrue={false} isTextPart={true} />}
+            element={<PageWithTextPart
+              isFaqsTrue={false}
+              isNewsTrue={false}
+              isTextPart={true} />}
           />
           <Route
             path="/path5"
-            element={<PageWithTextPart isFaqsTrue={false} isNewsTrue={false} isTextPart={true} />}
+            element={<PageWithTextPart
+              isFaqsTrue={false}
+              isNewsTrue={false}
+              isTextPart={true} />}
           />
           <Route
             path="/about"
-            element={<PageWithTextPart isFaqsTrue={false} isNewsTrue={false} isTextPart={true} />}
+            element={<PageWithTextPart
+              isFaqsTrue={false}
+              isNewsTrue={false}
+              isTextPart={true} />}
           />
         </Routes>
       </I18nextProvider>
