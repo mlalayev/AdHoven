@@ -41,7 +41,7 @@ const MainPage: React.FC = () => {
           display: 'flex',
           justifyContent: 'center'
         }}>
-        {/* {slides.length > 0 ? <ImageSlider /> : <p>Loading...</p>} */}
+        {slides.length > 0 ? <ImageSlider /> : <p>Loading...</p>}
       </section>
       <section className="sectionsecond">
         <Card />
