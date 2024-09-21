@@ -23,7 +23,7 @@ function App() {
             element={
               <>
                 <Header />
-                {/* <MainPage /> */}
+                <MainPage />
                 <Footer />
               </>
             }
