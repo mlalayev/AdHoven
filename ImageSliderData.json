@@ -1,7 +1,7 @@
 {
     "slides": [
         {
-            "image": "./src/assets/ImageSliderFirst.webp",
+            "image": "./src/assets/sliderimg.webp",
             "title": {
                 "en": "Want to Increase Your Business Revenue?",
                 "az": "Biznes gəlirinizi artırmaq istəyirsiniz?",
@@ -29,7 +29,7 @@
             "path": "/#"
         },
         {
-            "image": "./src/assets/sliderimg.webp",
+            "image": "./src/assets/ImageSliderFirst.webp",
             "title": {
                 "en": "You will notice the change on your page from the first week.",
                 "az": "Dəyişikliyi birinci həftədən səhifənizdə hiss edəcəksiniz.",
