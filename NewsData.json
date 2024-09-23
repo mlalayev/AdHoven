@@ -7,7 +7,7 @@
         "title": "B2B və B2C Rəqəmsal Marketinq Strategiyaları",
         "description": "Rəqəmsal dünyada marketinq strategiyaları sürətlə dəyişir və inkişaf edir. Şirkətlər üçün bu dəyişikliklərə uyğunlaşmaq və doğru hədəf auditoriyası ilə əlaqə qurmaq vacibdir. B2B və B2C üçün fərqli strategiyalar bu məqalədə ətraflı şəkildə izah edilir.",
         "category": "Rəqəmsal Marketinq",
-        "image": "./src/assets/notifimg.webp"
+        "image": "./src/assets/b2bvsb2c.webp"
       },
       {
         "id": 2,
@@ -15,7 +15,7 @@
         "title": "Rəqəmsal Marketinq Mütəxəssisi Kimdir?",
         "description": "Müasir biznes dünyasında rəqəmsal marketinq əvəzolunmaz bir vasitəyə çevrilib. Rəqəmsal marketinq mütəxəssisi olmaq üçün hansı bacarıqlar lazımdır və bu sahədə necə mütəxəssis olmaq olar?",
         "category": "Rəqəmsal Marketinq",
-        "image": "./src/assets/seoimg.webp"
+        "image": "./src/assets/MarketingSpecialist.webp"
       },
       {
         "id": 3,
@@ -49,7 +49,7 @@
         "title": "B2B and B2C Digital Marketing Strategies",
         "description": "Digital marketing strategies are rapidly evolving in the digital world. For companies, it is crucial to adapt to these changes and connect with the right target audience. This article details different strategies for B2B and B2C.",
         "category": "Digital Marketing",
-        "image": "./src/assets/notifimg.webp"
+        "image": "./src/assets/b2bvsb2c.webp"
       },
       {
         "id": 2,
@@ -57,7 +57,7 @@
         "title": "Who is a Digital Marketing Specialist?",
         "description": "In today's business world, digital marketing has become an indispensable tool. What skills are needed to become a digital marketing specialist, and how can one excel in this field?",
         "category": "Digital Marketing",
-        "image": "./src/assets/seoimg.webp"
+        "image": "./src/assets/MarketingSpecialist.webp"
       },
       {
         "id": 3,
@@ -91,7 +91,7 @@
         "title": "Стратегии цифрового маркетинга для B2B и B2C",
         "description": "Стратегии цифрового маркетинга стремительно развиваются в цифровом мире. Для компаний важно адаптироваться к этим изменениям и находить связь с нужной аудиторией. В этой статье подробно описываются различные стратегии для B2B и B2C.",
         "category": "Цифровой Маркетинг",
-        "image": "./src/assets/notifimg.webp"
+        "image": "./src/assets/b2bvsb2c.webp"
       },
       {
         "id": 2,
@@ -99,7 +99,7 @@
         "title": "Кто такой специалист по цифровому маркетингу?",
         "description": "В современном бизнесе цифровой маркетинг стал незаменимым инструментом. Какие навыки необходимы для того, чтобы стать специалистом по цифровому маркетингу, и как можно преуспеть в этой области?",
         "category": "Цифровой Маркетинг",
-        "image": "./src/assets/seoimg.webp"
+        "image": "./src/assets/MarketingSpecialist.webp"
       },
       {
         "id": 3,
