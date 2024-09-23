@@ -72,6 +72,13 @@ function App() {
               isTextPart={true} />}
           />
           <Route
+            path="/path7"
+            element={<PageWithTextPart
+              isFaqsTrue={false}
+              isNewsTrue={false}
+              isTextPart={true} />}
+          />
+          <Route
             path="/about"
             element={<PageWithTextPart
               isFaqsTrue={false}
