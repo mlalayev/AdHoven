@@ -36,13 +36,13 @@ const MainPage: React.FC = () => {
 
   return (
     <div>
-      <section className="sectionslider"
+      {/* <section className="sectionslider"
         style={{
           display: 'flex',
           justifyContent: 'center'
         }}>
         {slides.length > 0 ? <ImageSlider /> : <p>Loading...</p>}
-      </section>
+      </section> */}
       <section className="sectionsecond">
         <Card />
       </section>
