@@ -4,15 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy",
+    "build": "prisma generate && react-scripts build",
     "postinstall": "prisma generate",
     "dev": "vite",
-    "build": "react-scripts build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "aos": "^2.3.4",
-     "prisma": "^1.1.1",
+    "prisma": "^1.1.1",
     "axios": "^1.7.2",
     "i18next": "^23.12.2",
     "i18next-http-backend": "^2.5.2",
@@ -38,6 +40,6 @@
     "vite": "^5.3.4"
   },
   "engines": {
-  "node": "20.x"
-}
+    "node": "20.x"
+  }
 }
